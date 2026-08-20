@@ -29,7 +29,23 @@
 以下 GitHub Pages 链接由 GitHub Actions 在同步时自动生成，可直接用于 Surge 的“从 URL 安装模块”。
 
 <!-- MODULE_LINKS_START -->
-首次运行同步后，此处会自动列出全部模块链接。
+- [AdUnion.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/AdUnion.sgmodule)
+- [AlibabaFamily.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/AlibabaFamily.sgmodule)
+- [Bilibili.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Bilibili.sgmodule)
+- [ByteDanceFamily.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/ByteDanceFamily.sgmodule)
+- [Finance.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Finance.sgmodule)
+- [MeituanFamily.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/MeituanFamily.sgmodule)
+- [MiniProgramAdBlock.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/MiniProgramAdBlock.sgmodule)
+- [MyBlockAds.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/MyBlockAds.sgmodule)
+- [PinDuoDuo.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/PinDuoDuo.sgmodule)
+- [Spotify.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Spotify.sgmodule)
+- [Tieba.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Tieba.sgmodule)
+- [Video.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Video.sgmodule)
+- [Weibo.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Weibo.sgmodule)
+- [XiaoHongShu.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/XiaoHongShu.sgmodule)
+- [Ximalaya.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Ximalaya.sgmodule)
+- [YouTube.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/YouTube.sgmodule)
+- [Zhihu.sgmodule](https://cingdaat.github.io/Surge-Modules/Modules/Surge/Zhihu.sgmodule)
 <!-- MODULE_LINKS_END -->
 
 ## 同步原则

@@ -1,0 +1,689 @@
+{
+  "generated_files": [
+    "AdUnion.sgmodule",
+    "AlibabaFamily.sgmodule",
+    "Bilibili.sgmodule",
+    "ByteDanceFamily.sgmodule",
+    "Finance.sgmodule",
+    "MeituanFamily.sgmodule",
+    "MiniProgramAdBlock.sgmodule",
+    "MyBlockAds.sgmodule",
+    "PinDuoDuo.sgmodule",
+    "Spotify.sgmodule",
+    "Tieba.sgmodule",
+    "Video.sgmodule",
+    "Weibo.sgmodule",
+    "XiaoHongShu.sgmodule",
+    "Ximalaya.sgmodule",
+    "YouTube.sgmodule",
+    "Zhihu.sgmodule",
+    "_resources/ad_union/adsense-8343a1053843019c.js",
+    "_resources/ad_union/alicdn-a1536927e11e0b56.js",
+    "_resources/ad_union/amdc-d187a0b6e9846a48.js",
+    "_resources/alipan/adrive-113890ab142694bb.js",
+    "_resources/amap/amap-7bdf13ae802b0dbd.js",
+    "_resources/baidu_netdisk/chxm1023_bdcloud-49b029314704baf6.js",
+    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js",
+    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js",
+    "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js",
+    "_resources/bilibili/json-49ba14d278a415da.js",
+    "_resources/bilibili/request-8ccfd654891015e4.js",
+    "_resources/bilibili/response-0aeae5e6e503326f.js",
+    "_resources/blued/blued-4821c4ba5f47c7f5.js",
+    "_resources/boohee/boohee-cab92058d564794c.js",
+    "_resources/cainiao/cainiao-5aec06afaafdd490.js",
+    "_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json",
+    "_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js",
+    "_resources/dianping/dianping-d7cd7fadf4b469af.js",
+    "_resources/ezviz/ys7-ac550595ac61cdfd.js",
+    "_resources/fliggy/fliggy-eeadbaa380278458.js",
+    "_resources/freshippo/freshippo-806c7be05c2b8c0a.js",
+    "_resources/goofish/goofish-0fd54500cd31e0c6.js",
+    "_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js",
+    "_resources/ithome/kelee.one_IThome_remove_ads-2381391738ca5f03.js",
+    "_resources/jd/jd-824aa2c327a04b43.js",
+    "_resources/jingxi/jingxiAd-81b2de8846f19461.js",
+    "_resources/maidanba/mdb-89816a29460471fa.js",
+    "_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js",
+    "_resources/meitu/meitu-3139df05cf679e3f.js",
+    "_resources/meituan/meituan-3c30ba0d24393abd.js",
+    "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js",
+    "_resources/mini_program_adblock/kelee.one_M_Stand-fcfb9d06ac976277.js",
+    "_resources/mini_program_adblock/kelee.one_T3-ff6ccbdc427d5216.js",
+    "_resources/mini_program_adblock/kelee.one_alittle-tea-c12c7329f0921bf4.js",
+    "_resources/mini_program_adblock/kelee.one_chayanyuese_remove_ads-83ad0eeeb2fed7ce.js",
+    "_resources/mini_program_adblock/kelee.one_coco-349af7ab77872fee.js",
+    "_resources/mini_program_adblock/kelee.one_ems-e88e06a330e09845.js",
+    "_resources/mini_program_adblock/kelee.one_kff-e71239e05218aa12.js",
+    "_resources/mini_program_adblock/kelee.one_lawson-45835cc0067fc6bf.js",
+    "_resources/mini_program_adblock/kelee.one_ming-68a6baa0607f1862.js",
+    "_resources/mini_program_adblock/kelee.one_qingju-e5bbbf8c01ddbf32.js",
+    "_resources/mini_program_adblock/kelee.one_xiaotucc-5c31ba666d0ddbaa.js",
+    "_resources/pinduoduo/pinduoduo-b7846619c02916ba.js",
+    "_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js",
+    "_resources/quark/quark-a4613b36b767fa37.js",
+    "_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js",
+    "_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js",
+    "_resources/spotify/spotify-json-02086290c7c6ac68.js",
+    "_resources/spotify/spotify-proto-99449675fd0d0002.js",
+    "_resources/taobao/taobao-80baf40ea1ffaa97.js",
+    "_resources/tieba/kelee.one_tieba-proto-167a15bd53ff51f3.js",
+    "_resources/weibo/weibo-532cde71b54b0c94.js",
+    "_resources/xiaohongshu/xiaohongshu-ca20c7c41aa56a84.js",
+    "_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js",
+    "_resources/ximalaya/ximalaya_json-7207e9dc08009d9d.js",
+    "_resources/youku/cntv-87119b51bccf2fd6.js",
+    "_resources/youtube/youtube.request-eae363a79af95e6c.js",
+    "_resources/youtube/youtube.response-f6d9678c4bd04211.js",
+    "_resources/zhihu/zhihu-5450c6eb014eaa8b.js"
+  ],
+  "outputs": {
+    "AdUnion.sgmodule": "87b78f36c0e918c67732f07549a74b4f0ff2cd3c4688814c991ebd0e1bc0bada",
+    "AlibabaFamily.sgmodule": "0736939d0c77f945a72e7586436b2ae89d59314c0594fb8cbf08e4ba12dffb7f",
+    "Bilibili.sgmodule": "9f02a88c8cf8e77f68d63b61f2b8464bb8698b393c24940581417315518fe53f",
+    "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
+    "Finance.sgmodule": "9cf445e9b3398794a8c601cba330092168d2bf6031e375325c603f416e1a94c4",
+    "MeituanFamily.sgmodule": "d1b43e6baf22f6bd0610b7fed4c7e90b10f4fd9f8e496e6e11adf0cacea8a2e3",
+    "MiniProgramAdBlock.sgmodule": "98be03a1554526b6b8bdc566f6c8e69309537415db5a2d70d6516e17ac1496e0",
+    "MyBlockAds.sgmodule": "c60026b58cc7c46039a03a4cdc62b05d028e25aeecf3fa6b3a1653292c017161",
+    "PinDuoDuo.sgmodule": "18f8e5aa5727d91c207edd52dfbeaabccafcd1b4987006e62fd71f83c4de585d",
+    "Spotify.sgmodule": "e9078a62e647c13738b79172a7f437434b7e84dc28190f70f18e78904901e28a",
+    "Tieba.sgmodule": "759def23a5d0d5aa481b4c447cb9070015a529b72cefed522b94bef3874e2a3e",
+    "Video.sgmodule": "7c388111e8b63edf9536815683d0cf89fa0ddffc3f72799e964077a1bf315b8f",
+    "Weibo.sgmodule": "60d596086a1b7c23ed1b2153cfee7e903820d8b9bc45f74b509f3035c8222e07",
+    "XiaoHongShu.sgmodule": "da87e6d8509f9bde4f6d4717781b051063ff23c21d2af848c8a9afbadb8867d4",
+    "Ximalaya.sgmodule": "36846138194230f8167f49530b8a7e0319e401a2e8b77110cc9cb6786cbe096c",
+    "YouTube.sgmodule": "9781312ec712fbeee97c5f95ce39ab01f6b165791868c2402edd20db3bfe7205",
+    "Zhihu.sgmodule": "56225649aee447325364e8db0392572bfd07a8276c81cbe38626947c841fe973",
+    "_resources/ad_union/adsense-8343a1053843019c.js": "d79654a773b4f248afbf90adaf85b4824a70fefe3686a34cb39c68cddaa6eefd",
+    "_resources/ad_union/alicdn-a1536927e11e0b56.js": "e6ff8a29a82508abff43eab1e85c7d518002c6d810f5458d1b78a8219fc4cdcf",
+    "_resources/ad_union/amdc-d187a0b6e9846a48.js": "4987266c554b1632ae90b224f642e3ca4349e9f3326104a09cb987390510b7b9",
+    "_resources/alipan/adrive-113890ab142694bb.js": "4de6fd8ece48712dcc08c3c41cdd5da2440ea30c2e8e6f86c1e8be10ced9aa42",
+    "_resources/amap/amap-7bdf13ae802b0dbd.js": "90be0dca3a927df667c805470c31f75e2abd9a7d1c7903dd40e17ecb12c54004",
+    "_resources/baidu_netdisk/chxm1023_bdcloud-49b029314704baf6.js": "0dca14782f45fef21bd1ceb07ba6e5f7a37db1c56ba75da27053dd13945d4413",
+    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js": "2fdc54b1c7acd53df4ac5379485df8c50834859eed20a8b590de2da0df217ac6",
+    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js": "00615ce6dfae37cdc5e55ae791c9353a3fb6f981d895a6fbd0b53caaaf129ecd",
+    "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js": "9a50669b814eedd82eb9b73518089547bc7b9c5388dc4e441dfc9f155c55fc61",
+    "_resources/bilibili/json-49ba14d278a415da.js": "5e9b28e0b00ccc30dc39fc535c71829bee1f57e9c7395ef53f79d32c0f2668f1",
+    "_resources/bilibili/request-8ccfd654891015e4.js": "4ef33eadc011aef9462cc6a9433767b24cab8879507799258aa9479aa82b6c42",
+    "_resources/bilibili/response-0aeae5e6e503326f.js": "2b7c90ba7db98883382298d54711f810da43241e33cfc0d06b218476fea40132",
+    "_resources/blued/blued-4821c4ba5f47c7f5.js": "b9aa88e977da62caa90afbe5d921f45d8ef63f09945442043bc95145eb551a7d",
+    "_resources/boohee/boohee-cab92058d564794c.js": "c0d70da6294c34ea98fe2ab013b39cc64734d4e4f3c25addd14f5a0c7c00970f",
+    "_resources/cainiao/cainiao-5aec06afaafdd490.js": "c99c07937e4f4357949ba17f77927748992ad480afe14619a20c9f6551160d86",
+    "_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json": "dde008b55310925cb3c24bd863125dab3bdb9f577c9f36642f321da4db330e28",
+    "_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js": "51d20e0cd5f134603f541fdb7a05a3e9a259b8e3adece8347b90df237687c0a1",
+    "_resources/dianping/dianping-d7cd7fadf4b469af.js": "6a8d275f392c86f102d785e1b2f4d57b322ee2a321c8c3a13d534f925fbceb86",
+    "_resources/ezviz/ys7-ac550595ac61cdfd.js": "9380bb149f8fa9de5289a277efb7153306f9eb119c21e952312067c79531e2bb",
+    "_resources/fliggy/fliggy-eeadbaa380278458.js": "050efdf95b8050816050f614fef98052944c27bfe1c8d07857ea9b552786c66f",
+    "_resources/freshippo/freshippo-806c7be05c2b8c0a.js": "edf71faccbca61b153bbce98f56b75e27313883cf520e5e315f6ba15ed52360d",
+    "_resources/goofish/goofish-0fd54500cd31e0c6.js": "aa4fd649a9cc23700e408b6f9174a411b76b227f7034c3b8ffdae0ae0e3b4f22",
+    "_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js": "43ec9962925a76ca49cf1491a73430bd1b7fc3ef206de50eb0083c75b69865a6",
+    "_resources/ithome/kelee.one_IThome_remove_ads-2381391738ca5f03.js": "3008c1a2831ec084c07e44c2219ee8776aefb45a9b4053da675fde6701caa141",
+    "_resources/jd/jd-824aa2c327a04b43.js": "ddf9ec8ab97d5e5a5e1bc171c0301350ba42f41b9dcd129c166c6a192ecb7957",
+    "_resources/jingxi/jingxiAd-81b2de8846f19461.js": "aa125c2689fba2cdd3ff1eb5aeb9e43bde2b1abab546cfcafdb67bd647d47b94",
+    "_resources/maidanba/mdb-89816a29460471fa.js": "f50cef7a5f3b3e3179f9c5a93f2ab937dd72d83ca4dc2c9e8a66937c38e3e9ab",
+    "_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js": "7393e4f79938096a5ae000533dd228f88b7d03215031f6b22bbf3edf56bd1bec",
+    "_resources/meitu/meitu-3139df05cf679e3f.js": "3a7b60ded8afe990bc8d2096db08fa28a0fadfd7466768ba6dbc30c0b8c8d612",
+    "_resources/meituan/meituan-3c30ba0d24393abd.js": "49397f334f7186928d31383561a6cc237482bf28f285b8de11493cc29f2d10c3",
+    "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js": "e25457f43eacfbf27ca8229445e69f60f7562ece723b5ebaf07969c0ebf75e1c",
+    "_resources/mini_program_adblock/kelee.one_M_Stand-fcfb9d06ac976277.js": "5d6f163842ce53eb034fa01c244f6482fedd2f5d56b7c206c25d6f11c21e805f",
+    "_resources/mini_program_adblock/kelee.one_T3-ff6ccbdc427d5216.js": "ab1ca9af4dd9b294f585335856de51d6df2b61c31d9a3d1982a5b091355da25a",
+    "_resources/mini_program_adblock/kelee.one_alittle-tea-c12c7329f0921bf4.js": "c765215071712fa0c0c0ef3719263fff81d4a1ce0189f8bc0861aa721657a44c",
+    "_resources/mini_program_adblock/kelee.one_chayanyuese_remove_ads-83ad0eeeb2fed7ce.js": "4b7f857caa810648f7be584e916ceffb9c12dd3b2ce7766ed5bd605646e2a4d1",
+    "_resources/mini_program_adblock/kelee.one_coco-349af7ab77872fee.js": "dc9a1915eed8f6f760a8f3a03f5e2f5a0f346373693ae4ac2e0c5dbd90fd46b3",
+    "_resources/mini_program_adblock/kelee.one_ems-e88e06a330e09845.js": "2208e4945d8781e5bc9d20a436fc141629a7e4dc9fd516f9fe917196010cf5bc",
+    "_resources/mini_program_adblock/kelee.one_kff-e71239e05218aa12.js": "8453c73e9412fd99396afbfea14e7d26c46936da1650603b6f2433cda18cbf2c",
+    "_resources/mini_program_adblock/kelee.one_lawson-45835cc0067fc6bf.js": "3d57d6ae9070934eef3513e2a4b640fad9dd5076fbbc6c471994bd3d790068f1",
+    "_resources/mini_program_adblock/kelee.one_ming-68a6baa0607f1862.js": "bd0f4e67ae73fdd083b10c1e802912d8c9ade1b2b14a0dead865d7af0b90d991",
+    "_resources/mini_program_adblock/kelee.one_qingju-e5bbbf8c01ddbf32.js": "8664e7a22b21aaa8546ec167e3a43fee7ebd2c00552a126212720b09a4819bf8",
+    "_resources/mini_program_adblock/kelee.one_xiaotucc-5c31ba666d0ddbaa.js": "a10131a49267ce2cdd17c7c4d783eb64c8aa943b83ee4dcadb846ccd2c4bbb1b",
+    "_resources/pinduoduo/pinduoduo-b7846619c02916ba.js": "94a89137c299d14072a2bbb3585a77306aa274c11e03edc8afa1686efc650366",
+    "_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js": "76659d365b0da3eef1ef54cde44254f9d951799138af52a3edeea2e29a43f83f",
+    "_resources/quark/quark-a4613b36b767fa37.js": "6aa13d1c7d7f3d37f821aced7747dffa5a505f6ba3eae2dafd8d37caa43454d8",
+    "_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js": "22a825d8149d952dd9c6c1c5c96fa3f830a0ebba975f8fc402f55ad1f40d4a8a",
+    "_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js": "7ed45ff3a292d28ef1ccbb3b12e7f949a4792e60c3e7275125fee297b0f2701e",
+    "_resources/spotify/spotify-json-02086290c7c6ac68.js": "41cf1074770cdef3948baa12ff4a8db9045d1cac888714c8b7e69909eb531bc9",
+    "_resources/spotify/spotify-proto-99449675fd0d0002.js": "2e6850e888d092905c766f0bbedc4b4afb9a712330970cc1265105d7fb4995d0",
+    "_resources/taobao/taobao-80baf40ea1ffaa97.js": "948921def8daf5fc8da5f36645569e1b01ee03c99f2c2d54da6ae77b8cef8a86",
+    "_resources/tieba/kelee.one_tieba-proto-167a15bd53ff51f3.js": "2ab9006be369e1083072ec49f4163245d8c385b0f3acc40910c2922454ebbd78",
+    "_resources/weibo/weibo-532cde71b54b0c94.js": "7498cbef4c2f3293afebc3a686faec63220e27a62cd16303c18db2371bf529f3",
+    "_resources/xiaohongshu/xiaohongshu-ca20c7c41aa56a84.js": "318d89bce1117edb26a93b383804e195649ec4674a04efa9e3ddb4ef7f34b498",
+    "_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js": "4cf62100424886068a5470daecec319e93ccd034c647d79a9daaa72bbbc341bb",
+    "_resources/ximalaya/ximalaya_json-7207e9dc08009d9d.js": "2b0cb0abf3cf9eaf16e45591c947d2ab1905c2fa5aa8c1ca56ac1f3b4cf19533",
+    "_resources/youku/cntv-87119b51bccf2fd6.js": "a5242876770cd4c151435f687e98bf58dcf75fe8cad9e7f256ec26f019fb7c1b",
+    "_resources/youtube/youtube.request-eae363a79af95e6c.js": "3ecca15e06e76a31720092c581180f648ef2c45e494644941ba985c878efbb26",
+    "_resources/youtube/youtube.response-f6d9678c4bd04211.js": "f98483d5f5017514f82502253c0db5ce2d4ffb7839887aa2cadc22666f5a7f12",
+    "_resources/zhihu/zhihu-5450c6eb014eaa8b.js": "f35efe4a539e1c69709ceffdcd220afc7563faa943b369ebd52238cb387f29e2"
+  },
+  "schema": 1,
+  "sources": {
+    "ad_union": {
+      "output": "AdUnion.sgmodule",
+      "provider": "zirawell",
+      "sha256": "0fae049676c0f497c98d05ca0f1bfbead45a67cf20c0349df7a98470eb9b5843",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/%23/%E5%B9%BF%E5%91%8A%E8%81%94%E7%9B%9F/adunion.sgmodule"
+    },
+    "aihuishou": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "ddgksf2013",
+      "sha256": "3246d1a2d1ce837005a0e8d6c0f354b6cdf89fc5d487c486c93fac02078e968c",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/AiHuiShouAds.sgmodule"
+    },
+    "alipan": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "19bbf2c0fdbf6edc754199cd1888bd29222241a7907a143711c4e8e3ac968486",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/adrive.sgmodule"
+    },
+    "alipay": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b6c4ec6b828b5d7270bfdc0c20ad9fdf36a2d4f6c1e618ee949baf4382bc4546",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%94%AF%E4%BB%98%E5%AE%9D/alipay.sgmodule"
+    },
+    "amap": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "RuCu6",
+      "sha256": "556b55b6f921eb496504606a3673ad688662dabe4294be95a55e3962e5d356b4",
+      "url": "https://rucu6.pages.dev/Plugins/amap.lpx"
+    },
+    "amazon": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "d24c439c6931c23ca24e20d84ef7882e17bbe547248323911d1dbe77f29c415f",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%9A%E9%A9%AC%E9%80%8A/amazon.sgmodule"
+    },
+    "baidu_netdisk": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "sooyaaabo",
+      "sha256": "1a920e2cedb831ce3e2d83cb7fb4fef6dc0c0488bc7be8d7c6be9c190b0f2369",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/BaiduNetDisk.sgmodule"
+    },
+    "bank_of_china": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "0abffd471ed4a55f0433cf5224a47d9370a06982e764e50665ceeb412926310b",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/boc.sgmodule"
+    },
+    "bank_of_communications": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "c98405bf15b1f8667e29cd70cc09581a23d0df53408990c88ddf3202f5a016e5",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C/bankcomm.sgmodule"
+    },
+    "beautycam": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "28be8e5a8ab847eb42b05ecf7574f9e5c754383c8c38aa00630bc04717d60b9f",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/MeituMYXJ_remove_ads.sgmodule"
+    },
+    "beike": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "11a9be00aa0f38438ea2637f1e725d1c0e3dfc83b7830b92a5513c1bebd24a37",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beike_remove_ads.sgmodule"
+    },
+    "bilibili": {
+      "output": "Bilibili.sgmodule",
+      "provider": "RuCu6",
+      "sha256": "b43aaa75a8bcc4ec679aed4292555d0e00e161452ee3f8640c142cea42ea0386",
+      "url": "https://rucu6.pages.dev/Plugins/bilibili.lpx"
+    },
+    "binance": {
+      "output": "Finance.sgmodule",
+      "provider": "fmz200",
+      "sha256": "6173df4bf315664050fdccdb2e68ed970a93f430fd0b02047005295c60ad9c3d",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partB/Binance.lpx"
+    },
+    "blued": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "1566cc88aafc1b6595434e5040b94a164f6d12b6c9ef6e33490a8b053d799ca1",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/Blued/blued.sgmodule"
+    },
+    "boohee": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "69d0772ad3d9dcfc3588d011c8fa4c93d3a9694a8046119c23665161d7f9986e",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/%E8%96%84%E8%8D%B7%E5%81%A5%E5%BA%B7/boohee.sgmodule"
+    },
+    "bytedance_family": {
+      "output": "ByteDanceFamily.sgmodule",
+      "provider": "fmz200",
+      "sha256": "31b03c4eddf81611ec2dd45d4b690035ce0bc71ac91cf58246b971ae8299bc56",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partZ/ByteDance.lpx"
+    },
+    "cainiao": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "cdf8a9c3880d3509602a5c866162ee2da4e716a069b951e648a07561d576036d",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/C/%E8%8F%9C%E9%B8%9F/cainiao.sgmodule"
+    },
+    "china_construction_bank": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b385895e7959b39587852d997188d430fab7a166632bbc4594ff5a324feeeb99",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C/ccb.sgmodule"
+    },
+    "china_merchants_bank": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "3083c6cb1134053e5836d45268c0c11a1b84f64ae82883fa7e12110c292abc0d",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/cmb.sgmodule"
+    },
+    "china_telecom": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "6214aca197e6891ed33a5c7f708bbf9c2cef3725e9c100ffdf418ff887df9a20",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partZ/ChinaTelecom.lpx"
+    },
+    "china_unicom": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "sooyaaabo",
+      "sha256": "474fd4e4b56709c2547c3e9f2f7c677f90198d6a321ff8f20563d6895496d1bd",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/ChinaUnicom.sgmodule"
+    },
+    "cmb_life": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "80ee2a45b90e65287c752dc4af20cc7b103393ffa5219de90d6a4935655e4dd8",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8E%8C%E4%B8%8A%E7%94%9F%E6%B4%BB/cmbcc.sgmodule"
+    },
+    "colorful_clouds": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "3bd99b2d5f4aa2dd2f989e598508255dd57ae9d81e721eb569c8dd20a6a8bb41",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/ColorfulClouds_remove_ads.sgmodule"
+    },
+    "coolapk": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "8b1cd3c66be93de5e3ae477bf990cef04dec65af3806de00a5669edd798b54b0",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/CoolApk_remove_ads.sgmodule"
+    },
+    "csdn": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "4ef12c9899ec3d5016723dc3329ea0d168f0afbff0caf1bc3ee905fc44cf9dcb",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partC/CSDN.lpx"
+    },
+    "damai": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b5fee539b12299b1fb2796815c84b97a9810b44b9c01c991a348a6f2ba965b44",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E9%BA%A6/damai.sgmodule"
+    },
+    "dewu": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "72ad3e6940c15362f5636b23ba08b1840a649f1381c76c52696f23f3d6a82506",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Dewu_remove_ads.sgmodule"
+    },
+    "dianping": {
+      "output": "MeituanFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "7c3212c4d28b5a3560cb30b4a36afe60e4c4059749a6ec7dc3502a7d265f489a",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E4%BC%97%E7%82%B9%E8%AF%84/dianping.sgmodule"
+    },
+    "didi": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "a5ff5044e40129fd2a33c6c1b6ab0b40d33890d74d4c7d0f4113ac884252cf02",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/DiDi_remove_ads.sgmodule"
+    },
+    "douban": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "43e1a3305035b6863eb8550dc03fbf322c33aba5485ee5273d9497dc2121bcc5",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E8%B1%86%E7%93%A3/douban.sgmodule"
+    },
+    "ezviz": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "22f9a39a61eb0a491743714dd49de5c084821c3be0900ea16327b2bca30fdc71",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E8%90%A4%E7%9F%B3%E4%BA%91%E8%A7%86%E9%A2%91/ys7.sgmodule"
+    },
+    "fcbox": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "5dcf8fc9e2f26495684f6e3c8dd761434b580a93b825775aa220d225508df7c8",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E4%B8%B0%E5%B7%A2/fcbox.sgmodule"
+    },
+    "fliggy": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "2f7cf24028b7205c153631800620aef40ff722a054b76d39e1d1c937e36d48a1",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule"
+    },
+    "freshippo": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "5204637fd471e7439d200a7cf0f9bd8f145a9380ebe8748237e51d4ade2b1406",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/H/%E7%9B%92%E9%A9%AC/freshippo.sgmodule"
+    },
+    "futunn": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "226a75807669da56d325b4a50692de83366cb0a43e84c05126633ef5c43ce480",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E5%AF%8C%E9%80%94%E7%89%9B%E7%89%9B/futunn.sgmodule"
+    },
+    "gcores": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "603883515bc7440c6124df83020946fd93b16cacf0594207281d7ff0e453f5db",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9C%BA%E6%A0%B8/gcores.sgmodule"
+    },
+    "goofish": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "5086f51186b56b707bdbac0f0a8ce0d3a064a49126a22cbebaa4377c34ed74a8",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E9%97%B2%E9%B1%BC/goofish.sgmodule"
+    },
+    "hupu": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "a79f4a1da020fe800c291004231ff10f6295015b7d8e4adbb66c0cfd1587feda",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/HUPU_remove_ads.sgmodule"
+    },
+    "iqiyi": {
+      "output": "Video.sgmodule",
+      "provider": "zirawell",
+      "sha256": "223c07b08e3f0d3abf1edb4e26a849f63c64671a1f4251f5c4a3eae77c451207",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E7%88%B1%E5%A5%87%E8%89%BA/iqiyi.sgmodule"
+    },
+    "ithome": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "98cb1b97b14cbf8fb9b0ad28ea709477f736f6c602ab6bbf4a0b315c657a6bda",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/IThome_remove_ads.sgmodule"
+    },
+    "jd": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b14e1e67ddbf18863cb54f1809dab9790d358ba700756b856900c9fa0231cc1f",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%AC%E4%B8%9C/jd.sgmodule"
+    },
+    "jingxi": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "25078a745ba1bad6ae54f6de0d4506b22e8044f96469b238a3226c29d2c5c7a3",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partJ/JingXi.lpx"
+    },
+    "jump": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "b69dbd419ebfadca82fdd7904dc22548c40e9fba62afe8a002b9408cbabaecea",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Jump_remove_ads.sgmodule"
+    },
+    "keep": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "sooyaaabo",
+      "sha256": "4c650f66e4d853fb35181ae4e3ef702510893f88c4c114d7f7878ab90720ad8a",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Keep.sgmodule"
+    },
+    "kfc": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "63e9157cc38c7e3952b80212e5abf456578a608750b1786b53a85c07714428c6",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partK/KFC.lpx"
+    },
+    "leoao": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "62e02343ffb899eba7b016790e11803ac6798459311053bb7e94786bc9742e95",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/L/%E4%B9%90%E5%88%BB%E8%BF%90%E5%8A%A8/leoao.sgmodule"
+    },
+    "luckin_coffee": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "a217dfb6fe88b945742b09e9f56ea3dba02008f3a512004d286f26a1db3cae89",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/LuckinCoffee_remove_ads.sgmodule"
+    },
+    "maidanba": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b2b85ea1d623ef68aa76d9e7a96054787fecc6a41eae98c6d9549b5a1dca7a71",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E4%B9%B0%E5%8D%95%E5%90%A7/mdb.sgmodule"
+    },
+    "mango_tv": {
+      "output": "Video.sgmodule",
+      "provider": "sooyaaabo",
+      "sha256": "6204f9aa157aa7e3a3443b12492eeda574eb75497608186f3013c46538de47aa",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/MangoTV.sgmodule"
+    },
+    "mcdonalds": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "607f3b55db76e337bc47dd9fbd9f058de13024d5d752ffed239a02f05d721819",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partM/McDonalds.lpx"
+    },
+    "meitu": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "7e28c9fe4f0c9565ab35193c467817d4229ea7053578e641b4a64440fa9f9ea7",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80/meitu.sgmodule"
+    },
+    "meituan": {
+      "output": "MeituanFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "55674508e75f750b4098188e78fbe87a62c610b3d2946fa87b293c1cd3c1b24f",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2/meituan.sgmodule"
+    },
+    "meituan_waimai": {
+      "output": "MeituanFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "7ad46cce4bc0e0ed10081704eabf6af0ad438a997962d732a86477bf74a1e01d",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96/meituanwm.sgmodule"
+    },
+    "mijia": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "691eb87378d8f1f374fce5f5b6ea14a8256e2125de7ae9b2d2a74fab24892798",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partM/Mijia.lpx"
+    },
+    "mini_program_adblock": {
+      "output": "MiniProgramAdBlock.sgmodule",
+      "provider": "Kelee",
+      "sha256": "ec8e2f6b7b23d602a450e3ad4ff8f1b26672111fe70e491020c9895b0a8b0ce0",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/WexinMiniPrograms_Remove_ads.sgmodule"
+    },
+    "minimal_exchange_rate": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "6b355f8bfa8ca7b1cb3f0f74e56127a4cb0310a9d6690ab0aeb3326c34be43c5",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9E%81%E7%AE%80%E6%B1%87%E7%8E%87/tratao.sgmodule"
+    },
+    "mwee": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "3e0a9e985f2468d30836da5f4ef661e0d9b09f633bd2c9b1453e9802ac7451f0",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%91%B3%E4%B8%8D%E7%94%A8%E7%AD%89/mwee.sgmodule"
+    },
+    "pikpak": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "76dbb342b1e75cc78fde52221969d88d390382761d2b9fd1db962d7d08237100",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/P/pikpak/pikpak.sgmodule"
+    },
+    "pinduoduo": {
+      "output": "PinDuoDuo.sgmodule",
+      "provider": "RuCu6",
+      "sha256": "9584655cbc59e73d6ee261724f5e28a92ca6f7716ac2f9d384d1474e6395f6e2",
+      "url": "https://rucu6.pages.dev/Plugins/pinduoduo.lpx"
+    },
+    "pupu": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "245a0e774581f72b5130981684f12e9155d0821eceb5794c42b1e99288349de7",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PuPuMall_remove_ads.sgmodule"
+    },
+    "quark": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "08789a2147d88ad407cbc1687944a590527870df873023e00a851ec2386fd08e",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/K/%E5%A4%B8%E5%85%8B/quark.sgmodule"
+    },
+    "railway_12306": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "Kelee",
+      "sha256": "d23955c25ccb685de7cdb85eb1975d2966bf2641bef214fbd5fa3ca3511c13de",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/12306_remove_ads.sgmodule"
+    },
+    "sams_club": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b6052fdf15be4b5de32dd3ed175f0a1564970a20cdfccb4cf5a5c3082ad4e6d7",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B1%B1%E5%A7%86%E4%BC%9A%E5%91%98%E5%95%86%E5%BA%97/samsclub.sgmodule"
+    },
+    "sf_express": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "0a7ff373a1555b0f12c4d54c4180e5387b41ae66ca64dfbe8998be661d48fff5",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E9%A1%BA%E4%B8%B0%E9%80%9F%E8%BF%90/sfexpress.sgmodule"
+    },
+    "shihuo": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "de4676e7ecaecf346e7900b1b11a9612436a8ec5fb00a3c917b9d12ba935f70d",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E8%AF%86%E8%B4%A7/shihuo.sgmodule"
+    },
+    "smzdm": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "a3541b4f75beeb7d735aff120b4fa7ecfce84f069d4c528a46a9dfc183813168",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/smzdm.sgmodule"
+    },
+    "spotify": {
+      "output": "Spotify.sgmodule",
+      "provider": "app2smile",
+      "sha256": "c8198e6967bde16c747e2c4f4ab71e91b976667f0f8d778473e8bf8a73399521",
+      "url": "https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module"
+    },
+    "sspai": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "766e9bb838a9532ae7633c922d9864bf417679fcc6859ad466ccb94e0020b740",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B0%91%E6%95%B0%E6%B4%BE/sspai.sgmodule"
+    },
+    "suning": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "d165f03c8d2de59b52fac43c31715905effdd7b83cddf7ed8f9d48ea635acba0",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partS/Suning.lpx"
+    },
+    "taobao": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "728a814d62a47a74d162231546cbdbfb4c482299bfe5f8d8fd45cc06a142e3c8",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D/taobao.sgmodule"
+    },
+    "taobao_flash_eleme": {
+      "output": "AlibabaFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "b075744f11089fea3c3865e4138e29cc111101d0275cbeb58e7771aa3f1a79fa",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule"
+    },
+    "tencent_video": {
+      "output": "Video.sgmodule",
+      "provider": "zirawell",
+      "sha256": "9a687e8d1e5355f22fdaf2fd5807ea5cf3336b7b68a566e7c5c60a977e468492",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91/txtv.sgmodule"
+    },
+    "tianyi_cloud": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "351851bd1e5f2a9bb4e5cb75ac6832963b8f0ddba425e2106457d87a7eb1f7b3",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98/189cloud.sgmodule"
+    },
+    "tieba": {
+      "output": "Tieba.sgmodule",
+      "provider": "Kelee",
+      "sha256": "f3d441b4cb23545d17a87e92d134ec443bc2135ae0f845c3b4c725b920a08354",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Tieba_remove_ads.sgmodule"
+    },
+    "traffic_management_12123": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "d5942d29a1a88cd32c391f27e4b14ccc489477c83483ffdab2de6b4122418e40",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E7%AE%A112123/12123.sgmodule"
+    },
+    "unionpay": {
+      "output": "Finance.sgmodule",
+      "provider": "zirawell",
+      "sha256": "63673999b24c96c3e33a58cf6154e7db738950b4fb3a90bc0b8694d4a32f86be",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%91%E9%97%AA%E4%BB%98/unionpay.sgmodule"
+    },
+    "wanda_cinema": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "c475ff655606458aed06ba7728fdba0fb153c439dec3926b8a53802b74d812f0",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partW/WandaCinema.lpx"
+    },
+    "weibo": {
+      "output": "Weibo.sgmodule",
+      "provider": "RuCu6",
+      "sha256": "ee530f3418de319686e2dc1dca1299af1d6ee2ef578442161e3410d9ed0fd6bb",
+      "url": "https://rucu6.pages.dev/Plugins/weibo.lpx"
+    },
+    "xiaohongshu": {
+      "output": "XiaoHongShu.sgmodule",
+      "provider": "fmz200",
+      "sha256": "3ada7e288cf4b9b39122c69f62fa236b3bdedef360b4699e00c4e22fa9bc8307",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partX/Xiaohongshu.lpx"
+    },
+    "xiaomi_mall": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "fmz200",
+      "sha256": "8cda8f48a0a731e4d2e7c95cc205045ad535866d38a30be2950dd7479590bba2",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partX/XiaomiMall.lpx"
+    },
+    "xiaomi_youpin": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "64cf52a382d00c0a025ea63d3791f1eb7d7207962f08dc463898b6263277719d",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E7%B1%B3%E6%9C%89%E5%93%81/miyoupin.sgmodule"
+    },
+    "xiaoxiang_supermarket": {
+      "output": "MeituanFamily.sgmodule",
+      "provider": "zirawell",
+      "sha256": "7b0055207ff86bb848bee6726fe703ab4daca81168384508010727121633bfca",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E8%B1%A1%E8%B6%85%E5%B8%82/xiaoxiang.sgmodule"
+    },
+    "xiaoxiao_youxuan": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "60b7e0df33781b5bd20eca4d22cc9822656545067b3f80725f0012bbb6521100",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E6%99%93%E6%99%93%E4%BC%98%E9%80%89/xxyx.sgmodule"
+    },
+    "xichuangzhu": {
+      "output": "MyBlockAds.sgmodule",
+      "provider": "zirawell",
+      "sha256": "232512e8e497f5a58943ccb7e316134766cb0c65906eb4be98a5d3f819d0f2a6",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E8%A5%BF%E7%AA%97%E7%83%9B/xczim.sgmodule"
+    },
+    "ximalaya": {
+      "output": "Ximalaya.sgmodule",
+      "provider": "ddgksf2013",
+      "sha256": "9fe885ef9359bc5000f85b09976022ff4a62049c535577d19a791fd61d5f2079",
+      "url": "https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Ximalaya.conf"
+    },
+    "youku": {
+      "output": "Video.sgmodule",
+      "provider": "zirawell",
+      "sha256": "ae85972a83fe673e937eb305d3bfc58bdf60a96a696901dca3a6f93d8e379ea5",
+      "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91/youku.sgmodule"
+    },
+    "youtube": {
+      "output": "YouTube.sgmodule",
+      "provider": "Maasea",
+      "sha256": "0ff08c6afc19200afe2bc2e93d53ab9eae8e99f7aec1f91b0e92ae4782cafdbd",
+      "url": "https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule"
+    },
+    "zhihu": {
+      "output": "Zhihu.sgmodule",
+      "provider": "RuCu6",
+      "sha256": "0f2c78b1ddaeaec6bf15a94af024b47e5f46f347b7b81b64828e0f09949483ef",
+      "url": "https://rucu6.pages.dev/Plugins/zhihu.lpx"
+    }
+  }
+}

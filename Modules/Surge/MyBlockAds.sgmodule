@@ -1,0 +1,828 @@
+#!name=MyBlockAds 软件合集
+#!category=AdBlock
+#!desc=由 GitHub Actions 自动同步；各成员完整取自已选择的上游
+#!author=Upstream authors; automated assembly
+#!arguments=removePinnedArticles:false,removeAllBanners:false,jkxi_enable:true,xnmiuhig_enable:true
+
+# Sources:
+# - amap | RuCu6 | https://rucu6.pages.dev/Plugins/amap.lpx
+# - didi | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/DiDi_remove_ads.sgmodule
+# - sf_express | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E9%A1%BA%E4%B8%B0%E9%80%9F%E8%BF%90/sfexpress.sgmodule
+# - traffic_management_12123 | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E7%AE%A112123/12123.sgmodule
+# - railway_12306 | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/12306_remove_ads.sgmodule
+# - douban | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E8%B1%86%E7%93%A3/douban.sgmodule
+# - ithome | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/IThome_remove_ads.sgmodule
+# - coolapk | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/CoolApk_remove_ads.sgmodule
+# - smzdm | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/smzdm.sgmodule
+# - csdn | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partC/CSDN.lpx
+# - hupu | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/HUPU_remove_ads.sgmodule
+# - gcores | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9C%BA%E6%A0%B8/gcores.sgmodule
+# - sspai | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B0%91%E6%95%B0%E6%B4%BE/sspai.sgmodule
+# - dewu | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Dewu_remove_ads.sgmodule
+# - jd | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%AC%E4%B8%9C/jd.sgmodule
+# - shihuo | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E8%AF%86%E8%B4%A7/shihuo.sgmodule
+# - jingxi | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partJ/JingXi.lpx
+# - suning | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partS/Suning.lpx
+# - sams_club | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B1%B1%E5%A7%86%E4%BC%9A%E5%91%98%E5%95%86%E5%BA%97/samsclub.sgmodule
+# - amazon | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%9A%E9%A9%AC%E9%80%8A/amazon.sgmodule
+# - xiaomi_mall | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partX/XiaomiMall.lpx
+# - xiaomi_youpin | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E7%B1%B3%E6%9C%89%E5%93%81/miyoupin.sgmodule
+# - aihuishou | ddgksf2013 | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/AiHuiShouAds.sgmodule
+# - beike | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beike_remove_ads.sgmodule
+# - kfc | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partK/KFC.lpx
+# - mcdonalds | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partM/McDonalds.lpx
+# - mwee | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%91%B3%E4%B8%8D%E7%94%A8%E7%AD%89/mwee.sgmodule
+# - pupu | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PuPuMall_remove_ads.sgmodule
+# - luckin_coffee | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/LuckinCoffee_remove_ads.sgmodule
+# - wanda_cinema | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partW/WandaCinema.lpx
+# - fcbox | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E4%B8%B0%E5%B7%A2/fcbox.sgmodule
+# - baidu_netdisk | sooyaaabo | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/BaiduNetDisk.sgmodule
+# - colorful_clouds | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/ColorfulClouds_remove_ads.sgmodule
+# - jump | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Jump_remove_ads.sgmodule
+# - meitu | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80/meitu.sgmodule
+# - beautycam | Kelee | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/MeituMYXJ_remove_ads.sgmodule
+# - minimal_exchange_rate | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9E%81%E7%AE%80%E6%B1%87%E7%8E%87/tratao.sgmodule
+# - pikpak | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/P/pikpak/pikpak.sgmodule
+# - tianyi_cloud | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98/189cloud.sgmodule
+# - ezviz | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E8%90%A4%E7%9F%B3%E4%BA%91%E8%A7%86%E9%A2%91/ys7.sgmodule
+# - mijia | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partM/Mijia.lpx
+# - keep | sooyaaabo | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Keep.sgmodule
+# - leoao | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/L/%E4%B9%90%E5%88%BB%E8%BF%90%E5%8A%A8/leoao.sgmodule
+# - boohee | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/%E8%96%84%E8%8D%B7%E5%81%A5%E5%BA%B7/boohee.sgmodule
+# - blued | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/Blued/blued.sgmodule
+# - china_unicom | sooyaaabo | https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/ChinaUnicom.sgmodule
+# - china_telecom | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partZ/ChinaTelecom.lpx
+# - xiaoxiao_youxuan | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E6%99%93%E6%99%93%E4%BC%98%E9%80%89/xxyx.sgmodule
+# - xichuangzhu | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E8%A5%BF%E7%AA%97%E7%83%9B/xczim.sgmodule
+
+[Rule]
+
+# --- amap | RuCu6 ---
+AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"AMapiPhone*")),REJECT
+
+# --- didi | Kelee ---
+DOMAIN,gwp.xiaojukeji.com,REJECT
+AND,((IP-ASN,45090,no-resolve),(DEST-PORT,25641),(PROTOCOL,TCP)),REJECT
+AND,((IP-ASN,55990,no-resolve),(DEST-PORT,25641),(PROTOCOL,TCP)),REJECT
+AND,((IP-ASN,63646,no-resolve),(DEST-PORT,25641),(PROTOCOL,TCP)),REJECT
+
+# --- railway_12306 | Kelee ---
+DOMAIN,ad.12306.cn,DIRECT
+
+# --- smzdm | zirawell ---
+DOMAIN, api.zuihuimai.com, REJECT, extended-matching, pre-matching
+DOMAIN, analytics-api.smzdm.com, REJECT, extended-matching, pre-matching
+DOMAIN, ynuf.aliapp.org, REJECT, extended-matching, pre-matching
+
+# --- csdn | fmz200 ---
+DOMAIN-SUFFIX,ad.csdn.net,REJECT
+DOMAIN-SUFFIX,counter.csdn.net,REJECT
+DOMAIN-SUFFIX,dc.csdn.net,REJECT
+DOMAIN-SUFFIX,dc2.csdn.net,REJECT
+DOMAIN-SUFFIX,medal.blog.csdn.net,REJECT
+
+# --- jd | zirawell ---
+DOMAIN, dns.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, perf.m.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, mars.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, ex.m.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, mllog.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, waapdg.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, dsp-x.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, xlog.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, janapi.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, jdqd.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, dgstatic.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, wqs.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, sdkfp.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, second-floor-pro.pf.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, im-x.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN, discover.300hu.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, jzt.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, img-x.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, du.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, c-nfa.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, cm.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-KEYWORD, kepler.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-KEYWORD, bdsp.x.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-KEYWORD, keplerapi.jd.com, REJECT, extended-matching, pre-matching
+DOMAIN-KEYWORD, mapi.m.jd.com, REJECT, extended-matching, pre-matching
+IP-CIDR, 101.124.19.122/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 43.160.156.164/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 61.170.65.165/32, REJECT, no-resolve, pre-matching
+IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve, pre-matching
+
+# --- suning | fmz200 ---
+DOMAIN-SUFFIX,show.suning.beer,REJECT
+DOMAIN-SUFFIX,apm.suning.cn,REJECT
+DOMAIN-SUFFIX,mads.suning.com,REJECT
+DOMAIN-SUFFIX,ssac.suning.com,REJECT
+DOMAIN-SUFFIX,tad.suning.com,REJECT
+
+# --- xiaomi_youpin | zirawell ---
+DOMAIN, stat.youpin.mi.com, REJECT, extended-matching, pre-matching
+
+# --- colorful_clouds | Kelee ---
+DOMAIN,abyss.cyapi.cn,REJECT
+DOMAIN,ad.cyapi.cn,REJECT
+DOMAIN,gather.colorfulclouds.net,REJECT
+
+# --- jump | Kelee ---
+DOMAIN,zlsdk.1rtb.net,REJECT
+DOMAIN,jp.ad.gameley.com,REJECT
+DOMAIN,toblog.ctobsnssdk.com,REJECT
+DOMAIN,s3plus.meituan.net,REJECT
+DOMAIN,images.pinduoduo.com,REJECT
+DOMAIN,qh-material.taobao.com,REJECT
+DOMAIN-SUFFIX,admobile.top,REJECT
+
+# --- meitu | zirawell ---
+DOMAIN, adui.tg.meitu.com, REJECT, extended-matching, pre-matching
+DOMAIN, corp.meitu.com, REJECT, extended-matching, pre-matching
+DOMAIN, gg.meitu.com, REJECT, extended-matching, pre-matching
+DOMAIN, message.meitu.com, REJECT, extended-matching, pre-matching
+DOMAIN, tuiguang.meitu.com, REJECT, extended-matching, pre-matching
+DOMAIN, stat.meitudata.com, REJECT, extended-matching, pre-matching
+
+# --- beautycam | Kelee ---
+DOMAIN,adui.tg.meitu.com,REJECT
+
+# --- mijia | fmz200 ---
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
+
+# --- keep | sooyaaabo ---
+# 信息流广告
+DOMAIN,kad.gotokeep.com,REJECT
+DOMAIN,hc-ssp.sm.cn,REJECT
+DOMAIN,httpdns.calorietech.com,REJECT
+
+# --- china_unicom | sooyaaabo ---
+# 开屏广告
+DOMAIN,m1.ad.10010.com,REJECT
+
+# --- china_telecom | fmz200 ---
+DOMAIN,ad.21cn.com,REJECT
+DOMAIN,ad.k.21cn.com,REJECT
+DOMAIN,admarket.21cn.com,REJECT
+DOMAIN,adshows.21cn.com,REJECT
+IP-CIDR,122.229.8.47/32,REJECT,no-resolve
+IP-CIDR,122.229.29.89/32,REJECT,no-resolve
+
+# --- xiaoxiao_youxuan | zirawell ---
+DOMAIN-SUFFIX, 1rtb.net, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, adwangmai.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, ad.richmob.cn, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, fancyapi.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, yfanads.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, datads.cn, REJECT, extended-matching, pre-matching
+
+[URL Rewrite]
+
+# --- traffic_management_12123 | zirawell ---
+^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver - reject
+
+# --- douban | zirawell ---
+^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ - reject
+^https?:\/\/api\.douban\.com\/b.*\/common_ads\? - reject
+
+# --- ithome | Kelee ---
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+
+# --- csdn | fmz200 ---
+# 感谢【Jörgen Frecht】分享
+^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad - reject
+^https?:\/\/app-gw\.csdn\.net\/abtesting\/v2\/getList? - reject
+^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement - reject
+
+# --- sspai | zirawell ---
+^https?:\/\/ios\.sspai\.com\/api\/v\d\/recommend\/page\/get\?ad\.*ios_home_modal - reject
+
+# --- jd | zirawell ---
+# 屏蔽强制更新
+^https?:\/\/api\.m\.jd\.com\/openUpgrade - reject
+^https?:\/\/api\.m\.jd\.com\/api\/appPublishUpgrade - reject
+^https?:\/\/\w{32}\.jddebug\.com\/diagnose\? - reject
+^https?:\/\/storage\.360buyimg\.com\/app\.m\.jd\.com\/lottie - reject
+^https?:\/\/storage\.360buyimg\.com\/dynamicConfig\/binary - reject
+^https?:\/\/storage\.360buyimg\.com\/occupy-home\/ - reject
+^https?:\/\/storage\.360buyimg\.com\/xview - reject
+^https?:\/\/storage\.360buyimg\.com\/appcartsoa\/client\/cart_egg_entry - reject
+^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
+^https?:\/\/storage\.jd\.com\/ti-pythontask\/JD\/jdt_ - reject
+^https?:\/\/storage\.jd\.com\/mpaas2-public\/product\/\d+\/ - reject
+
+# --- shihuo | zirawell ---
+^https?:\/\/sh-gateway\.shihuo\.cn\/v\d\/services\/sh-adapi\/home\/(?>screen|ad) - reject
+
+# --- suning | fmz200 ---
+^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo - reject
+
+# --- sams_club | zirawell ---
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get) - reject
+
+# --- kfc | fmz200 ---
+^https?:\/\/res\.kfc\.com.\cn\/advertisement\/ - reject
+
+# --- mwee | zirawell ---
+^https?:\/\/capi\.mwee\.cn\/app-api\/V\d{2}\/app\/(?>ad|getstartad) - reject
+
+# --- pupu | Kelee ---
+^https:\/\/j1\.pupuapi\.com\/client\/account\/discount\/order - reject
+^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?position_types=100 - reject
+
+# --- luckin_coffee | Kelee ---
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList - reject
+^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
+
+# --- fcbox | zirawell ---
+^https?:\/\/dsp\.fcbox\.com\/adSearch\/get\? - reject
+^https?:\/\/external\.fcbox\.com\/wxgw\/post\/suggestion\/query - reject
+;^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ - reject
+
+# --- meitu | zirawell ---
+^https?:\/\/mea\.meitudata\.com\/kaiping - reject
+
+# --- minimal_exchange_rate | zirawell ---
+^https?:\/\/explorer\.tratao\.com\/api\/client\/v\d\/xtransfer\/ad\/ - reject
+
+# --- pikpak | zirawell ---
+^https?:\/\/access\.mypikpak\.com\/access_controller\/v\d\/area_accessible - reject
+
+# --- ezviz | zirawell ---
+^https?:\/\/\w+\.ys7\.com\/api\/ads - reject
+
+# --- boohee | zirawell ---
+^https?:\/\/.*\.boohee\.(?>cn|com).*(?>notification_template|advertisements|share_contents|app_square|plugins|notifications|start_up_with_ad|float_ad|data_file_entrance) - reject
+^https?:\/\/api\.boohee\.com\/app-interface\/v\d\/ad\/info - reject
+
+# --- china_unicom | sooyaaabo ---
+# 广告推送
+^https?:\/\/m\.client\.10010\.com\/mobileserviceimportant\/customer\/querySmartServicekhd.htm - reject
+# 新人专享
+^https?:\/\/m\.client\.10010\.com\/clientIndex\/api\/v1\/index\/queryIndexExclusiveOffers - reject
+# 首页瀑布流
+^https?:\/\/img\.client\.10010\.com\/homejingxuan12\/js\/(pubuliu|1homeView) - reject
+
+# --- china_telecom | fmz200 ---
+^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
+
+# --- xiaoxiao_youxuan | zirawell ---
+^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/agent_ad - reject
+^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/get_.*_ad - reject
+^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/\w+_banner - reject
+^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/activity\/show - reject
+^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/client\/invite\/phone\/activity\/popup - reject
+^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/client\/urban\/activity\/index\/data - reject
+
+# --- xichuangzhu | zirawell ---
+^https?:\/\/lchttpapi\.xczim\.com\/\d\.\d\/functions\/getLaunchImageForIOS - reject
+
+[Body Rewrite]
+
+# --- amap | RuCu6 ---
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","commonMaterial"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","tipsOperationLocation"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","resourcePlacement"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\? 'delpaths([["history_tags"]])'
+http-response-jq ^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\? 'delpaths([["data","carTips","data","popupInfo"]])'
+
+# --- didi | Kelee ---
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core\? '.data.disorder_cards.bottom_nav_list.data |= map(select(.id == "home_page" or .id == "user_center")) | .data.order_cards.nav_list_card.data |= map(select(.nav_id == "dache_anycar" or .nav_id == "carmate" or .nav_id == "driverservice" or .nav_id == "zhandianbashi" or .nav_id == "yuancheng" or .nav_id == "pincheche" or .nav_id == "bike" or .nav_id == "special_ride" or .nav_id == "nav_more_v3"))'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","disorder_cards","communicate_card"]])'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","disorder_cards","not_login_bottom_bar"]])'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","disorder_cards","riding_code_card"]])'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","order_cards","car_owner_widget_card"]])'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","order_cards","marketing_card"]])'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","order_cards","super_banner_card"]])'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","disorder_cards","car_icon","data","icon_info_new_agreement"]])'
+http-response-jq ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget\? 'delpaths([["data","mult_home_banner"]])'
+http-response-jq ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5\/usercenter\/layout$ '.data |= (.instances |= (to_entries | map(select(.key as $k | ["center_base_info_card", "center_tool_card", "center_wallet_finance_card", "center_order_related_card"] | index($k))) | from_entries)) | .data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券" or .title == "余额" or .title == "福利金"))'
+http-response-jq ^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v1\/dache_homepage_layout\? '.data |= (.instances |= (to_entries | map(select(.key | test("feed_back_|dache_main_member|order_container_|dache_main_core_icon|dache_main_card_"))) | from_entries))'
+http-response-jq ^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v1\/pSFCHomePage\? '.data |= (if . == null then null else {hot_route_info, legal_info} end) | . as $root | .data.tab_list = ($root.data.tab_list | map(select(.tab_id == "passenger")))'
+http-response-jq ^https:\/\/daijia\.kuaidadi\.com:443\/gateway\? 'delpaths([["data","variantInfo"]])'
+http-response-jq ^https:\/\/daijia\.kuaidadi\.com:443\/gateway\? '.data |= with_entries(select(.value.isAd != 1))'
+http-response-jq ^https:\/\/api\.udache\.com\/intercity\/ticket\/api\/v1\/core\/getFullPageInfoLayout\? '.data.disorder_components |= (map(select(.name == "history_order_card" or .name == "inprogress_order_card" or .name == "station_calendar" or .name == "main_card_v2" or .name == "user_history_order")))'
+http-response-jq ^https:\/\/htwkop\.xiaojukeji\.com:443\/gateway\? 'delpaths([["data","didi-bike-homepage-popup"]])'
+http-response-jq ^https:\/\/htwkop\.xiaojukeji\.com:443\/gateway\? 'delpaths([["data","variantInfo"]])'
+http-response-jq ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? '.data |= map(if .name|IN("daijia_journey_new_tcp_switch","daijia_tcp_init","daijia_tcp_msg_encrypt","daijia_tcp_site_info","daijia_tcp_site_report")then.allow=false else. end)'
+
+# --- railway_12306 | Kelee ---
+http-response-jq ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ 'delpaths([["materialsList"]])'
+http-response-jq ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ 'delpaths([["advertParam"]])'
+
+# --- coolapk | Kelee ---
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/feed\/detail\? '.data.hotReplyRows |= if . then map(select(.id?)) else . end | .data.topReplyRows |= if . then map(select(.id?)) else . end | reduce ("detailSponsorCard", "include_goods", "include_goods_ids") as $key (.; .data[$key]=[])'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/feed\/replyList 'if .data? and ((.data | type) == "array") and (.data | length > 0) then .data |= map(select(.id?)) else . end'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/main\/dataList '.data |= (if (type=="array" and length>0) then map(select((.entityTemplate!="sponsorCard") and (.title!="精选配件"))) else . end)'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList 'if (.data | length > 0) then .data |= map(select((.title? != "酷安热搜") and (.entityTemplate? != "imageScaleCard") and (.entityTemplate? != "sponsorCard"))) else . end'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/main\/indexV8 '.data |= (if length > 0 then map(select((.entityTemplate != "sponsorCard") and ([8639,29349,33006,32557] | index(.entityId) | not) and ((.title// "" | test("值得买|红包")) | not))) else . end)'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/main\/init '.data |= map(select(.entityId? | [944,945,6390] | index(.) | not) | if .entityId == 20131 then .entities |= map(select(.title != "酷品")) else . end)'
+
+# --- dewu | Kelee ---
+http-response-jq ^https:\/\/app\.dewu\.com\/api\/v1\/app\/biz-aggregate\/me\/user-index\? '.data.modules |= map(if .key == "wallet" then .data.menus |= map(select(.key == "coupon" or .key == "allowance" or .key == "gift" or .key == "balance")) else . end) | .data.modules |= map(select(.key != "merchant" and .key != "discountCoupon"))'
+http-response-jq ^https:\/\/app\.dewu\.com\/api\/v1\/app\/account\/wallet\/page\/entrance\? '.data.groupInfoDTOS |= map(.moduleInfoDTO = {assetModule: .moduleInfoDTO.assetModule}) | .data.moduleNames = [.data.moduleNames[] | select(. == "assetModule")] | . as $full | $full | .data.groupNames |= (map(select(. == "MAIN" or . == "ASYNC_COMMON" or . == "ASYNC_GOODS_FEEDS")))'
+http-response-jq ^https:\/\/app\.dewu\.com\/identify-discovery\/v1\/discovery\/index\? '.data.groups |= map(.items |= map(select(.title == "消息中心")))'
+
+# --- jingxi | fmz200 ---
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising jdLiteAdvertisingVO fmz200
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush pushData fmz200
+
+# --- aihuishou | ddgksf2013 ---
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/config\/search-config '.data=[]'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dammam-service\/api\/scene-message-template\/pull '.data.statusCode=1 | .data.params={} | .data.context={} | .data.templateId=0 | .data.eventName=""'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/home\/config-renew-v3 '.data.promotionBannerConfigs=[] | .data.homeSecondFloorBanner=[] | .data.yanxuanSlogan=null | .data.recycleSlogan=null'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/home\/my-product-rotate-v2 '.data.myProductCoupon={"receivableCouponCount":0,"receivableCouponList":[],"userCouponCount":0,"couponPrice":0,"couponCondition":0} | .data.otherCategoriesImg=""'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/welfare-center\/entry-v2 '.data.pop=false | .data.receiveStatus=0 | .data.couponPackages=[] | .data.cashBacks=null | .data.taskBonus=null | .data.totalAwardPrice=0 | .data.homeWelfareZone=null | .data.notLoginPopup=null | .data.bgImageUrl=""'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/activity\/gradient-increase-sniff-v2 '.data.items=[] | .data.matchedPolicyItem=null | .data.nextPolicyItem=null | .data.inquiryItems=[] | .data.illustrate=""'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/config\/module-config-v2 '.data.userCenterAflBanner=null | .data.userCenterLinLiBanner=null | .data.userCenterBottomBanners=[] | .data.activityCarouselMap=[] | .data.inviteNewUserActivity=null | .data.userCenterCommonFunctions=((.data.userCenterCommonFunctions// []) | map(select(.title!="福利中心" and .title!="口令兑换" and .title!="门店加盟")))'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/ahs-yanxuan-service\/products\/home\/config '.data.adBannerList=null | .data.categoryAdBannerList=[] | .data.adBannerImgList=[]'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/ahs-yanxuan-service\/channel\/banner '.data.flowBannerList=[]'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/search\/placeholders-v2 '.data=[]'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/config\/find-tab-v4 '.data=[]'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/config\/navbar-v7 '.data=((.data// []) | map(select(.type!=8 and .type!=9 and .type!=10)))'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/task-center\/show-entrance '.data.showEntrance=false | .data.unclaimedAmount=0 | .data.expireAmount=null | .data.secondsUntilExpired=null | .data.timeLimitTask=false | .data.showWaitComment=false | .data.fissionBubble=null'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/home\/float-layers\/guide-login-v2 '.data.id=0 | .data.name="" | .data.interactionMethod=0 | .data.commonLink=null | .data.couponPackageCode=null | .data.imgUrl=""'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/config\/commonConfig '.data.loginPageConfig.loginNewCouponTips="" | .data.loginPageConfig.loginNewCouponTipsImg="" | .data.loginPageConfig.loginBannerUrl="" | .data.cartHeaderImage="" | .data.promotionCenter.popup=false | .data.promotionCenterV2.popup=false | .data.promotionCenterV2.popupImg="" | .data.promotionCenterV2.popupButtonImg="" | .data.tradeRelievedRecycleAdvantageImage=""'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/shops\/service-station-list-v7 '.data.customerTagConfig=[]'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/config-center\/search-project '.data=((.data// []) | map(select(.name=="附近回收机" or .name=="附近门店" or .name=="手机维修" or .name=="帮助中心")))'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/member\/static-config '.data.memberUserCenter={} | .data.memberWelfareCenter={} | .data.couponTagImgUrl="" | .data.memberInquiry.popTitleImageUrl="" | .data.memberInquiry.popBgImageUrl="" | .data.memberInquiry.popCoupon={}'
+http-response-jq ^https:\/\/(?:dubai-app|dubai)\.aihuishou\.com\/dubai-gateway\/gemini\/grouping '.data=((.data// []) | map(if .name=="wechat_advertisement" then .group=0 else . end))'
+
+# --- beike | Kelee ---
+http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/homepage\/initData\/mini\? 'delpaths([["data","bootpage"]])'
+http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/homepage\/initData\/mini\? 'delpaths([["data","bottom_bar_activity"]])'
+http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/userCenter\/info\? 'delpaths([["data","islandModule"]])'
+http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/userCenter\/info\? 'del(.data.mainIcons.list[] | select(.indexKey == "coupon"))'
+http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/myhome\/pagedetail\? '.data.moduleList |= map(select(.tab != "myHomeDecorV4"))'
+http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/homepage\/feed\? '.data.list |= map(select(.cardType == "houseContainer" or .cardType == "houseV2" or .cardType == "houseV3" or .cardType == "rentHouseDiscount" or .cardType == "decorationCase"))'
+
+# --- wanda_cinema | fmz200 ---
+http-response-jq ^https:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api '.data.objects["OpenAPP-&-FlashAD"] = [] | .data.objects["InTheaters-&-BoxAD"] = []'
+http-response ^https?:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api\?bannerInfos=%5B%7B%22cinemaI "WX_index_mp-&-boxAD" "fmz200"
+
+# --- baidu_netdisk | sooyaaabo ---
+http-response-jq ^https:\/\/pan\.baidu\.com\/feed\/kingkongdistrict\? '.data.data |= map(select(.type != "novel" and .type != "shortplay" and .type != "print" and .type != "job_hunt"))'
+
+# --- jump | Kelee ---
+http-response-jq ^https:?\/\/switch.jumpvg.com\/jump\/getlaunchad\/v2$ 'del(.data.adList)|.data.launchAd.showType=0'
+http-response-jq ^https:?\/\/switch.jumpvg.com\/jump\/recommend\/ad_conf$ '.data=[]'
+
+# --- beautycam | Kelee ---
+http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'delpaths([["response","time_limit"]])'
+http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'delpaths([["response","bubble"]])'
+http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'delpaths([["response","person_center"]])'
+http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'if (getpath(["response","function_pop","meiyan_style"]) | has("is_pop")) then (setpath(["response","function_pop","meiyan_style","is_pop"]; false)) else . end'
+http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'if (getpath(["response","onoff","vip_half_window_exit_remain_popup"]) | has("open")) then (setpath(["response","onoff","vip_half_window_exit_remain_popup","open"]; 0)) else . end'
+http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'if (getpath(["response","onoff"]) | has("vip_home_exit_remain_popup")) then (setpath(["response","onoff","vip_home_exit_remain_popup"]; 0)) else . end'
+
+# --- keep | sooyaaabo ---
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","adTimeoutReport"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","spotShowReport"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","adSupplementIntervalMinutes"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","adSupplementSwitch"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityBrandFeedSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","feedDetailSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","homePageFeedSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","followFeedSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedRecommendSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindSpotAdRequestMoment"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedSpotFixedPositionSecond"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotFixedPositionSecond"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","followFeedSpotFixedPositionSecond"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotFixedPositionSecond"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotFixedPositionThird"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindSpotFixedPositionSecond"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindSpotFixedPositionThird"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotFixedPositionInitial"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotFixedPositionThird"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedDynamicSpotPosition"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","feedDetailDynamicSpotPosition"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedRecommendDynamicSpotPosition"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindDynamicSpotPosition"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","homePageFeedDynamicSpotPosition"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","followFeedDynamicSpotPosition"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotPositionDynamic"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotPositionDynamic"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityBrandFeedSpotPositionDynamic"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","splashAdLoadTimeLimit"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","courseAdLoadTimeLimit"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","feedAdLoadTimeLimit"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","aliHCSpotConfig"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","gdtSpotConfig"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcThresholdPercent"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcStepMinSeconds"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcStepMaxSeconds"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcPreLoadEarlySeconds"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcLoadPostPreRolls"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","closeConfirmButtonText"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/union_feed_all$ '.data.modules |= map(select(.code == "unionFeedEntry"))'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/v\d\/feed\/entryDetail\? 'if (getpath([]) | has("data")) then (setpath(["data"]; {})) else . end'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/config\/v\d\/basic\? '.data.bottomBarControl.defaultTab = "dynamic_sports" | .data.discoverPageConfigs.toolsBar = [] | .data.bottomBarControl.tabs |= map(select(.tabType == "schedule" or .tabType == "dynamic_sports" or .tabType == "discover" or .tabType == "personal")) | .data.discoverPageConfigs.discoverTabs |= map(select(.type == "socialTab" or .type == "union_feed_all" or .type == "union_feed_feed_activity" or .type == "union_feed_marathon_icon" or .type == "product") | .default = (.type == "union_feed_all") | if has("showAd") then .showAd = false else . end)'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/pencil-webapp\/play\/v\d\/games\? '.data.games[].microGames[] |= if .leftIcon? and .leftIcon.type == "aiMode" then del(.leftIcon) else . end'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/v\d\/social\/tab\/friends '.data.modules |= map(select(.positions | type == "object" and (has("recommendReason") | not) and (has("recommendUsers") | not)))'
+
+# --- boohee | zirawell ---
+http-response ^https?:\/\/api\.boohee\.com\/meta-interface\/v\d\/index\/record_index articles random_body
+
+# --- china_unicom | sooyaaabo ---
+http-response-jq ^https:\/\/m\.client\.10010\.com\/search_service\/tyfbSearch\/searchDiscoverListExpress '.data = []'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/search_service\/search\/searchScrollWord '.["113000004"] = []'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/clientIndex\/v1\/api\/navHome '.datas.homeTopMenuItems |= map(select(.menuName != "通通" and .menuName != "vowifi" and .menuName != "签到" and .menuName != ""))'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/clientIndex\/homefusion\/fuInter 'del(.["HomeFusion.backGroundQuery"], .["HomeFusion.fuchuangAdv_A8"], .["HomeFusion.bottomLabel"])'
+http-response-jq ^https:\/\/m\.client\.10010\.com\/clientMyPage\/v1\/api\/myWallet '.data.payShowFlag = false'
+http-response-jq ^https?:\/\/m\.client\.10010\.com\/clientMyPage\/v\d\/api\/(myWallet|myPoints|myColorfulRingtone|newUserInfo|getDeviceInfo) '.data={}'
+
+# --- xiaoxiao_youxuan | zirawell ---
+http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resource_slug random_body
+
+[Map Local]
+
+# --- amap | RuCu6 ---
+# 此条可以屏蔽首次进入的天气动效图层 但是会导致足迹不显示地图数据
+#^https:\/\/mps\.amap\.com\/ws\/mps\/scene\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
+^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
+^https:\/\/ai\.amap\.com\/v1\/ai_rec\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc|usr-profile-fc\/homeV2) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/(?:mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 打车页 - 红点角标、弹窗、天气图标、推广卡片
+^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-comment\/contentNearbyCard\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/(?:feedback\/get_card_questions|feedback\/viptips|king_toolbox_car_bubble|remark\/satisfactionConf|rights_information)|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:pay\/web\/paySuccess\/info\/request|transportation\/diversion\/resource\/driving) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- didi | Kelee ---
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/lion\.didialift\.com\/broker\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/slow\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/poi\.map\.xiaojukeji\.com\/mapapi\/recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- sf_express | zirawell ---
+^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/ data-type=json data="{}" status-code=200
+^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/bms\/queryRecommend data-type=json data="{}" status-code=200
+^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-video\/video\/app\/video\/labelClusterList data-type=json data="{}" status-code=200
+^https?:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList data-type=json data="{}" status-code=200
+
+# --- coolapk | Kelee ---
+^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- smzdm | zirawell ---
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul\? data-type=json data="{}" status-code=200
+
+# --- hupu | Kelee ---
+^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/reddot\/v1\/app\/getReddot data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/(bbsallapi\/tag\/v1\/heatTag|bbsrankapi\/v1\/rating\/list) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/search\/v2\/(hintkeylist|hotkeylist) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/goblin\.hupu\.com\/\d\/\d\.\d\.\d+\/interfaceAd\/getOther\/v\d data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/goblin\.hupu\.com\/\d\/\d\.\d\.\d+\/interfaceAd\/getOther\/batch data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/fairy\.mobileapi\.hupu\.com\/gallery\/getmod2 data-type=text data=" " status-code=200
+
+^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplcommentapi\/bpl\/score_tab\/groups data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplapi\/banner\/getLocationBanners data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- gcores | zirawell ---
+^https?:\/\/www\.gcores\.com\/gapi\/v\d\/app-start-pages\?page data-type=json data="{}" status-code=200
+
+# --- dewu | Kelee ---
+^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/app\.dewu\.com\/hacking-newbie\/v1\/app\/coupon\/module\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/app\.dewu\.com\/api\/v1\/app\/search\/lexicon\/v3\/background_words\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/app\.dewu\.com\/api\/v1\/app\/search\/lexicon\/v1\/rank_words\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/app\.dewu\.com\/sns-rec\/v1\/attention\/feed\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/app\.dewu\.com\/sns-rec\/v1\/search\/word-skip\/new-list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/app\.dewu\.com\/sns-rec\/v1\/search\/hotword-list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- jd | zirawell ---
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>searchBoxWord|xview2Config|stationPullService|getWidget|widget|hybrid|jdDiscoveryRedPoint|queryMaterialAdverts|apollo_style|jdaPreDownload|uniformRecommend7) data-type=text data="" status-code=200
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ data-type=text data="" status-code=200
+
+# --- shihuo | zirawell ---
+^https?:\/\/www\.shihuo\.cn\/app\d\/saveAppInfo data-type=text data="" status-code=200
+^https?:\/\/static\.shihuocdn\.cn\/admin\/imgs/202[0-9]{5}\/[a-z0-9]{32}_(513x777|750x1624)\.png data-type=text data="" status-code=200
+
+# --- suning | fmz200 ---
+^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ data-type=text data=" " status-code=200
+
+# 新人专享弹窗
+^https?:\/\/luckman\.suning\.com\/luck-web\/policy\/v\d\/msf\/index\.do data-type=text data=" " status-code=200
+
+# --- sams_club | zirawell ---
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/channel\/portal\/AdgroupData data-type=json data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/personCenterEntrance\/query data-type=json data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/trade\/order\/getOftenBuyGoods data-type=json data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/goods-portal\/spu\/searchRecommendPool data-type=json data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/appVersionUpdate\/getAppVersionUpdateInfo data-type=json data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/portal\/beUpdate data-type=json data="{}" status-code=200
+
+# --- amazon | zirawell ---
+^https?:\/\/api-cslp-emt\.amazon\.cn\/gateway\/recommend data-type=json data="{}" status-code=200
+^https?:\/\/api-cslp-emt\.amazon\.cn\/gateway\/config\/getUpdatePopupConfig data-type=json data="{}" status-code=200
+^https?:\/\/api-cslp-emt\.amazon\.cn\/gateway\/content\/widget\/(?>popup|floatingWindow) data-type=json data="{}" status-code=200
+
+# --- xiaomi_youpin | zirawell ---
+^https?:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig data-type=text data="" status-code=200
+
+# --- aihuishou | ddgksf2013 ---
+# > 埋点 / Sentry / 探针
+^https:\/\/bi-log\.aihuishou\.com\/trace\/log\/ahs data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/ahs-sentry\.aihuishou\.com\/api\/\d+\/envelope\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/wirelessgate\.aihuishou\.com\/garage-versional\/sniffer data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- beike | Kelee ---
+^https:\/\/apps\.api\.ke\.com\/config\/config\/bootpage\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/userCenter\/feed\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/apps\.api\.ke\.com\/config\/config\/getactivityconfig\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- kfc | fmz200 ---
+^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome5\/apphome data-type=text data=" " status-code=200
+
+^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- mcdonalds | fmz200 ---
+^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash data-type=text data=" " status-code=200
+
+# --- baidu_netdisk | sooyaaabo ---
+# 开屏广告、首页卡片广告、传输页面广告、各类弹窗，精简侧拉抽屉和我的页面
+^https:\/\/pan\.baidu\.com\/api\/getconfig\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/pan\.baidu\.com\/api\/getsyscfg\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/pan\.baidu\.com\/act\/api\/activityentry\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/pan\.baidu\.com\/api\/plugin\/get\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/pan\.baidu\.com\/recommend\/query\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 启动弹窗
+^https?:\/\/.*baidu\.com\/rest\/.*\/membership\/proxy\/guide data-type=text data=" " status-code=200
+
+# 设置信息流
+^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list data-type=text data=" " status-code=200
+
+# 热搜list
+^https:\/\/pan\.baidu\.com\/feed\/hotlist data-type=text data=" " status-code=200
+
+# 活动推广
+^https?:\/\/.*zhangyuyidong\.cn\/api\/zysdk data-type=text data=" " status-code=200
+
+# 搜索填词
+^https:\/\/pan\.baidu\.com\/queryintent\/queryhint data-type=text data=" " status-code=200
+
+# 金币乐园
+^https:\/\/pan\.baidu\.com\/coins\/center\/notice data-type=text data=" " status-code=200
+
+# 短剧
+^https:\/\/pan\.baidu\.com\/recommend\/shortseries\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- colorful_clouds | Kelee ---
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- beautycam | Kelee ---
+^https:\/\/api\.meiyan\.com\/operation\/home_banner\.json\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.meiyan\.com\/vip\/permission_update_popup\.json\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- tianyi_cloud | zirawell ---
+^https?:\/\/api\.cloud\.189\.cn\/guns\/(img\/recommendedPosition|getOpenscreenBanners) data-type=json data="{}" status-code=200
+
+# --- ezviz | zirawell ---
+^https?:\/\/\w+\.ys7\.com\/api\/user\/tabList data-type=json data="{}" status-code=200
+^https?:\/\/\w+\.ys7\.com\/v\d\/config\/service\/entrance\/bannerInfo data-type=json data="{}" status-code=200
+^https?:\/\/\w+\.ys7\.com\/v\d\/intelligent-app\/apps\/linkage data-type=json data="{}" status-code=200
+^https?:\/\/\w+\.ys7\.com\/v\d\/configurations\/gray\/info\?grayTypes=185 data-type=json data="{}" status-code=200
+^https?:\/\/\w+\.ys7\.com\/v\d\/videoclips\/square\/video\/query data-type=json data="{}" status-code=200
+
+# --- mijia | fmz200 ---
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/resource\/realtime\/openingBanner data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- keep | sooyaaabo ---
+# 开屏广告
+^https:\/\/(api|kad)\.gotokeep\.com\/op-engine-webapp\/v\d\/ad\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 搜索填充词
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 关注 - 关注推荐
+^https:\/\/api\.gotokeep\.com\/twins\/v\d\/feed\/followPage\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/function\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 弹窗
+^https:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.gotokeep\.com\/anno\/v1\/upgrade\/check$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 搜索 - 榜单
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 搜索 - 热门话题
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotHashtag\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 搜索 - 热搜推荐词
+^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 未读消息
+^https:\/\/api\.gotokeep\.com\/messenger\/v\d\/conversations\/unread data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# --- leoao | zirawell ---
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v\d\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew data-type=json data="{}" status-code=200
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v\d\/com\.lefit\.dubbo\.cms\.api\.bff\.ClientFrontFacade\/queryHomeMiddleInfo data-type=json data="{}" status-code=200
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v\d\/com\.lefit\.dubbo\.cms\.api\.front\.AdvertiseConfigFrontService\/getAdvertiseConfigNew data-type=json data="{}" status-code=200
+
+# --- boohee | zirawell ---
+^https?:\/\/api\.boohee\.com\/shop-interface\/api\/v\d\/home\/index data-type=json data="{}" status-code=200
+^https?:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v\d\/sfo\/user_popup_configs data-type=json data="{}" status-code=200
+^https?:\/\/api\.boohee\.com\/meta-interface\/v\d\/index\/(?>discover_chosen|page_float_bubbles|sensor-banners|tool_buttons) data-type=json data="{}" status-code=200
+^https?:\/\/api\.boohee\.com\/app-interface\/v\d\/record\/record_tool(_pop)?_ad data-type=json data="{}" status-code=200
+^https?:\/\/api\.boohee\.com\/app-interface\/v\d\/search\/search\? data-type=json data="{}" status-code=200
+^https?:\/\/status\.boohee\.com\/api\/v\d\/merged_messages$ data-type=json data="{}" status-code=200
+
+# --- blued | zirawell ---
+^https?:\/\/social\.blued\.cn\/users\/recommend data-type=json data="{}" status-code=200
+^https?:\/\/social\.blued\.cn\/users\/no_auth\/benefit data-type=json data="{}" status-code=200
+
+# --- china_telecom | fmz200 ---
+^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data-type=tiny-gif status-code=200
+
+[Script]
+
+# --- amap | RuCu6 ---
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除路线规划、导航结束页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除导航详情页底部酒店、处理附近页 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除搜索栏推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除搜索详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除我的页面推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除附近页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+移除导航详情页推广 = type=http-response, pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
+
+# --- railway_12306 | Kelee ---
+移除12306应用内广告 = type=http-request, pattern=^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js
+
+# --- ithome | Kelee ---
+IT之家去广告 = type=http-response, pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/ithome/kelee.one_IThome_remove_ads-2381391738ca5f03.js, requires-body=true, argument="[{{{removeAllBanners}}},{{{removePinnedArticles}}}]"
+
+# --- smzdm | zirawell ---
+smzdm = type=http-response,pattern=^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/user-api\.smzdm\.com\/vip,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/(loading|update),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/haojia-api\.smzdm\.com\/(?>home\/list|ranking_list\/articles),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/homepage-api\.smzdm\.com\/v\d\/home,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/article-api\.smzdm\.com\/publish\/get_bubble,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/qianbao\.smzdm\.com\/v\d\/app\/home,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/(>?filter\/tags\/hot_tags|list_v\d\?),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+smzdm = type=http-response,pattern=^https?:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
+
+# --- hupu | Kelee ---
+移除虎扑广告 = type=http-response, pattern=^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+
+移除虎扑广告 = type=http-response, pattern=^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+
+移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+
+移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+
+# --- jd | zirawell ---
+jd = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome|readCustomSurfaceList),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/jd/jd-824aa2c327a04b43.js
+
+# --- jingxi | fmz200 ---
+京喜 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/jingxi/jingxiAd-81b2de8846f19461.js, requires-body=true, timeout=60
+
+# --- xiaomi_mall | fmz200 ---
+小米商城 = type=http-response, pattern=^https?:\/\/api\.m\.mi\.com\/v1\/app\/start, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js, requires-body=true, timeout=60
+
+# --- pupu | Kelee ---
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/search_component_banner, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/search\/hot_keywords\/v3, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/app_resource\/resource_preload\/list_h5_resource, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/interests\/products, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+
+# --- baidu_netdisk | sooyaaabo ---
+# 广告推广
+[百度网盘]移除广告推广 = type=http-response, pattern=^https?:\/\/afd\.baidu\.com\/afd\/entry, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js, requires-body=true
+
+# 首页信息流
+[百度网盘]移除首页信息流广告 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/feed\/cardinfos, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js, requires-body=true
+
+# 游戏广告
+[百度网盘]移除游戏广告 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?method=gamecenter, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js, requires-body=true
+
+# chxm1023
+[百度网盘]会员权益@chxm1023 = type=http-response, pattern=^https?:\/\/pan\.baidu\.com\/(act\/.+\/(activityentry|bchannel|cardwelfare|skin)|rest\/.+\/(membership\/user|pcs\/adv)|feed\/cardinfos|api\/(user\/getinfo|quota|loginstatus|account\/getprivilege)|buy\/ad\/conf|wap\/vip|coins\/taskcenter\/homensr), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/chxm1023_bdcloud-49b029314704baf6.js, requires-body=true
+
+# ddgksf2013
+[百度网盘]倍速播放@ddgksf2013 = type=http-request, pattern=^https:\/\/pan\.baidu\.com\/api\/streaming\?app_id=\d+&type=M3U8_HQ_1080, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js
+
+[百度网盘]倍速播放@ddgksf2013 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js, requires-body=true
+
+# --- colorful_clouds | Kelee ---
+彩云天气去广告 = type=http-response, pattern=^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js, requires-body=true
+
+# --- meitu | zirawell ---
+meitu = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/meitu/meitu-3139df05cf679e3f.js
+
+# --- beautycam | Kelee ---
+精简首页功能栏目并移除美颜推荐 = type=http-response, pattern=^https:\/\/api\.meiyan\.com\/operation\/home\.json\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js, requires-body=true
+
+# --- ezviz | zirawell ---
+ys7 = type=http-response,pattern=^https?:\/\/\w+\.ys7\.com\/v\d\/valueadded\/operation\/config\/master\/station,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/ezviz/ys7-ac550595ac61cdfd.js
+
+# --- boohee | zirawell ---
+boohee = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/meta-interface\/v\d\/index\/plaza-flow\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/boohee/boohee-cab92058d564794c.js
+boohee = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/meta-interface\/v\d\/index\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/boohee/boohee-cab92058d564794c.js
+boohee = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/meta-interface\/v\d\/index\/plaza\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/boohee/boohee-cab92058d564794c.js
+boohee = type=http-response,pattern=^https?:\/\/api\.boohee\.com\/open-interface\/v\d\/string\/market_page\?title=metabolism_config$,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/boohee/boohee-cab92058d564794c.js
+
+# --- blued | zirawell ---
+blued = type=http-response,pattern=^https?:\/\/social\.blued\.cn\/users\/.+\/more\/ios\?v=\d,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/blued/blued-4821c4ba5f47c7f5.js
+
+[MITM]
+
+hostname = %APPEND% *.amap.com, as.xiaojukeji.com, common.diditaxi.com.cn, conf.diditaxi.com.cn, lion.didialift.com, api.udache.com, ct.xiaojukeji.com, res.xiaojukeji.com, 112.53.55.225, 139.199.240.84, 113.46.225.*, 162.14.157.*, 123.207.209.*, 120.241.142.*, 120.241.143.*, 116.85.*, ccsp-egmas.sf-express.com, ucmp.sf-express.com, gab.122.gov.cn, ad.12306.cn, mobile.12306.cn, api.douban.com, napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com, api.coolapk.com, haojia.m.smzdm.com, user-api.smzdm.com, app-api.smzdm.com, haojia-api.smzdm.com, homepage-api.smzdm.com, article-api.smzdm.com, qianbao.smzdm.com, s-api.smzdm.com, post.m.smzdm.com, app-gw.csdn.net, gw.csdn.net, games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com, www.gcores.com, ios.sspai.com, app.dewu.com, api.m.jd.com, *.jddebug.com, bdsp-x.jd.com, dsp-x.jd.com, storage.360buyimg.com, img*.360buyimg.com, storage.jd.com, www.shihuo.cn, sh-gateway.shihuo.cn, static.shihuocdn.cn, mpcs.suning.com, image.suning.com, luckman.suning.com, api-sams.walmartmobile.cn, api-cslp-emt.amazon.cn, shopapi.io.mi.com, dubai-app.aihuishou.com, dubai.aihuishou.com, bi-log.aihuishou.com, ahs-sentry.aihuishou.com, wirelessgate.aihuishou.com, apps.api.ke.com, res.kfc.com.cn, api.mcd.cn, capi.mwee.cn, j1.pupuapi.com, capi.lkcoffee.com, misc-api-prd-mx.wandafilm.com, dsp.fcbox.com, external.fcbox.com, pan.baidu.com, afd.baidu.com, biz.cyapi.cn, starplucker.cyapi.cn, api.caiyunapp.com, cdn-w.caiyunapp.com, switch.jumpvg.com, mea.meitudata.com, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, api.posters.meitu.com, api.meiyan.com, explorer.tratao.com, access.mypikpak.com, api.cloud.189.cn, i.ys7.com, api.ys7.com, home.mi.com, 42.187.199.248, api.gotokeep.com, kad.gotokeep.com, lens.leoao.com, *.boohee.com, *.boohee.cn, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, social.blued.cn, m.client.10010.com, img.client.10010.com, cloud.189.cn, zt-app.go189.cn, xxyx-client-api.xiaoxiaoyouxuan.com, lchttpapi.xczim.com

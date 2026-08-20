@@ -1,0 +1,136 @@
+#!name=金融软件合集
+#!category=AdBlock
+#!desc=由 GitHub Actions 自动同步；各成员完整取自已选择的上游
+#!author=Upstream authors; automated assembly
+
+# Sources:
+# - alipay | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%94%AF%E4%BB%98%E5%AE%9D/alipay.sgmodule
+# - unionpay | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%91%E9%97%AA%E4%BB%98/unionpay.sgmodule
+# - cmb_life | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8E%8C%E4%B8%8A%E7%94%9F%E6%B4%BB/cmbcc.sgmodule
+# - maidanba | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E4%B9%B0%E5%8D%95%E5%90%A7/mdb.sgmodule
+# - china_construction_bank | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C/ccb.sgmodule
+# - bank_of_communications | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C/bankcomm.sgmodule
+# - china_merchants_bank | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/cmb.sgmodule
+# - bank_of_china | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/boc.sgmodule
+# - futunn | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E5%AF%8C%E9%80%94%E7%89%9B%E7%89%9B/futunn.sgmodule
+# - binance | fmz200 | https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partB/Binance.lpx
+
+[Rule]
+
+# --- alipay | zirawell ---
+DOMAIN, adgw.alipay.com, REJECT, extended-matching, pre-matching
+DOMAIN, amdc.alipay.com, REJECT, extended-matching, pre-matching
+DOMAIN, rtms.alipay.com, REJECT, extended-matching, pre-matching
+DOMAIN, amdc-sibling.alipay.com.cn, REJECT, extended-matching, pre-matching
+DOMAIN, mobiledc.stable.alipay.net, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, mdap.alipay.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, ynuf.alipay.com, REJECT, extended-matching, pre-matching
+DOMAIN-KEYWORD, loggw.alipay.com, REJECT, extended-matching, pre-matching
+
+# --- unionpay | zirawell ---
+DOMAIN, switch.cup.com.cn, REJECT, extended-matching, pre-matching
+DOMAIN, ads.cup.com.cn, REJECT, extended-matching, pre-matching
+DOMAIN, analytics.95516.com, REJECT, extended-matching, pre-matching
+DOMAIN, tysdk.95516.com, REJECT, extended-matching, pre-matching
+
+# --- maidanba | zirawell ---
+DOMAIN-SUFFIX, track.bankcomm.com, REJECT, extended-matching, pre-matching
+
+# --- china_construction_bank | zirawell ---
+DOMAIN-SUFFIX, adv.ccb.com, REJECT, extended-matching, pre-matching
+
+# --- china_merchants_bank | zirawell ---
+DOMAIN, log.cmbchina.com, REJECT, extended-matching, pre-matching
+DOMAIN, mbads.paas.cmbchina.com, REJECT, extended-matching, pre-matching
+DOMAIN, yl.zh.cmbchina.com, REJECT, extended-matching, pre-matching
+
+# --- bank_of_china | zirawell ---
+DOMAIN, iisp-oidea.mbs.boc.cn, REJECT, extended-matching, pre-matching
+DOMAIN, iisp.mbs.boc.cn, REJECT, extended-matching, pre-matching
+
+[URL Rewrite]
+
+# --- unionpay | zirawell ---
+^https?:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 - reject
+
+# --- cmb_life | zirawell ---
+^https?:\/\/intellicc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender\.api\.(?>AdWork|QueryMultipleAds) - reject
+^https?:\/\/intellicc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec - reject
+^https?:\/\/.*mbasecc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.preloadService\/preload - reject
+^https?:\/\/.*mbasecc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec - reject
+^https?:\/\/.*mbasecc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.mbase\.appWidget\.api\.WidgetGatewayControllerApi\/executeWidgetJobs - reject
+
+# --- maidanba | zirawell ---
+^https?:\/\/creditcard.*\.bankcomm\.(com|cn)\/.*Ads\.do - reject
+^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb_interaction\/common\/globalNotify - reject
+^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb_interaction\/qryHighRiskUser - reject
+^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb_collection - reject
+
+# --- china_construction_bank | zirawell ---
+^https?:\/\/image1\.ccb\.com\/newsinfo\/eBranch\/check\/(nf\/newfin\/activity|po\/poortheme\/activity)\/\w+\.png - reject
+^https?:\/\/imageadv\.ccb\.com\/adpic\/sszserver\/upload\/activity\/\d{8}\/\w+\.(?>gif|png|jpg)$ - reject
+
+# --- bank_of_communications | zirawell ---
+^https?:\/\/download1\.bankcomm\.com\/mobs6-inner\/offline\/static\/releaseConf - reject
+^https?:\/\/download1\.bankcomm\.com\/_cdn\/mobs\/home\/oss\/pub\/file\/file\/public\/config\/pageConfig - reject
+
+# --- china_merchants_bank | zirawell ---
+^https?:\/\/mobile\.cmbchina\.com\/icornucopia\/accompany\/slot - reject
+
+# --- futunn | zirawell ---
+^https?:\/\/api\.futunn\.com\/v\d\/ad - reject
+^https?:\/\/api\d?\.futunn\.com\/ad - reject
+^https?:\/\/api\.futunn\.com\/treasure-chest\/box-data - reject
+^https?:\/\/api\.futunn\.com\/v\d\/config\/promote-config - reject
+^https?:\/\/api\.futunn\.com\/v\d\/optimus\/my-homepage-config - reject
+
+[Body Rewrite]
+
+# --- cmb_life | zirawell ---
+http-response ^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/ClientFacePublic\/\w+\.DAT$ widget widget0
+
+[Map Local]
+
+# --- cmb_life | zirawell ---
+# ⚠️域名[res.cc.cmbimg.com]可能会导致App端部分功能无法使用，请自行选择是否需要
+^https?:\/\/mars\.ccc\.cmbchina\.com\/MarsReceiver data-type=json data="{}" status-code=200
+^https?:\/\/marscc\.bcs\.cmbchina\.com\/MarsReceiver data-type=json data="{}" status-code=200
+^https?:\/\/contentcc\.bcs\.cmbchina\.com\/Edge\/api\/contentpublisher\.api\.UserFeedsControllerApi\/query data-type=json data="{}" status-code=200
+^https?:\/\/intellicc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.RecommendRenderControllerApi\/getRecommendResult data-type=json data="{}" status-code=200
+^https?:\/\/interactivecc\.\w+\.cmbchina\.com\/Edge\/api\/atpcore\.api\.AccompanyingServiceControllerApi\/queryAccompanyingServiceUserConfForApp data-type=json data="{}" status-code=200
+
+# --- maidanba | zirawell ---
+^https?:\/\/creditcard\.bankcomm\.(com|cn)\/tfimg\/public00\/M00\/4C\/6F data-type=tiny-gif status-code=200
+^https?:\/\/creditcard\.bankcomm\.(com|cn)\/tofimg\/bucket-pj-btss-tfcn-dmz\/OSS-F\/a8f2e8 data-type=tiny-gif status-code=200
+^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/CnsvMdbaptFinclipWeb data-type=json data="{}" status-code=200
+^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb_interaction\/appInfo\/appNewestVersion data-type=text data="" status-code=200
+^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb\/homepage(\/discovery)?\/promote data-type=json data="{}" status-code=200
+
+# --- china_construction_bank | zirawell ---
+^https?:\/\/cy\.cloud\.ccb\.com\/\/gateway\/user-server\/user\/qyCenter\/getCustomizedAdv data-type=json data="{}" status-code=200
+
+# --- bank_of_communications | zirawell ---
+^https?:\/\/download1\.bankcomm\.com\/chngweb\/CHNRCSP\/media data-type=text data="" status-code=200
+
+# --- china_merchants_bank | zirawell ---
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data-type=text data="" status-code=200
+^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend data-type=file data="https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json"
+
+# --- bank_of_china | zirawell ---
+^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/theme\/ data-type=text data="" status-code=200
+^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg data-type=text data="" status-code=200
+^https?:\/\/cdn1\.mbs\.boc\.cn\/ubas-mgateway-static\/images\/theme\/ data-type=text data="" status-code=200
+^https?:\/\/cdn1\.mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/\.+\.jpg data-type=text data="" status-code=200
+
+# --- binance | fmz200 ---
+# 开屏广告
+^https?:\/\/www\.(binance|yingwangtech)\.(com|info|net)\/bapi\/composite\/v1\/public\/market\/holiday-atmosphere data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+
+# --- maidanba | zirawell ---
+mdb = type=http-response,pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/maidanba/mdb-89816a29460471fa.js
+
+[MITM]
+
+hostname = %APPEND% wallet.95516.com, mars.ccc.cmbchina.com, marscc.bcs.cmbchina.com, contentcc.bcs.cmbchina.com, intellicc.b*s.cmbchina.com, *mbasecc.b*s.cmbchina.com, interactivecc.b*s.cmbchina.com, *.bankcomm.com, *.bankcomm.cn, image1.ccb.com, imageadv.ccb.com, cy.cloud.ccb.com, download1.bankcomm.com, webappcfg.paas.cmbchina.com, mobile.cmbchina.com, mbs.boc.cn, cdn1.mbs.boc.cn, api*.futunn.com, www.binance.info, www.yingwangtech.net, www.binance.com

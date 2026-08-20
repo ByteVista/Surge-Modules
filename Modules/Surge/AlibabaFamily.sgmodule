@@ -1,0 +1,212 @@
+#!name=阿里系合集
+#!category=AdBlock
+#!desc=由 GitHub Actions 自动同步；各成员完整取自已选择的上游
+#!author=Upstream authors; automated assembly
+
+# Sources:
+# - taobao | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D/taobao.sgmodule
+# - taobao_flash_eleme | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule
+# - damai | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E9%BA%A6/damai.sgmodule
+# - fliggy | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule
+# - quark | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/K/%E5%A4%B8%E5%85%8B/quark.sgmodule
+# - goofish | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E9%97%B2%E9%B1%BC/goofish.sgmodule
+# - alipan | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/adrive.sgmodule
+# - cainiao | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/C/%E8%8F%9C%E9%B8%9F/cainiao.sgmodule
+# - freshippo | zirawell | https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/H/%E7%9B%92%E9%A9%AC/freshippo.sgmodule
+
+[Rule]
+
+# --- taobao | zirawell ---
+DOMAIN-SUFFIX, apoll.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, w.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, re.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, re.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, agoodm.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, ai.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, api.waptest.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, dsp.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, fav.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, m.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, mclick.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, redirect.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, simba.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, srd.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, temai.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, textlink.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, unitacs.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, adashx4yt.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, tns.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, click.mz.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, click.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, click.tz.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, stat.simba.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, m-adash.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, adashbc.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, ut.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, tunion-api.m.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-SUFFIX, acs4baichuan.m.taobao.com, REJECT, extended-matching, pre-matching
+
+# --- taobao_flash_eleme | zirawell ---
+DOMAIN, wgo.mmstat.com, REJECT, extended-matching, pre-matching
+IP-CIDR, 59.82.121.172/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.121.72/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.121.216/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.121.222/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.120.33/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.120.252/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.120.171/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.120.210/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.133.36/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.133.78/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 203.119.212.22/32, REJECT, no-resolve, pre-matching
+DOMAIN-KEYWORD, baichuan.taobao.com, REJECT, extended-matching, pre-matching
+DOMAIN-KEYWORD, o2o-ad-dev.oss-cn, REJECT, extended-matching, pre-matching
+
+# --- fliggy | zirawell ---
+IP-CIDR, 59.82.113.8/32, REJECT, no-resolve, pre-matching
+DOMAIN, ad-track.fliggy.com, REJECT, extended-matching, pre-matching
+
+# --- freshippo | zirawell ---
+IP-CIDR, 59.82.14.1/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.14.161/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.34.147/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.34.255/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.113.219/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.113.10/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 139.95.0.151/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 139.95.4.98/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 47.246.103.9/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 47.246.103.10/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 203.119.238.164/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 203.119.238.63/32, REJECT, no-resolve, pre-matching
+
+[URL Rewrite]
+
+# --- taobao | zirawell ---
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise - reject
+
+# --- taobao_flash_eleme | zirawell ---
+^https?:\/\/nr-op\.elemecdn\.com\/eleme\/transformer\/templates\/\w_eleme_home_yolo_popup - reject
+
+# --- damai | zirawell ---
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.mec\.popup - reject
+^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch\?appkey=23782110 - reject
+
+# --- fliggy | zirawell ---
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.(?>popresource|screen) - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.guide\.guess\.what\.you\.like - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.tripbaymax\.busi\.buyer\.promote\.track - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.traffic\.ai\.chat\.init - reject
+
+# --- quark | zirawell ---
+^https?:\/\/huichuan\.sm\.cn\/nativead - reject
+
+# --- goofish | zirawell ---
+^https?:\/\/h5\.m\.goofish\.com\/app\/idleFish-F2e\/idlefish-pop - reject
+^https?:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ - reject
+^https?:\/\/g\.alicdn\.com\/IdleFish-F2e\/idlefish-workers\/[0-9.]+\/smartLoader - reject
+
+# --- freshippo | zirawell ---
+^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch\?appkey=23230111 - reject
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.hippotown\.tabbar\.info - reject
+
+[Body Rewrite]
+
+# --- fliggy | zirawell ---
+http-response ^https?:\/\/outfliggys\.m\.taobao\.com\/app\/trip\/rx-travel-detail\/pages\/index "showAiAssistant":true, "showAiAssistant":false,
+
+[Map Local]
+
+# --- taobao | zirawell ---
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv data-type=json data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit data-type=json data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get data-type=json data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome data-type=json data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources data-type=json data="{}" status-code=200
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) data-type=json data="{}" status-code=200
+
+# --- taobao_flash_eleme | zirawell ---
+^https?:\/\/amdc\.m\.ele\.me\/amdc\/mobileDispatch data-type=json data="{}" status-code=200
+^https?:\/\/g\.alicdn\.com\/TBTakeout\/et-store\/(\d+.)*\/weex\/store-brand-popup data-type=json data="{}" status-code=200
+^https?:\/\/(?>nr-op|cube)\.elemecdn\.com\/image\/.*\.(png|jpeg|jpg|gif)\?x-oss-process=image\/resize,m_fill,w_180,h_180\/($|format,webp\/$) data-type=tiny-gif status-code=200
+
+# --- damai | zirawell ---
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome data-type=text data="" status-code=200
+
+# --- quark | zirawell ---
+^https?:\/\/stars\.shuqireader\.com\/kkios\/render\/load\/resource\/appConfig data-type=json data="{}" status-code=200
+
+# --- goofish | zirawell ---
+^https?:\/\/h5\.m\.goofish\.com\/wow\/moyu\/moyu-project\/idle-xy-seller-home\/pages\/dress-pop data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.wireless\.home\.xianyu(\.my)?\.awesome\.get data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.live\.home\.ads\.material\.get data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\. data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.topic\.banner\/ data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.resell\.recommendorhotcate data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.idle\.coin\.nextfresh\/ data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ data-type=json data="{}" status-code=200
+^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.(discover|shade)\/ data-type=json data="{}" status-code=200
+
+# --- alipan | zirawell ---
+^https?:\/\/member\.alipan\.com\/v\d\/activity\/sign_in_(?>info|luckyBottle) data-type=json data="{}" status-code=200
+^https?:\/\/api\.alipan\.com\/adrive\/v\d\/file\/getTopFolders data-type=json data="{}" status-code=200
+
+# --- cainiao | zirawell ---
+# 首页 好物推荐,商品推广,底部标签页,快递详情页,问卷调查,主页图标
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.cncommunity\.my\.station\.query data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbopen\.miniapp\.recommend data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close) data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(homepage\.merge|tabbar\.marketing)\.get data-type=json data="{}" status-code=200
+# 发现页 数字角标 裹裹券
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cnactivitycenter data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit data-type=json data="{}" status-code=200
+^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent data-type=json data="{}" status-code=200
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad data-type=json data="{}" status-code=200
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads data-type=json data="{}" status-code=200
+^https?:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads data-type=json data="{}" status-code=200
+
+# --- freshippo | zirawell ---
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.alibaba\.emas\.publish\.update\.get data-type=json data="{}" status-code=200
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.sg\.querysinglescene data-type=json data="{}" status-code=200
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querysinglepage data-type=text data="" status-code=200
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.fc\.recommend\.feedscommondservice data-type=json data="{}" status-code=200
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.crm\.platform\.ma\.recommend data-type=json data="{}" status-code=200
+^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.mimir\.recommend(?!\.hgitems) data-type=json data="{}" status-code=200
+
+[Script]
+
+# --- taobao | zirawell ---
+taobao = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/taobao/taobao-80baf40ea1ffaa97.js
+taobao = type=http-response,pattern=^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/taobao/taobao-80baf40ea1ffaa97.js
+
+# --- fliggy | zirawell ---
+fliggy = type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.ssif\.pattern\.home,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/fliggy/fliggy-eeadbaa380278458.js
+fliggy = type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.traveldetail\.ultron\.detail\.firstscreen\.get,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/fliggy/fliggy-eeadbaa380278458.js
+
+# --- quark | zirawell ---
+quark = type=http-response,pattern=^https?:\/\/open-cms-api\.quark\.cn\/open-cms,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/quark/quark-a4613b36b767fa37.js
+
+# --- goofish | zirawell ---
+goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
+goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
+goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
+
+# --- alipan | zirawell ---
+adrive = type=http-response,pattern=^https?:\/\/member\.alipan\.com\/v\d\/users\/onboard_list,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/alipan/adrive-113890ab142694bb.js
+adrive = type=http-response,pattern=^https?:\/\/api\.alipan\.com\/apps\/v\d\/users\/home\/(?>news|widgets),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/alipan/adrive-113890ab142694bb.js
+
+# --- cainiao | zirawell ---
+cainiao = type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/cainiao/cainiao-5aec06afaafdd490.js
+# 消息中心
+cainiao = type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/cainiao/cainiao-5aec06afaafdd490.js
+
+# --- freshippo | zirawell ---
+freshippo = type=http-response,pattern=^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/freshippo/freshippo-806c7be05c2b8c0a.js
+
+[MITM]
+
+hostname = %APPEND% acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, amdc.m.ele.me, g.alicdn.com, nr-op.elemecdn.com, cube.elemecdn.com, amdc.m.taobao.com, huichuan.sm.cn, stars.shuqireader.com, open-cms-api.quark.cn, h5.m.goofish.com, dinamicx.alibabausercontent.com, acs.m.goofish.com, g-acs.m.goofish.com, member.alipan.com, api.alipan.com, cn-acs.m.cainiao.com, netflow-mtop.cainiao.com, acs-m.freshippo.com
