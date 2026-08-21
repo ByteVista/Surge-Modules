@@ -85,7 +85,7 @@
     "Finance.sgmodule": "9cf445e9b3398794a8c601cba330092168d2bf6031e375325c603f416e1a94c4",
     "MeituanFamily.sgmodule": "d1b43e6baf22f6bd0610b7fed4c7e90b10f4fd9f8e496e6e11adf0cacea8a2e3",
     "MiniProgramAdBlock.sgmodule": "98be03a1554526b6b8bdc566f6c8e69309537415db5a2d70d6516e17ac1496e0",
-    "MyBlockAds.sgmodule": "c60026b58cc7c46039a03a4cdc62b05d028e25aeecf3fa6b3a1653292c017161",
+    "MyBlockAds.sgmodule": "a934f596470650b52332efa5f552ed33551d7970be1913c9408321058b0ea8df",
     "PinDuoDuo.sgmodule": "18f8e5aa5727d91c207edd52dfbeaabccafcd1b4987006e62fd71f83c4de585d",
     "Spotify.sgmodule": "e9078a62e647c13738b79172a7f437434b7e84dc28190f70f18e78904901e28a",
     "Tieba.sgmodule": "759def23a5d0d5aa481b4c447cb9070015a529b72cefed522b94bef3874e2a3e",
@@ -190,7 +190,7 @@
     "amazon": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "d24c439c6931c23ca24e20d84ef7882e17bbe547248323911d1dbe77f29c415f",
+      "sha256": "335a98705038bb36cc6edb70592b054838c4d05c28046dc806e12e8ba3d3de13",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%9A%E9%A9%AC%E9%80%8A/amazon.sgmodule"
     },
     "baidu_netdisk": {
