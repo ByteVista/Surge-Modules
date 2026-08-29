@@ -82,7 +82,7 @@
     "AlibabaFamily.sgmodule": "0736939d0c77f945a72e7586436b2ae89d59314c0594fb8cbf08e4ba12dffb7f",
     "Bilibili.sgmodule": "9f02a88c8cf8e77f68d63b61f2b8464bb8698b393c24940581417315518fe53f",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
-    "Finance.sgmodule": "9cf445e9b3398794a8c601cba330092168d2bf6031e375325c603f416e1a94c4",
+    "Finance.sgmodule": "e8fa3c3bb545d0b55ffe3da526f1289e0fe6c04fa540c5439dfdca683fffea1f",
     "MeituanFamily.sgmodule": "d1b43e6baf22f6bd0610b7fed4c7e90b10f4fd9f8e496e6e11adf0cacea8a2e3",
     "MiniProgramAdBlock.sgmodule": "98be03a1554526b6b8bdc566f6c8e69309537415db5a2d70d6516e17ac1496e0",
     "MyBlockAds.sgmodule": "a934f596470650b52332efa5f552ed33551d7970be1913c9408321058b0ea8df",
@@ -286,7 +286,7 @@
     "cmb_life": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "80ee2a45b90e65287c752dc4af20cc7b103393ffa5219de90d6a4935655e4dd8",
+      "sha256": "7174827df8aaf7d073d43710e3c1236166de687a2fbb8d8be3d6fd08890b0e70",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8E%8C%E4%B8%8A%E7%94%9F%E6%B4%BB/cmbcc.sgmodule"
     },
     "colorful_clouds": {

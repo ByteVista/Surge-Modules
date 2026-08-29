@@ -98,6 +98,7 @@ http-response ^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/ClientFacePublic\/\w+
 ^https?:\/\/contentcc\.bcs\.cmbchina\.com\/Edge\/api\/contentpublisher\.api\.UserFeedsControllerApi\/query data-type=json data="{}" status-code=200
 ^https?:\/\/intellicc\.\w+\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.RecommendRenderControllerApi\/getRecommendResult data-type=json data="{}" status-code=200
 ^https?:\/\/interactivecc\.\w+\.cmbchina\.com\/Edge\/api\/atpcore\.api\.AccompanyingServiceControllerApi\/queryAccompanyingServiceUserConfForApp data-type=json data="{}" status-code=200
+^https?:\/\/yummy2web01-edge-dmz\.bcs\.cmbchina\.com\/Edge\/api\/cmscampaign\.api\.HomeActivityClientControllerApi\/activityClientPartake data-type=json data="{}" status-code=200
 
 # --- maidanba | zirawell ---
 ^https?:\/\/creditcard\.bankcomm\.(com|cn)\/tfimg\/public00\/M00\/4C\/6F data-type=tiny-gif status-code=200
@@ -133,4 +134,4 @@ mdb = type=http-response,pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/
 
 [MITM]
 
-hostname = %APPEND% wallet.95516.com, mars.ccc.cmbchina.com, marscc.bcs.cmbchina.com, contentcc.bcs.cmbchina.com, intellicc.b*s.cmbchina.com, *mbasecc.b*s.cmbchina.com, interactivecc.b*s.cmbchina.com, *.bankcomm.com, *.bankcomm.cn, image1.ccb.com, imageadv.ccb.com, cy.cloud.ccb.com, download1.bankcomm.com, webappcfg.paas.cmbchina.com, mobile.cmbchina.com, mbs.boc.cn, cdn1.mbs.boc.cn, api*.futunn.com, www.binance.info, www.yingwangtech.net, www.binance.com
+hostname = %APPEND% wallet.95516.com, mars.ccc.cmbchina.com, marscc.bcs.cmbchina.com, contentcc.bcs.cmbchina.com, intellicc.b*s.cmbchina.com, *mbasecc.b*s.cmbchina.com, interactivecc.b*s.cmbchina.com, yummy2web01-edge-dmz.bcs.cmbchina.com, *.bankcomm.com, *.bankcomm.cn, image1.ccb.com, imageadv.ccb.com, cy.cloud.ccb.com, download1.bankcomm.com, webappcfg.paas.cmbchina.com, mobile.cmbchina.com, mbs.boc.cn, cdn1.mbs.boc.cn, api*.futunn.com, www.binance.info, www.yingwangtech.net, www.binance.com
