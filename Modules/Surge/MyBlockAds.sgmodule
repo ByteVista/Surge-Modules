@@ -285,13 +285,6 @@ DOMAIN-SUFFIX, datads.cn, REJECT, extended-matching, pre-matching
 
 [Body Rewrite]
 
-# --- amap | RuCu6 ---
-http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","commonMaterial"]])'
-http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","tipsOperationLocation"]])'
-http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","resourcePlacement"]])'
-http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\? 'delpaths([["history_tags"]])'
-http-response-jq ^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\? 'delpaths([["data","carTips","data","popupInfo"]])'
-
 # --- didi | Kelee ---
 http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core\? '.data.disorder_cards.bottom_nav_list.data |= map(select(.id == "home_page" or .id == "user_center")) | .data.order_cards.nav_list_card.data |= map(select(.nav_id == "dache_anycar" or .nav_id == "carmate" or .nav_id == "driverservice" or .nav_id == "zhandianbashi" or .nav_id == "yuancheng" or .nav_id == "pincheche" or .nav_id == "bike" or .nav_id == "special_ride" or .nav_id == "nav_more_v3"))'
 http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/fast\? 'delpaths([["data","disorder_cards","communicate_card"]])'
@@ -449,37 +442,6 @@ http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resour
 # --- amap | RuCu6 ---
 # 此条可以屏蔽首次进入的天气动效图层 但是会导致足迹不显示地图数据
 #^https:\/\/mps\.amap\.com\/ws\/mps\/scene\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
-^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
-^https:\/\/ai\.amap\.com\/v1\/ai_rec\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc|usr-profile-fc\/homeV2) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/(?:mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 打车页 - 红点角标、弹窗、天气图标、推广卡片
-^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-comment\/contentNearbyCard\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/(?:feedback\/get_card_questions|feedback\/viptips|king_toolbox_car_bubble|remark\/satisfactionConf|rights_information)|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:pay\/web\/paySuccess\/info\/request|transportation\/diversion\/resource\/driving) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 # --- didi | Kelee ---
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="{}" status-code=200 header="Content-Type:application/json"
@@ -706,35 +668,6 @@ http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resour
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data-type=tiny-gif status-code=200
 
 [Script]
-
-# --- amap | RuCu6 ---
-移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除路线规划、导航结束页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除导航详情页底部酒店、处理附近页 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除搜索栏推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除搜索详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除我的页面推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除附近页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
-
-移除导航详情页推广 = type=http-response, pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/amap/amap-7bdf13ae802b0dbd.js, requires-body=true
 
 # --- railway_12306 | Kelee ---
 移除12306应用内广告 = type=http-request, pattern=^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js
