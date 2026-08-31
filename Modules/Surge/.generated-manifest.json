@@ -72,11 +72,11 @@
   ],
   "outputs": {
     "AdUnion.sgmodule": "257d2661d0de3f27c09fa691e528dbd963a47560b979ac8f76126c9a416f4fc1",
-    "AlibabaFamily.sgmodule": "0736939d0c77f945a72e7586436b2ae89d59314c0594fb8cbf08e4ba12dffb7f",
+    "AlibabaFamily.sgmodule": "47a630ed4f343e068d2577b82d11af4c66fb2a68b8d12381cf1a42fb2c4361bc",
     "Bilibili.sgmodule": "e79807fa1e1d8c97f0e43c27d685129b71b0a19fa113a92e4b712a8b43ffb956",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "e8fa3c3bb545d0b55ffe3da526f1289e0fe6c04fa540c5439dfdca683fffea1f",
-    "MeituanFamily.sgmodule": "d1b43e6baf22f6bd0610b7fed4c7e90b10f4fd9f8e496e6e11adf0cacea8a2e3",
+    "MeituanFamily.sgmodule": "7c692bedcfd6322e83f22ccab80c2e5151ed4a34fcf6ead913a212a5d4d4cc97",
     "MiniProgramAdBlock.sgmodule": "98be03a1554526b6b8bdc566f6c8e69309537415db5a2d70d6516e17ac1496e0",
     "MyBlockAds.sgmodule": "9466f75a5bc90348a635eec7e4adc805188a7d15714889c63bbf22026fa9eeab",
     "PinDuoDuo.sgmodule": "e2ee03d258f2a8f0b4ac16601103bfaf460f8b3b0b1cab41121dc27aca066b4a",
@@ -338,7 +338,7 @@
     "fliggy": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "2f7cf24028b7205c153631800620aef40ff722a054b76d39e1d1c937e36d48a1",
+      "sha256": "691792a0a8eb2355f3482883ebf04a162609769c0a1272470e643989b3ca170a",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule"
     },
     "freshippo": {
@@ -452,7 +452,7 @@
     "meituan": {
       "output": "MeituanFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "55674508e75f750b4098188e78fbe87a62c610b3d2946fa87b293c1cd3c1b24f",
+      "sha256": "2c605848bb3591fc4a402807b19994fd6a8b07318eac6c45fc90ca1b9a6eabdf",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2/meituan.sgmodule"
     },
     "meituan_waimai": {

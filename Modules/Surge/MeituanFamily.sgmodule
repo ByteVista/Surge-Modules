@@ -47,7 +47,6 @@ IP-CIDR, 119.29.126.137/32, REJECT, no-resolve, pre-matching
 # --- meituan | zirawell ---
 ^https?:\/\/apimobile\.meituan\.com\/appupdate - reject
 ^https?:\/\/apimobile\.meituan\.com\/group\/v\d\/recommend\/unity\/recommends - reject
-^https?:\/\/img\.meituan\.net\/bizad - reject
 ^https?:\/\/p\d\.meituan\.net\/(display|mmc)\/ - reject
 ^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\? - reject
 ^https?:\/\/s3plus\.meituan\.net\/v\d\/mss_\w+\/waimai-alita\/\w+\.zip$ - reject
