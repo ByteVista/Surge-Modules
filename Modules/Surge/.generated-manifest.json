@@ -72,7 +72,7 @@
   ],
   "outputs": {
     "AdUnion.sgmodule": "257d2661d0de3f27c09fa691e528dbd963a47560b979ac8f76126c9a416f4fc1",
-    "AlibabaFamily.sgmodule": "47a630ed4f343e068d2577b82d11af4c66fb2a68b8d12381cf1a42fb2c4361bc",
+    "AlibabaFamily.sgmodule": "e75532ffca9cbe76962abbd1f2f7b36e5cdc4c4507106f1b528e2b4e649c991c",
     "Bilibili.sgmodule": "e79807fa1e1d8c97f0e43c27d685129b71b0a19fa113a92e4b712a8b43ffb956",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "e8fa3c3bb545d0b55ffe3da526f1289e0fe6c04fa540c5439dfdca683fffea1f",
@@ -566,7 +566,7 @@
     "taobao_flash_eleme": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "b075744f11089fea3c3865e4138e29cc111101d0275cbeb58e7771aa3f1a79fa",
+      "sha256": "2396ab7ec8aa7f3c03054a5640dde62c7adbbe81fc708899d7f21398808fed46",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule"
     },
     "tencent_video": {

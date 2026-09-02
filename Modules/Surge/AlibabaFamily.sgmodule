@@ -48,6 +48,9 @@ DOMAIN-SUFFIX, acs4baichuan.m.taobao.com, REJECT, extended-matching, pre-matchin
 
 # --- taobao_flash_eleme | zirawell ---
 DOMAIN, wgo.mmstat.com, REJECT, extended-matching, pre-matching
+DOMAIN, h-adashx.ut.ele.me, REJECT, extended-matching, pre-matching
+DOMAIN, highway-tb.ele.me, REJECT, extended-matching, pre-matching
+DOMAIN, cdn.ynuf.aliapp.org, REJECT, extended-matching, pre-matching
 IP-CIDR, 59.82.121.172/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 59.82.121.72/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 59.82.121.216/32, REJECT, no-resolve, pre-matching
