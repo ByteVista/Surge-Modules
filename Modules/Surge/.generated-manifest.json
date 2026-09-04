@@ -78,7 +78,7 @@
     "Finance.sgmodule": "e8fa3c3bb545d0b55ffe3da526f1289e0fe6c04fa540c5439dfdca683fffea1f",
     "MeituanFamily.sgmodule": "7c692bedcfd6322e83f22ccab80c2e5151ed4a34fcf6ead913a212a5d4d4cc97",
     "MiniProgramAdBlock.sgmodule": "98be03a1554526b6b8bdc566f6c8e69309537415db5a2d70d6516e17ac1496e0",
-    "MyBlockAds.sgmodule": "ea6b86d48e06ca00ba021271c3c789e775ad9087b5886439ee7210d0ba91d9f5",
+    "MyBlockAds.sgmodule": "e0907447c5c5e1544572ac781a74e1f4af0a9d626293d128ef380dee06d37bd6",
     "PinDuoDuo.sgmodule": "e2ee03d258f2a8f0b4ac16601103bfaf460f8b3b0b1cab41121dc27aca066b4a",
     "Spotify.sgmodule": "e9078a62e647c13738b79172a7f437434b7e84dc28190f70f18e78904901e28a",
     "Tieba.sgmodule": "759def23a5d0d5aa481b4c447cb9070015a529b72cefed522b94bef3874e2a3e",
@@ -314,7 +314,7 @@
     "didi": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "38d414c826e5bc147c77f8ad954b3d700653c11536fb9ac231cde427afbc3719",
+      "sha256": "ad187ee096f44d64637c128a099146627b4527b3d8537a5f441c809c085a2608",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/DiDi_remove_ads.sgmodule"
     },
     "douban": {
