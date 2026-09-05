@@ -7,7 +7,7 @@
 | 输出 | 内容 |
 |---|---|
 | `MyBlockAds.sgmodule` | MyBlockAds 软件清单中的普通 App，包括萤石云视频；不包含视频类 App |
-| `Bilibili.sgmodule` | 哔哩哔哩，使用 RuCu6 Loon 插件完整转换 |
+| `Bilibili.sgmodule` | 哔哩哔哩，使用 Romeo 镜像的 Kelee Loon 插件完整转换 |
 | `YouTube.sgmodule` | YouTube，直接使用 Maasea 原生 Surge 模块 |
 | `Video.sgmodule` | 优酷、爱奇艺、芒果 TV、腾讯视频 |
 | `AlibabaFamily.sgmodule` | 淘宝、淘宝闪购、大麦、飞猪、夸克、闲鱼、阿里云盘、菜鸟、盒马；1688 暂不启用 |
@@ -53,7 +53,7 @@
 ## 同步原则
 
 - 原生 Surge 上游直接使用；Loon 和 Quantumult X 上游只做格式转换。
-- Kelee 项目直接读取 Romeo 已完成的 Surge 转换结果，不再由本仓库现场访问 Kelee 插件并转换。
+- Kelee 项目优先读取 Romeo 已完成的 Surge 转换结果；哔哩哔哩使用 Romeo 镜像的 Kelee Loon 插件，由本仓库转换为 Surge。
 - 不从不同作者中拼规则，不补写功能，不裁剪所选上游自带的去广告、页面净化或解锁功能。
 - 合集按同名 Surge 配置段汇总，仅删除完全相同的活动行；`[MITM]` 的 hostname 机械合并并精确去重。
 - 所有运行时依赖都会镜像，包括 JavaScript、Map Local 远程数据和规则集；文件内容不改，只把模块引用替换为本仓库 Pages 地址。
