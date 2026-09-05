@@ -115,7 +115,7 @@ http-response ^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/ClientFacePublic\/\w+
 
 # --- china_merchants_bank | zirawell ---
 ^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data-type=text data="" status-code=200
-^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend data-type=file data="https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json"
+^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend data-type=file data="https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json"
 
 # --- bank_of_china | zirawell ---
 ^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/theme\/ data-type=text data="" status-code=200
@@ -130,7 +130,7 @@ http-response ^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/ClientFacePublic\/\w+
 [Script]
 
 # --- maidanba | zirawell ---
-mdb = type=http-response,pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/maidanba/mdb-89816a29460471fa.js
+mdb = type=http-response,pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/maidanba/mdb-89816a29460471fa.js
 
 [MITM]
 

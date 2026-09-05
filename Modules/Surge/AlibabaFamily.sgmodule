@@ -184,32 +184,32 @@ http-response ^https?:\/\/outfliggys\.m\.taobao\.com\/app\/trip\/rx-travel-detai
 [Script]
 
 # --- taobao | zirawell ---
-taobao = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/taobao/taobao-80baf40ea1ffaa97.js
-taobao = type=http-response,pattern=^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/taobao/taobao-80baf40ea1ffaa97.js
+taobao = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/taobao/taobao-80baf40ea1ffaa97.js
+taobao = type=http-response,pattern=^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/taobao/taobao-80baf40ea1ffaa97.js
 
 # --- fliggy | zirawell ---
-fliggy = type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.ssif\.pattern\.home,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/fliggy/fliggy-eeadbaa380278458.js
-fliggy = type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.traveldetail\.ultron\.detail\.firstscreen\.get,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/fliggy/fliggy-eeadbaa380278458.js
+fliggy = type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.ssif\.pattern\.home,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/fliggy/fliggy-eeadbaa380278458.js
+fliggy = type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.traveldetail\.ultron\.detail\.firstscreen\.get,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/fliggy/fliggy-eeadbaa380278458.js
 
 # --- quark | zirawell ---
-quark = type=http-response,pattern=^https?:\/\/open-cms-api\.quark\.cn\/open-cms,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/quark/quark-a4613b36b767fa37.js
+quark = type=http-response,pattern=^https?:\/\/open-cms-api\.quark\.cn\/open-cms,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/quark/quark-a4613b36b767fa37.js
 
 # --- goofish | zirawell ---
-goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
-goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
-goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
+goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
+goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
+goofish = type=http-response,pattern=^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/goofish/goofish-0fd54500cd31e0c6.js
 
 # --- alipan | zirawell ---
-adrive = type=http-response,pattern=^https?:\/\/member\.alipan\.com\/v\d\/users\/onboard_list,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/alipan/adrive-113890ab142694bb.js
-adrive = type=http-response,pattern=^https?:\/\/api\.alipan\.com\/apps\/v\d\/users\/home\/(?>news|widgets),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/alipan/adrive-113890ab142694bb.js
+adrive = type=http-response,pattern=^https?:\/\/member\.alipan\.com\/v\d\/users\/onboard_list,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/alipan/adrive-113890ab142694bb.js
+adrive = type=http-response,pattern=^https?:\/\/api\.alipan\.com\/apps\/v\d\/users\/home\/(?>news|widgets),requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/alipan/adrive-113890ab142694bb.js
 
 # --- cainiao | zirawell ---
-cainiao = type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/cainiao/cainiao-5aec06afaafdd490.js
+cainiao = type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/cainiao/cainiao-5aec06afaafdd490.js
 # 消息中心
-cainiao = type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/cainiao/cainiao-5aec06afaafdd490.js
+cainiao = type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/cainiao/cainiao-5aec06afaafdd490.js
 
 # --- freshippo | zirawell ---
-freshippo = type=http-response,pattern=^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/freshippo/freshippo-806c7be05c2b8c0a.js
+freshippo = type=http-response,pattern=^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream),requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/freshippo/freshippo-806c7be05c2b8c0a.js
 
 [MITM]
 

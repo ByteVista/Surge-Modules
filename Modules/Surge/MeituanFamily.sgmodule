@@ -101,11 +101,11 @@ IP-CIDR, 119.29.126.137/32, REJECT, no-resolve, pre-matching
 [Script]
 
 # --- meituan | zirawell ---
-meituan = type=http-response,pattern=^https?:\/\/p\d\.meituan\.net\/linglong\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/meituan/meituan-3c30ba0d24393abd.js
+meituan = type=http-response,pattern=^https?:\/\/p\d\.meituan\.net\/linglong\/,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/meituan/meituan-3c30ba0d24393abd.js
 
 # --- dianping | zirawell ---
-dianping = type=http-response,pattern=^https?:\/\/img\.meituan\.net\/(?>dpmobile|goodsawardpic)\/,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/dianping/dianping-d7cd7fadf4b469af.js
-dianping = type=http-response,pattern=^https?:\/\/ddplus\.meituan\.net\/v\d\/mss_\w+\/picassovc,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/dianping/dianping-d7cd7fadf4b469af.js
+dianping = type=http-response,pattern=^https?:\/\/img\.meituan\.net\/(?>dpmobile|goodsawardpic)\/,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/dianping/dianping-d7cd7fadf4b469af.js
+dianping = type=http-response,pattern=^https?:\/\/ddplus\.meituan\.net\/v\d\/mss_\w+\/picassovc,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/dianping/dianping-d7cd7fadf4b469af.js
 
 [MITM]
 

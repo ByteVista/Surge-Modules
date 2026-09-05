@@ -227,46 +227,46 @@ http-response-jq ^https:\/\/comment\.mgtv\.com\/v\d\/comment\/getCommentList\? '
 
 # --- youku | zirawell ---
 # 播放详情页,首页信息流,顶部tab,我的页面,评论区
-youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.(gateway\.new\.execute|home\.feed|home\.query|uc\.query|ycp\.query),requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.(gateway\.new\.execute|home\.feed|home\.query|uc\.query|ycp\.query),requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 底部tab
-youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 青少年模式弹窗
-youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config2,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config2,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 搜索列表
-youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+youku = type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 热剧弹窗
-youku = type=http-response,pattern=^https?:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+youku = type=http-response,pattern=^https?:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 开屏广告
-youku = type=http-response,pattern=^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+youku = type=http-response,pattern=^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 
 # --- iqiyi | zirawell ---
 # 首页信息流广告
-iqiyi = type=http-response,pattern=^https?:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
-iqiyi = type=http-response,pattern=^https?:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
-iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
-iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 播放详情页
-iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 搜索页列表
-iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 评论区
-iqiyi = type=http-response,pattern=^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 我的页面菜单
-iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 首页左上角天气
-iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 通用控制,各tab页二楼
-iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 底部tab,顶部tab
-iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 搜索框填充词
-iqiyi = type=http-response,pattern=^https?:\/\/search\.video\.iqiyi\.com\/q\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/search\.video\.iqiyi\.com\/q\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 # 开屏广告,播放广告
-iqiyi = type=http-response,pattern=^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?,requires-body=1,max-size=0,script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
+iqiyi = type=http-response,pattern=^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/youku/cntv-87119b51bccf2fd6.js
 
 # --- mango_tv | sooyaaabo ---
 # 会员解锁
-[芒果TV]会员解锁 = type=http-request, pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source, script-path=https://cingdaat.github.io/Surge-Modules/Modules/Surge/_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js
+[芒果TV]会员解锁 = type=http-request, pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js
 
 [MITM]
 
