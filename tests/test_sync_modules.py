@@ -133,8 +133,8 @@ class ReadmeLinkTests(unittest.TestCase):
                 generated,
             )
             content = readme.read_text(encoding="utf-8")
-            ad_union = "- [AdUnion.sgmodule](https://raw.githubusercontent.com/owner/repo/main/Modules/Surge/AdUnion.sgmodule)"
-            video = "- [Video.sgmodule](https://raw.githubusercontent.com/owner/repo/main/Modules/Surge/Video.sgmodule)"
+            ad_union = "- [AdUnion.sgmodule](https://raw.githubusercontent.com/owner/repo/main/Modules/Surge/install.html?module=AdUnion.sgmodule)"
+            video = "- [Video.sgmodule](https://raw.githubusercontent.com/owner/repo/main/Modules/Surge/install.html?module=Video.sgmodule)"
             self.assertIn(ad_union, content)
             self.assertIn(video, content)
             self.assertLess(content.index(ad_union), content.index(video))

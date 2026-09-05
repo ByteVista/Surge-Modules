@@ -33,6 +33,7 @@ class PagesBuildTests(unittest.TestCase):
             self.assertFalse((site / "Modules/Surge/.generated-manifest.json").exists())
             self.assertEqual((site / "README.md").read_text(encoding="utf-8"), "README")
             self.assertTrue((site / ".nojekyll").is_file())
+            self.assertTrue((site / "Modules/Surge/install.html").is_file())
             index = (site / "index.html").read_text(encoding="utf-8")
             self.assertIn("Modules/Surge/Bilibili.sgmodule", index)
 

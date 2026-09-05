@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>安装 Surge 模块</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:64px auto;padding:0 24px;line-height:1.8}a{overflow-wrap:anywhere}</style>
+<h1>安装 Surge 模块</h1>
+<p id="status">正在准备安装链接…</p>
+<p><a id="install" hidden>打开 Surge 安装</a></p>
+<p><a id="source" hidden>原始订阅链接</a></p>
+<script>
+const name = new URLSearchParams(location.search).get('module');
+if (!name || /[/\\]/.test(name) || !name.endsWith('.sgmodule')) {
+  document.getElementById('status').textContent = '模块链接无效，请返回 README 重新选择。';
+} else {
+  const url = new URL(encodeURIComponent(name), location.href).href;
+  const scheme = 'surge:///install-module?url=' + encodeURIComponent(url);
+  const install = document.getElementById('install');
+  install.href = scheme;
+  install.hidden = false;
+  const source = document.getElementById('source');
+  source.href = url;
+  source.hidden = false;
+  document.getElementById('status').textContent = '正在打开 Surge 安装 ' + name + '。如未自动打开，请点击下方按钮，并允许浏览器打开 Surge。需要先安装 Surge。';
+  location.href = scheme;
+}
+</script>
+</html>

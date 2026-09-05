@@ -26,26 +26,26 @@
 
 ## 模块订阅链接
 
-以下 GitHub Pages 链接由 GitHub Actions 在同步时自动生成，可直接用于 Surge 的“从 URL 安装模块”。
+点击下方模块名称即可打开安装页，自动唤起 Surge 安装。若浏览器拦截自动跳转，请点击安装页的“打开 Surge 安装”；也可复制“原始订阅链接”到 Surge 的“从 URL 安装模块”。
 
 <!-- MODULE_LINKS_START -->
-- [AdUnion.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/AdUnion.sgmodule)
-- [AlibabaFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/AlibabaFamily.sgmodule)
-- [Bilibili.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Bilibili.sgmodule)
-- [ByteDanceFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/ByteDanceFamily.sgmodule)
-- [Finance.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Finance.sgmodule)
-- [MeituanFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/MeituanFamily.sgmodule)
-- [MiniProgramAdBlock.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/MiniProgramAdBlock.sgmodule)
-- [MyBlockAds.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/MyBlockAds.sgmodule)
-- [PinDuoDuo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/PinDuoDuo.sgmodule)
-- [Spotify.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Spotify.sgmodule)
-- [Tieba.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Tieba.sgmodule)
-- [Video.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Video.sgmodule)
-- [Weibo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Weibo.sgmodule)
-- [XiaoHongShu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/XiaoHongShu.sgmodule)
-- [Ximalaya.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Ximalaya.sgmodule)
-- [YouTube.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/YouTube.sgmodule)
-- [Zhihu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/Zhihu.sgmodule)
+- [AdUnion.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=AdUnion.sgmodule)
+- [AlibabaFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=AlibabaFamily.sgmodule)
+- [Bilibili.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Bilibili.sgmodule)
+- [ByteDanceFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=ByteDanceFamily.sgmodule)
+- [Finance.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Finance.sgmodule)
+- [MeituanFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=MeituanFamily.sgmodule)
+- [MiniProgramAdBlock.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=MiniProgramAdBlock.sgmodule)
+- [MyBlockAds.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=MyBlockAds.sgmodule)
+- [PinDuoDuo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=PinDuoDuo.sgmodule)
+- [Spotify.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Spotify.sgmodule)
+- [Tieba.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Tieba.sgmodule)
+- [Video.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Video.sgmodule)
+- [Weibo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Weibo.sgmodule)
+- [XiaoHongShu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=XiaoHongShu.sgmodule)
+- [Ximalaya.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Ximalaya.sgmodule)
+- [YouTube.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=YouTube.sgmodule)
+- [Zhihu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Zhihu.sgmodule)
 <!-- MODULE_LINKS_END -->
 
 ## 同步原则

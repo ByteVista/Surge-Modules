@@ -540,7 +540,7 @@ def update_readme_links(
     links = []
     for path in module_paths:
         encoded_path = urllib.parse.quote(str(path), safe="/._-")
-        links.append(f"- [{path.name}]({raw_base.rstrip('/')}/{encoded_path})")
+        links.append(f"- [{path.name}]({raw_base.rstrip('/')}/install.html?module={encoded_path})")
     generated_block = README_LINKS_START + "\n" + "\n".join(links) + "\n" + README_LINKS_END
     updated = readme[:start] + generated_block + readme[end + len(README_LINKS_END) :]
     atomic_write(readme_path, updated.encode("utf-8"))

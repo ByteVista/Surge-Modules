@@ -29,6 +29,8 @@ def build_pages(modules_root: Path, readme_path: Path, site_root: Path) -> None:
     for module in modules:
         shutil.copy2(module, public_modules / module.name)
 
+    shutil.copy2(Path(__file__).with_name("install.html"), public_modules / "install.html")
+
     resources = modules_root / "_resources"
     if resources.is_dir():
         shutil.copytree(resources, public_modules / "_resources")
