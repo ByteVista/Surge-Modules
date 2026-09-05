@@ -16,6 +16,7 @@
 | `Finance.sgmodule` | 支付宝、云闪付、掌上生活、买单吧、银行、富途和币安等已选金融软件 |
 | `AdUnion.sgmodule` | 用户明确选择的 zirawell 广告联盟完整模块，作用范围跨 App |
 | `MiniProgramAdBlock.sgmodule` | Romeo 提供的 Kelee 微信小程序 Surge 转换版 |
+| `VVebo_repair.sgmodule` | Kelee 的 VVebo 用户时间线和“我的页面”修复 |
 | 独立模块 | 贴吧、拼多多、小红书、微博、知乎、喜马拉雅、Spotify |
 
 所有最终 `.sgmodule` 都发布在 `Modules/Surge/` 根目录，不再划分模块子目录。模块引用的脚本、远程数据和规则集会完整镜像到 `Modules/Surge/_resources/`，模块内的运行依赖链接全部改为本仓库的公开 GitHub Pages 地址。作者主页、App Store 和图标属于说明性元数据，不是模块运行依赖，因此保持上游原值。
@@ -122,5 +123,7 @@ python scripts/build_pages.py --modules Modules/Surge --readme README.md --site 
 ```
 
 ## 使用提醒
+
+VVebo 修复模块的上游说明要求：使用前禁用微博去广告插件，以免冲突。
 
 部分模块启用 MITM，部分完整上游还带会员、画质、倍速或区域解锁。安装前请阅读生成模块顶部的来源列表；遇到登录、支付、播放或页面异常时，应先停用对应合集排查。所有模块及脚本版权归各上游作者，本仓库只负责自动同步、格式转换和组合发布。

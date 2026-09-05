@@ -113,6 +113,16 @@ apps:
     mode: disabled
     reason: selected_upstream_combines_ads_and_enhancements
 
+  vvebo:
+    module: VVebo_repair.sgmodule
+    mode: direct
+    format: surge
+    provider: Kelee
+    source_mirror: Romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/VVebo_repair.sgmodule
+    modifications: none
+    include_in_bundle: false
+
   weibo:
     module: Weibo.sgmodule
     mode: convert
