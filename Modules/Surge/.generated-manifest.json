@@ -26,6 +26,9 @@
     "_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js",
     "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js",
     "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js",
+    "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js",
+    "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js",
+    "_resources/bilibili/kelee.one_Bilibili_proto_response_kokoryh-58fa8c729c45b8c2.js",
     "_resources/blued/blued-4821c4ba5f47c7f5.js",
     "_resources/boohee/boohee-cab92058d564794c.js",
     "_resources/cainiao/cainiao-5aec06afaafdd490.js",
@@ -75,7 +78,7 @@
   "outputs": {
     "AdUnion.sgmodule": "c04ddc85b8c1e5ce64d476f2c739e5c63207535148ef346749a32516631d6da3",
     "AlibabaFamily.sgmodule": "4b36509ed1674ab649bb344c9b7bf37c412773d8627051e4d0aec7724fcbec65",
-    "Bilibili.sgmodule": "e79807fa1e1d8c97f0e43c27d685129b71b0a19fa113a92e4b712a8b43ffb956",
+    "Bilibili.sgmodule": "4cf8299e7c626469c288c5412edc06bed44149209134876aab5ace7dd9b33ba5",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "0e99d43e6ffce89b551f0181ce1486dfea1b4bb572a1103591485f5331741157",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
@@ -99,6 +102,9 @@
     "_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js": "2fdc54b1c7acd53df4ac5379485df8c50834859eed20a8b590de2da0df217ac6",
     "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js": "00615ce6dfae37cdc5e55ae791c9353a3fb6f981d895a6fbd0b53caaaf129ecd",
     "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js": "9a50669b814eedd82eb9b73518089547bc7b9c5388dc4e441dfc9f155c55fc61",
+    "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js": "521a3974d1a485daf5750bc7b986ee5b64325480ed80da2e7d90265f4ad57090",
+    "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js": "96a516d6d72d61c295584a975027387870b79219e0c23b7485b7e8892b4261e9",
+    "_resources/bilibili/kelee.one_Bilibili_proto_response_kokoryh-58fa8c729c45b8c2.js": "e68042a18b2f89cd8e29258be9960c02692d691c184d678eb8d0f22d38809cea",
     "_resources/blued/blued-4821c4ba5f47c7f5.js": "b9aa88e977da62caa90afbe5d921f45d8ef63f09945442043bc95145eb551a7d",
     "_resources/boohee/boohee-cab92058d564794c.js": "c0d70da6294c34ea98fe2ab013b39cc64734d4e4f3c25addd14f5a0c7c00970f",
     "_resources/cainiao/cainiao-5aec06afaafdd490.js": "c99c07937e4f4357949ba17f77927748992ad480afe14619a20c9f6551160d86",
@@ -215,9 +221,9 @@
     },
     "bilibili": {
       "output": "Bilibili.sgmodule",
-      "provider": "RuCu6",
-      "sha256": "12ee952e1df7ecbb1294ec35396ed457957a75e809d1065db03e7dac0568b011",
-      "url": "https://rucu6.pages.dev/Plugins/bilibili.lpx"
+      "provider": "Kelee",
+      "sha256": "943d915bff902959fb0b77d35fbaf2acab1671c6d2ad7caf383acbf5f6dc234c",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Loon/Kelee/Bilibili_remove_ads.lpx"
     },
     "binance": {
       "output": "Finance.sgmodule",
