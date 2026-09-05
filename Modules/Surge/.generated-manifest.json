@@ -11,6 +11,7 @@
     "PinDuoDuo.sgmodule",
     "Spotify.sgmodule",
     "Tieba.sgmodule",
+    "VVebo_repair.sgmodule",
     "Video.sgmodule",
     "Weibo.sgmodule",
     "XiaoHongShu.sgmodule",
@@ -63,6 +64,7 @@
     "_resources/spotify/spotify-proto-99449675fd0d0002.js",
     "_resources/taobao/taobao-80baf40ea1ffaa97.js",
     "_resources/tieba/kelee.one_tieba-proto-167a15bd53ff51f3.js",
+    "_resources/vvebo/kelee.one_VVebo_repair-8edf1c3fff61fc20.js",
     "_resources/xiaohongshu/xiaohongshu-ca20c7c41aa56a84.js",
     "_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js",
     "_resources/ximalaya/ximalaya_json-7207e9dc08009d9d.js",
@@ -82,6 +84,7 @@
     "PinDuoDuo.sgmodule": "e2ee03d258f2a8f0b4ac16601103bfaf460f8b3b0b1cab41121dc27aca066b4a",
     "Spotify.sgmodule": "cd9601d7fed2f8d5aa92037884f8ac4f0bc6422bee402f702c0abefad8427d4f",
     "Tieba.sgmodule": "1fc0e0485d92a3272ed372bbbe3a074c810e7d99df83c200cd5afd681b52943d",
+    "VVebo_repair.sgmodule": "94870ce676970a435b09fc47607615ed88725c5b02614d3039f4c3b8b16bd39d",
     "Video.sgmodule": "93ba6772ce51f2afec6ef8c898ce9e76964dcad2ec11d072dc7ec5328f184e0a",
     "Weibo.sgmodule": "1642d801bfa131b5d39fb4cae8b716e6e0adcf80f689012d12cce42a423a4b5b",
     "XiaoHongShu.sgmodule": "80c57ccef0796a5e64b0386aba5a236d48c6c09830b3ab09dbcd662cb8f07387",
@@ -134,6 +137,7 @@
     "_resources/spotify/spotify-proto-99449675fd0d0002.js": "2e6850e888d092905c766f0bbedc4b4afb9a712330970cc1265105d7fb4995d0",
     "_resources/taobao/taobao-80baf40ea1ffaa97.js": "948921def8daf5fc8da5f36645569e1b01ee03c99f2c2d54da6ae77b8cef8a86",
     "_resources/tieba/kelee.one_tieba-proto-167a15bd53ff51f3.js": "2ab9006be369e1083072ec49f4163245d8c385b0f3acc40910c2922454ebbd78",
+    "_resources/vvebo/kelee.one_VVebo_repair-8edf1c3fff61fc20.js": "7fd17286253c41c42f1f96b02ac200e4a82f5edf98c14caa7be3a444a872ab16",
     "_resources/xiaohongshu/xiaohongshu-ca20c7c41aa56a84.js": "318d89bce1117edb26a93b383804e195649ec4674a04efa9e3ddb4ef7f34b498",
     "_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js": "4cf62100424886068a5470daecec319e93ccd034c647d79a9daaa72bbbc341bb",
     "_resources/ximalaya/ximalaya_json-7207e9dc08009d9d.js": "2b0cb0abf3cf9eaf16e45591c947d2ab1905c2fa5aa8c1ca56ac1f3b4cf19533",
@@ -598,6 +602,12 @@
       "provider": "zirawell",
       "sha256": "63673999b24c96c3e33a58cf6154e7db738950b4fb3a90bc0b8694d4a32f86be",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%91%E9%97%AA%E4%BB%98/unionpay.sgmodule"
+    },
+    "vvebo": {
+      "output": "VVebo_repair.sgmodule",
+      "provider": "Kelee",
+      "sha256": "b7d1c7cb50a89a419fb66da14618d223f48da4edca37ec43cc85ee55b7cf69e6",
+      "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/VVebo_repair.sgmodule"
     },
     "wanda_cinema": {
       "output": "MyBlockAds.sgmodule",

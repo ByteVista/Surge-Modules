@@ -42,6 +42,7 @@
 - [Spotify.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Spotify.sgmodule)
 - [Tieba.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Tieba.sgmodule)
 - [Video.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Video.sgmodule)
+- [VVebo_repair.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=VVebo_repair.sgmodule)
 - [Weibo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Weibo.sgmodule)
 - [XiaoHongShu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=XiaoHongShu.sgmodule)
 - [Ximalaya.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Ximalaya.sgmodule)
