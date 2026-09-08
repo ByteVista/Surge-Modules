@@ -68,7 +68,6 @@ DOMAIN-KEYWORD, o2o-ad-dev.oss-cn, REJECT, extended-matching, pre-matching
 # --- fliggy | zirawell ---
 IP-CIDR, 59.82.113.8/32, REJECT, no-resolve, pre-matching
 DOMAIN, ad-track.fliggy.com, REJECT, extended-matching, pre-matching
-DOMAIN-KEYWORD, adashx.ut.fliggy.com, REJECT, extended-matching, pre-matching
 
 # --- freshippo | zirawell ---
 IP-CIDR, 59.82.14.1/32, REJECT, no-resolve, pre-matching

@@ -77,14 +77,14 @@
   ],
   "outputs": {
     "AdUnion.sgmodule": "c04ddc85b8c1e5ce64d476f2c739e5c63207535148ef346749a32516631d6da3",
-    "AlibabaFamily.sgmodule": "4b36509ed1674ab649bb344c9b7bf37c412773d8627051e4d0aec7724fcbec65",
+    "AlibabaFamily.sgmodule": "36baafc18190c0328d7b701e8a906504c2e032a2249e1c168cc34ce23722d087",
     "Bilibili.sgmodule": "4cf8299e7c626469c288c5412edc06bed44149209134876aab5ace7dd9b33ba5",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "0e99d43e6ffce89b551f0181ce1486dfea1b4bb572a1103591485f5331741157",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
     "MiniProgramAdBlock.sgmodule": "b39332ff20470f76710dd3f5e40079ae4be7187047ba0e5bd4b7b486f48ef58e",
     "MyBlockAds.sgmodule": "61dfc6e6ad0ee94232e4f57e67bdf80886cb1a4d16fa3788cc3c643afe084052",
-    "PinDuoDuo.sgmodule": "e2ee03d258f2a8f0b4ac16601103bfaf460f8b3b0b1cab41121dc27aca066b4a",
+    "PinDuoDuo.sgmodule": "6f2d93ca2c15fa35a88375e8e5aa300b254b044087580c274506a73c351abe12",
     "Spotify.sgmodule": "cd9601d7fed2f8d5aa92037884f8ac4f0bc6422bee402f702c0abefad8427d4f",
     "Tieba.sgmodule": "1fc0e0485d92a3272ed372bbbe3a074c810e7d99df83c200cd5afd681b52943d",
     "VVebo_repair.sgmodule": "94870ce676970a435b09fc47607615ed88725c5b02614d3039f4c3b8b16bd39d",
@@ -348,7 +348,7 @@
     "fliggy": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "eed98a7afccf7cdac532f50049314d33706d8eaba19ed935eae0eee8960c31fe",
+      "sha256": "1de2dbd61281099a1fb38ac1abe7ca300d1e6ba620ff06aa4fb5f96413d8d629",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule"
     },
     "freshippo": {
@@ -504,7 +504,7 @@
     "pinduoduo": {
       "output": "PinDuoDuo.sgmodule",
       "provider": "RuCu6",
-      "sha256": "86e7322f8051123432a8b3afa267b6ac43cf1384a7e623e13ac5924cd46a744f",
+      "sha256": "9b9e33f5955a564fc878bb0ff17ad10a9bf2ce0d2f7d999313ccffbf2b744a1d",
       "url": "https://rucu6.pages.dev/Plugins/pinduoduo.lpx"
     },
     "pupu": {
