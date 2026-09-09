@@ -75,6 +75,7 @@ DOMAIN, iisp.mbs.boc.cn, REJECT, extended-matching, pre-matching
 ^https?:\/\/download1\.bankcomm\.com\/_cdn\/mobs\/home\/oss\/pub\/file\/file\/public\/config\/pageConfig - reject
 
 # --- china_merchants_bank | zirawell ---
+^https?:\/\/mobile\.cmbchina\.com\/gexternal - reject
 ^https?:\/\/mobile\.cmbchina\.com\/icornucopia\/accompany\/slot - reject
 
 # --- futunn | zirawell ---

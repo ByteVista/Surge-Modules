@@ -80,7 +80,7 @@
     "AlibabaFamily.sgmodule": "36baafc18190c0328d7b701e8a906504c2e032a2249e1c168cc34ce23722d087",
     "Bilibili.sgmodule": "4cf8299e7c626469c288c5412edc06bed44149209134876aab5ace7dd9b33ba5",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
-    "Finance.sgmodule": "0e99d43e6ffce89b551f0181ce1486dfea1b4bb572a1103591485f5331741157",
+    "Finance.sgmodule": "b406c48a386bdf4e28169723c966fdaf485241b8c24aed64ba04c20137aeabab",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
     "MiniProgramAdBlock.sgmodule": "b39332ff20470f76710dd3f5e40079ae4be7187047ba0e5bd4b7b486f48ef58e",
     "MyBlockAds.sgmodule": "61dfc6e6ad0ee94232e4f57e67bdf80886cb1a4d16fa3788cc3c643afe084052",
@@ -264,7 +264,7 @@
     "china_merchants_bank": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "0bc73cd122b32d7861cebe117dede190da86c95400f976849b0a8f64896545a9",
+      "sha256": "5ce90ce8a0a4d2eac41300a270f39486b566bcb4c290a3660a7c04cd20d0e9fe",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/cmb.sgmodule"
     },
     "china_telecom": {
