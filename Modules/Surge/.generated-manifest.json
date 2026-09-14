@@ -168,13 +168,13 @@
     "alipan": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "5c2202e67437479e26261bf981a4258555363610aa1d23ea89efa13582f9d614",
+      "sha256": "330d1083d39cd7de2b618f7441fe82dd3726f76f2ac5b8b6637ad819074f7bb1",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/adrive.sgmodule"
     },
     "alipay": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "b6c4ec6b828b5d7270bfdc0c20ad9fdf36a2d4f6c1e618ee949baf4382bc4546",
+      "sha256": "ab2ec0b7e6a5874d9d703dadb4b6de08622dc5b33a6702387837d1dd1cc3c2d6",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%94%AF%E4%BB%98%E5%AE%9D/alipay.sgmodule"
     },
     "amap": {
@@ -186,7 +186,7 @@
     "amazon": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "335a98705038bb36cc6edb70592b054838c4d05c28046dc806e12e8ba3d3de13",
+      "sha256": "b53fa2a39db0193782308a9380c9f78b42b66da2df0aba03f8b3a06ca78f2b05",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%9A%E9%A9%AC%E9%80%8A/amazon.sgmodule"
     },
     "baidu_netdisk": {
@@ -198,13 +198,13 @@
     "bank_of_china": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "0abffd471ed4a55f0433cf5224a47d9370a06982e764e50665ceeb412926310b",
+      "sha256": "65b5a71c4acb9c9af730df65a1b44f262a60070f4707f8d9bc6c1d8667004128",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/boc.sgmodule"
     },
     "bank_of_communications": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "c98405bf15b1f8667e29cd70cc09581a23d0df53408990c88ddf3202f5a016e5",
+      "sha256": "ad7074e349f73250c9d7ef96aa88c1b9f5d9c11a78c862cc5c0874eefb5803ce",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C/bankcomm.sgmodule"
     },
     "beautycam": {
@@ -234,13 +234,13 @@
     "blued": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "cbe10eeb93cfeb117598035ae6e97b5db632844a8eedb5108d80d1b1a64aa972",
+      "sha256": "23f492ea8ced541b31c4877aabbb9ebbe5d0e3d5359cd99eadf37f1b58294fbe",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/Blued/blued.sgmodule"
     },
     "boohee": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "c46e5e66122b673dd9948a2086328780259472018b1edda8692bbcfb678a413f",
+      "sha256": "ce8357442e886a5b79ba191bffaf4c34b34288b1032b5a27673224ef4181cc2e",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/%E8%96%84%E8%8D%B7%E5%81%A5%E5%BA%B7/boohee.sgmodule"
     },
     "bytedance_family": {
@@ -252,19 +252,19 @@
     "cainiao": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "afd87d20067cfccf4d5b7f8d77eba275411285d27422860941f072e1cb7ff666",
+      "sha256": "01127c5a2c9bfee12fabcb292e7e8d62f5b351d5a27dccd856c20f68138d68a2",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/C/%E8%8F%9C%E9%B8%9F/cainiao.sgmodule"
     },
     "china_construction_bank": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "b385895e7959b39587852d997188d430fab7a166632bbc4594ff5a324feeeb99",
+      "sha256": "2997d42cd1af355e575cf0c2e36e6e5804a3b9bdd14cdddd75a05d05041fdaba",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C/ccb.sgmodule"
     },
     "china_merchants_bank": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "5ce90ce8a0a4d2eac41300a270f39486b566bcb4c290a3660a7c04cd20d0e9fe",
+      "sha256": "ad55d0950290c2dcd329b37229146e9890f8a63b7bd04d59d5f4aa0a88aac528",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/cmb.sgmodule"
     },
     "china_telecom": {
@@ -282,7 +282,7 @@
     "cmb_life": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "7174827df8aaf7d073d43710e3c1236166de687a2fbb8d8be3d6fd08890b0e70",
+      "sha256": "d3f70da81ac9d7ebf27f9950ac7ef73722a49ed91228c8ac65398fe7efff6e1a",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8E%8C%E4%B8%8A%E7%94%9F%E6%B4%BB/cmbcc.sgmodule"
     },
     "colorful_clouds": {
@@ -306,7 +306,7 @@
     "damai": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "b5fee539b12299b1fb2796815c84b97a9810b44b9c01c991a348a6f2ba965b44",
+      "sha256": "20e58952307b62caa31389124d9d9f2b50d65345d138cb68893bf2897278c099",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E9%BA%A6/damai.sgmodule"
     },
     "dewu": {
@@ -318,7 +318,7 @@
     "dianping": {
       "output": "MeituanFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "d1d590420f40c50ed74f985b368e1c42f2248591ccda0c620082b6d7e244a56e",
+      "sha256": "1554a67724dd85473d00b9b22f0350be863c8254fe22d70d7168a1d67a9f8121",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E4%BC%97%E7%82%B9%E8%AF%84/dianping.sgmodule"
     },
     "didi": {
@@ -330,49 +330,49 @@
     "douban": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "43e1a3305035b6863eb8550dc03fbf322c33aba5485ee5273d9497dc2121bcc5",
+      "sha256": "35fb219ef0affa89f9d8bc78d9876aaf4d6b9733b19bb4c91c92e98f0e4f54db",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E8%B1%86%E7%93%A3/douban.sgmodule"
     },
     "ezviz": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "2f0b034d0755007b23ff47911cd6cf01187364ad06c8d9aa6b4fdb2dc94880f1",
+      "sha256": "249184c3262e49fe81f5f5344986bb493e1eac346f70611364728995f7c8e638",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E8%90%A4%E7%9F%B3%E4%BA%91%E8%A7%86%E9%A2%91/ys7.sgmodule"
     },
     "fcbox": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "5dcf8fc9e2f26495684f6e3c8dd761434b580a93b825775aa220d225508df7c8",
+      "sha256": "08c4176872b3db14bf66ae01f10d084a357e55585a66bf4b53535d8e599a9026",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E4%B8%B0%E5%B7%A2/fcbox.sgmodule"
     },
     "fliggy": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "1de2dbd61281099a1fb38ac1abe7ca300d1e6ba620ff06aa4fb5f96413d8d629",
+      "sha256": "4d602924d466f170a6ab57d0977c5fce905b1329d7f6053f25a7d35b26ede02a",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule"
     },
     "freshippo": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "0a458b55287f94b62810458b0ea7ee3c02068add8a54fb963c68b3616aee68d4",
+      "sha256": "90ed8436fba7f92f4e7a24fbe7a58cd58c7a59f20070f2f266522c3b26f3ec25",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/H/%E7%9B%92%E9%A9%AC/freshippo.sgmodule"
     },
     "futunn": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "226a75807669da56d325b4a50692de83366cb0a43e84c05126633ef5c43ce480",
+      "sha256": "054f869721e3725a1259fb4518da4c71097d3c735cff39c7f8c28539eb8ec2af",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E5%AF%8C%E9%80%94%E7%89%9B%E7%89%9B/futunn.sgmodule"
     },
     "gcores": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "603883515bc7440c6124df83020946fd93b16cacf0594207281d7ff0e453f5db",
+      "sha256": "9910ed2c7f2f5cfdd1f42cdf3d116c540cd8490040d3bb0ccfa3e6a415e37d3d",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9C%BA%E6%A0%B8/gcores.sgmodule"
     },
     "goofish": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "c7b746b9a18bcfb03c250686df6616f1f65540ffc15b269e807511a72cbd12e9",
+      "sha256": "afc226f2c8daf63199aa85df459df7733731895d7593786bb2cac306f4c40b84",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E9%97%B2%E9%B1%BC/goofish.sgmodule"
     },
     "hupu": {
@@ -384,7 +384,7 @@
     "iqiyi": {
       "output": "Video.sgmodule",
       "provider": "zirawell",
-      "sha256": "fd6f664241de4a9cefc1c85ed804ad2c280e05488019046c8bfa05c3ee5e5641",
+      "sha256": "06c5b5c6819b4429e739e810329edffcd98ef08b996231fcd13d638ceebdaa67",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E7%88%B1%E5%A5%87%E8%89%BA/iqiyi.sgmodule"
     },
     "ithome": {
@@ -396,7 +396,7 @@
     "jd": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "617f7a0f249ce07efef4fb85adafc75dccd6a07b4d269c4ef3bcdbe97a7ef9fa",
+      "sha256": "ee4bb0554aa7a05be557a4a37339a3d9ae29bf56afd5a5b05ec692dcd3d27d83",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%AC%E4%B8%9C/jd.sgmodule"
     },
     "jingxi": {
@@ -426,7 +426,7 @@
     "leoao": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "62e02343ffb899eba7b016790e11803ac6798459311053bb7e94786bc9742e95",
+      "sha256": "273dc689a5d8c0eb76afd2f65aefeb3ba21e8f0e87f931ebb5238a6799f138b0",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/L/%E4%B9%90%E5%88%BB%E8%BF%90%E5%8A%A8/leoao.sgmodule"
     },
     "luckin_coffee": {
@@ -438,7 +438,7 @@
     "maidanba": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "812bb15c3b9c3480d7a744649fe65a3d23cc82b64a923db55a1bc96e417422b0",
+      "sha256": "a1b8b09f26d3a3af71c9c2d485796dc31125b9ef2cce6938110707e19ecec394",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E4%B9%B0%E5%8D%95%E5%90%A7/mdb.sgmodule"
     },
     "mango_tv": {
@@ -456,19 +456,19 @@
     "meitu": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "53b897af6822a9cf4f49f1bceff77f8460ba043efeffb94f3d290336ee9d236f",
+      "sha256": "2e7aad2b5fa93c734e0780156869083e99cf0787bfd588b1c4bf49d8540099fc",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80/meitu.sgmodule"
     },
     "meituan": {
       "output": "MeituanFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "53a3716755e5c4f6242aad02f17cd292c72381242a68da2bf0d1166240fda037",
+      "sha256": "5068e09fcab76830ba94512aab8b3b9d06200f7c073100e1818c8a857189da1e",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2/meituan.sgmodule"
     },
     "meituan_waimai": {
       "output": "MeituanFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "7ad46cce4bc0e0ed10081704eabf6af0ad438a997962d732a86477bf74a1e01d",
+      "sha256": "b1e1a2d2de8da05cd9f4035b49b0359a93dd21e9f427eae34c47e94e7598d78d",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96/meituanwm.sgmodule"
     },
     "mijia": {
@@ -486,19 +486,19 @@
     "minimal_exchange_rate": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "6b355f8bfa8ca7b1cb3f0f74e56127a4cb0310a9d6690ab0aeb3326c34be43c5",
+      "sha256": "f2734cc188a4f751fca800361aaf5c2e318a20020ee2da5833508201a63585ad",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9E%81%E7%AE%80%E6%B1%87%E7%8E%87/tratao.sgmodule"
     },
     "mwee": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "3e0a9e985f2468d30836da5f4ef661e0d9b09f633bd2c9b1453e9802ac7451f0",
+      "sha256": "e1527c655a823efaf1179bdd0eadbc240404807a91516eff082afc2e39db0cb0",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%91%B3%E4%B8%8D%E7%94%A8%E7%AD%89/mwee.sgmodule"
     },
     "pikpak": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "76dbb342b1e75cc78fde52221969d88d390382761d2b9fd1db962d7d08237100",
+      "sha256": "9a9f7ca33da8692755653337b58500fdae5d1abba25979302d8146f1b5465d1d",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/P/pikpak/pikpak.sgmodule"
     },
     "pinduoduo": {
@@ -516,7 +516,7 @@
     "quark": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "d204fcb2b048240ac2f662f7e4b58de3c7cdac76f1e475e90d775af7a78835b8",
+      "sha256": "94f6af6448b50ca27b8a8b4bc0f689121257d9d3ee80670d8c8f7aef4aaa847e",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/K/%E5%A4%B8%E5%85%8B/quark.sgmodule"
     },
     "railway_12306": {
@@ -528,25 +528,25 @@
     "sams_club": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "b6052fdf15be4b5de32dd3ed175f0a1564970a20cdfccb4cf5a5c3082ad4e6d7",
+      "sha256": "ea83e15ea45161ca8b5f1658270738cb56d4004e7445bade4e58dd182609c81d",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B1%B1%E5%A7%86%E4%BC%9A%E5%91%98%E5%95%86%E5%BA%97/samsclub.sgmodule"
     },
     "sf_express": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "0a7ff373a1555b0f12c4d54c4180e5387b41ae66ca64dfbe8998be661d48fff5",
+      "sha256": "8c2f1b0e293244c0ebe9da9e72418b554f64776420d7cd3ec19fd959d4cb2f97",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E9%A1%BA%E4%B8%B0%E9%80%9F%E8%BF%90/sfexpress.sgmodule"
     },
     "shihuo": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "de4676e7ecaecf346e7900b1b11a9612436a8ec5fb00a3c917b9d12ba935f70d",
+      "sha256": "ed0364e39502637d934daa6e0d6262276b9dc0c7822b01ca9af9ed30342554a9",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E8%AF%86%E8%B4%A7/shihuo.sgmodule"
     },
     "smzdm": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "6987853c9da755b8933ccd9decc54cd57b04926dc4e1972aa19b26b1b5444c4f",
+      "sha256": "8671941241a0233a5ad08d15aba5149cecddee09095214a3032130058fc0b7f0",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/smzdm.sgmodule"
     },
     "spotify": {
@@ -558,7 +558,7 @@
     "sspai": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "766e9bb838a9532ae7633c922d9864bf417679fcc6859ad466ccb94e0020b740",
+      "sha256": "12346a4729f35b28d41d304259b9b86d6ade94912d7aa543b71f5269837cc334",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B0%91%E6%95%B0%E6%B4%BE/sspai.sgmodule"
     },
     "suning": {
@@ -570,25 +570,25 @@
     "taobao": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "4065ca76ef6d545c765c587c072f5ad7f8c9d69c61578ad8314d0cdfe183415c",
+      "sha256": "b724be983a30d0a1a5ca54bc0cf74486be8af5499ee42b5f92d906232b38b04f",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D/taobao.sgmodule"
     },
     "taobao_flash_eleme": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "2396ab7ec8aa7f3c03054a5640dde62c7adbbe81fc708899d7f21398808fed46",
+      "sha256": "5d458d2d73aa2ea5590227368df77aafc091185d00c66f1c0b4ad89cab16ff2b",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule"
     },
     "tencent_video": {
       "output": "Video.sgmodule",
       "provider": "zirawell",
-      "sha256": "9a687e8d1e5355f22fdaf2fd5807ea5cf3336b7b68a566e7c5c60a977e468492",
+      "sha256": "ae190694c23e48b454236ffe3240f3f960d529123af577ac1a5afff45dbb1fca",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91/txtv.sgmodule"
     },
     "tianyi_cloud": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "351851bd1e5f2a9bb4e5cb75ac6832963b8f0ddba425e2106457d87a7eb1f7b3",
+      "sha256": "57f50da2e7f49af0c9202f32ebcce7344fdfe65227c41f2473355f15eac411f6",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98/189cloud.sgmodule"
     },
     "tieba": {
@@ -600,13 +600,13 @@
     "traffic_management_12123": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "d5942d29a1a88cd32c391f27e4b14ccc489477c83483ffdab2de6b4122418e40",
+      "sha256": "6d2ba394126efb12737ad32f2ea1e63c5a8ee6bb1b0b5a85d9a6dfc87960a320",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E7%AE%A112123/12123.sgmodule"
     },
     "unionpay": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "63673999b24c96c3e33a58cf6154e7db738950b4fb3a90bc0b8694d4a32f86be",
+      "sha256": "991036d51d04e67c77990fb74257e97541a4520e49d5b8be8ce353a4d14e917b",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%91%E9%97%AA%E4%BB%98/unionpay.sgmodule"
     },
     "vvebo": {
@@ -642,25 +642,25 @@
     "xiaomi_youpin": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "64cf52a382d00c0a025ea63d3791f1eb7d7207962f08dc463898b6263277719d",
+      "sha256": "a8000f74e2219c009c37e7222f6ff4835c38eaa4641376a1bae766617d693ce3",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E7%B1%B3%E6%9C%89%E5%93%81/miyoupin.sgmodule"
     },
     "xiaoxiang_supermarket": {
       "output": "MeituanFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "7b0055207ff86bb848bee6726fe703ab4daca81168384508010727121633bfca",
+      "sha256": "80cf7b7daa83c4b861bae32fe84e6ca5b25caff9abe82db94b90d065e18b5e03",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E8%B1%A1%E8%B6%85%E5%B8%82/xiaoxiang.sgmodule"
     },
     "xiaoxiao_youxuan": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "60b7e0df33781b5bd20eca4d22cc9822656545067b3f80725f0012bbb6521100",
+      "sha256": "87b1d3052d56c7b2fc9e5c92c26307bc3a8f5c82dd95584b934a16f1768d5689",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E6%99%93%E6%99%93%E4%BC%98%E9%80%89/xxyx.sgmodule"
     },
     "xichuangzhu": {
       "output": "MyBlockAds.sgmodule",
       "provider": "zirawell",
-      "sha256": "232512e8e497f5a58943ccb7e316134766cb0c65906eb4be98a5d3f819d0f2a6",
+      "sha256": "d963ce37c8ee7e8ddb851d4a491ad827b59af060ea03c68a604e7dcb25fe049a",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E8%A5%BF%E7%AA%97%E7%83%9B/xczim.sgmodule"
     },
     "ximalaya": {
@@ -672,7 +672,7 @@
     "youku": {
       "output": "Video.sgmodule",
       "provider": "zirawell",
-      "sha256": "b29608cb6c82732239940eb50adc625ade521979fa0211ea746ec6610c0c80bc",
+      "sha256": "72efd67640c15580f8cb71f2a07ef05248852aa10147f348fe3e499fe690842c",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91/youku.sgmodule"
     },
     "youtube": {
