@@ -50,6 +50,15 @@
 - [Zhihu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Zhihu.sgmodule)
 <!-- MODULE_LINKS_END -->
 
+## 上游备选
+
+以下来源用于查找模块替代方案和上游更新信息。选定具体模块后，再将对应的订阅地址、格式和作者填入 `config/sources.yaml`；本列表不参与自动故障切换。
+
+| 来源 | 入口 | 用途 |
+|---|---|---|
+| 墨鱼 / ddgksf | [Cuttlefish の自留地](https://t.me/ddgksf2021) | 查看脚本发布、更新说明和订阅入口 |
+| fmz200 | [wool_scripts 规则列表](https://github.com/fmz200/wool_scripts/blob/main/README-RULE.md) | 查找 Surge、Loon、QuanX、Egern 等格式的规则和模块链接 |
+
 ## 同步原则
 
 - 原生 Surge 上游直接使用；Loon 和 Quantumult X 上游只做格式转换。
