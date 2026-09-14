@@ -89,7 +89,7 @@
     "Tieba.sgmodule": "1fc0e0485d92a3272ed372bbbe3a074c810e7d99df83c200cd5afd681b52943d",
     "VVebo_repair.sgmodule": "94870ce676970a435b09fc47607615ed88725c5b02614d3039f4c3b8b16bd39d",
     "Video.sgmodule": "93ba6772ce51f2afec6ef8c898ce9e76964dcad2ec11d072dc7ec5328f184e0a",
-    "Weibo.sgmodule": "1642d801bfa131b5d39fb4cae8b716e6e0adcf80f689012d12cce42a423a4b5b",
+    "Weibo.sgmodule": "e7563e5ee3f0f10a34c45caac4fa3c62542384b9e51ad6ab3343a06c657ee802",
     "XiaoHongShu.sgmodule": "80c57ccef0796a5e64b0386aba5a236d48c6c09830b3ab09dbcd662cb8f07387",
     "Ximalaya.sgmodule": "b6ed449996eed2b1791dbe334dfd42d5705a1af1b402c7d81879799b598d0dff",
     "YouTube.sgmodule": "5c224b9bd891330a05f56f5bf3113a0cfb634d5a04381bade861000c1d9eaf66",
@@ -103,8 +103,8 @@
     "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js": "00615ce6dfae37cdc5e55ae791c9353a3fb6f981d895a6fbd0b53caaaf129ecd",
     "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js": "9a50669b814eedd82eb9b73518089547bc7b9c5388dc4e441dfc9f155c55fc61",
     "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js": "521a3974d1a485daf5750bc7b986ee5b64325480ed80da2e7d90265f4ad57090",
-    "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js": "96a516d6d72d61c295584a975027387870b79219e0c23b7485b7e8892b4261e9",
-    "_resources/bilibili/kelee.one_Bilibili_proto_response_kokoryh-58fa8c729c45b8c2.js": "e68042a18b2f89cd8e29258be9960c02692d691c184d678eb8d0f22d38809cea",
+    "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js": "1b7e1d51efd960b10a22ea322630e72ecee646f2fdaad8a097c9e530fde1a857",
+    "_resources/bilibili/kelee.one_Bilibili_proto_response_kokoryh-58fa8c729c45b8c2.js": "e4a8426cffbfca85c78286126a10813051a2d1aeed018119bbabe3db5da85728",
     "_resources/blued/blued-4821c4ba5f47c7f5.js": "b9aa88e977da62caa90afbe5d921f45d8ef63f09945442043bc95145eb551a7d",
     "_resources/boohee/boohee-cab92058d564794c.js": "c0d70da6294c34ea98fe2ab013b39cc64734d4e4f3c25addd14f5a0c7c00970f",
     "_resources/cainiao/cainiao-5aec06afaafdd490.js": "c99c07937e4f4357949ba17f77927748992ad480afe14619a20c9f6551160d86",
@@ -624,7 +624,7 @@
     "weibo": {
       "output": "Weibo.sgmodule",
       "provider": "RuCu6",
-      "sha256": "cabfd502501eb4d3e6f3967f4ec1ccc1cd3dc98350468cf476950d815e84a462",
+      "sha256": "59feb3e6e67f26b6ba136c4172a0b89777ceddb63d596a30f2dc729e337e9ad0",
       "url": "https://rucu6.pages.dev/Plugins/weibo.lpx"
     },
     "xiaohongshu": {
