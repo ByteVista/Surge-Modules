@@ -95,10 +95,11 @@ apps:
 
   pinduoduo:
     module: PinDuoDuo.sgmodule
-    mode: convert
-    format: loon
-    provider: RuCu6
-    url: https://rucu6.pages.dev/Plugins/pinduoduo.lpx
+    mode: direct
+    format: surge
+    provider: Kelee
+    source_mirror: Romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PinDuoDuo_remove_ads.sgmodule
     modifications: none
 
   xiaohongshu:
@@ -126,18 +127,20 @@ apps:
 
   weibo:
     module: Weibo.sgmodule
-    mode: convert
-    format: loon
-    provider: RuCu6
-    url: https://rucu6.pages.dev/Plugins/weibo.lpx
+    mode: direct
+    format: surge
+    provider: Kelee
+    source_mirror: Romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Weibo_remove_ads.sgmodule
     modifications: none
 
   zhihu:
     module: Zhihu.sgmodule
-    mode: convert
-    format: loon
-    provider: RuCu6
-    url: https://rucu6.pages.dev/Plugins/zhihu.lpx
+    mode: direct
+    format: surge
+    provider: Kelee
+    source_mirror: Romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Zhihu_remove_ads.sgmodule
     modifications: none
 
   ximalaya:
@@ -402,10 +405,11 @@ apps:
 
   amap:
     module: MyBlockAds/Amap.sgmodule
-    mode: convert
-    format: loon
-    provider: RuCu6
-    url: https://rucu6.pages.dev/Plugins/amap.lpx
+    mode: direct
+    format: surge
+    provider: Kelee
+    source_mirror: Romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Amap_remove_ads.sgmodule
     modifications: dependency_mirror_only
 
   didi:
