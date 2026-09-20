@@ -45,7 +45,7 @@
     "_resources/jd/jd-824aa2c327a04b43.js",
     "_resources/jingxi/jingxiAd-81b2de8846f19461.js",
     "_resources/maidanba/mdb-89816a29460471fa.js",
-    "_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js",
+    "_resources/mango_tv/mgtv_vip-65ce77fc243ed631.js",
     "_resources/meitu/meitu-3139df05cf679e3f.js",
     "_resources/meituan/meituan-3c30ba0d24393abd.js",
     "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js",
@@ -91,7 +91,7 @@
     "Spotify.sgmodule": "cd9601d7fed2f8d5aa92037884f8ac4f0bc6422bee402f702c0abefad8427d4f",
     "Tieba.sgmodule": "1fc0e0485d92a3272ed372bbbe3a074c810e7d99df83c200cd5afd681b52943d",
     "VVebo_repair.sgmodule": "94870ce676970a435b09fc47607615ed88725c5b02614d3039f4c3b8b16bd39d",
-    "Video.sgmodule": "93ba6772ce51f2afec6ef8c898ce9e76964dcad2ec11d072dc7ec5328f184e0a",
+    "Video.sgmodule": "a9bded2fba56cf777b9df02cf85a35ff15af1f04b1f97fa636f2985523e1ee9e",
     "Weibo.sgmodule": "e32afd45c1b228615024d6a32589bd4a1bf46557b62db353b62897488f7e699a",
     "XiaoHongShu.sgmodule": "80c57ccef0796a5e64b0386aba5a236d48c6c09830b3ab09dbcd662cb8f07387",
     "Ximalaya.sgmodule": "b6ed449996eed2b1791dbe334dfd42d5705a1af1b402c7d81879799b598d0dff",
@@ -124,7 +124,7 @@
     "_resources/jd/jd-824aa2c327a04b43.js": "ddf9ec8ab97d5e5a5e1bc171c0301350ba42f41b9dcd129c166c6a192ecb7957",
     "_resources/jingxi/jingxiAd-81b2de8846f19461.js": "aa125c2689fba2cdd3ff1eb5aeb9e43bde2b1abab546cfcafdb67bd647d47b94",
     "_resources/maidanba/mdb-89816a29460471fa.js": "f50cef7a5f3b3e3179f9c5a93f2ab937dd72d83ca4dc2c9e8a66937c38e3e9ab",
-    "_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js": "7393e4f79938096a5ae000533dd228f88b7d03215031f6b22bbf3edf56bd1bec",
+    "_resources/mango_tv/mgtv_vip-65ce77fc243ed631.js": "7393e4f79938096a5ae000533dd228f88b7d03215031f6b22bbf3edf56bd1bec",
     "_resources/meitu/meitu-3139df05cf679e3f.js": "3a7b60ded8afe990bc8d2096db08fa28a0fadfd7466768ba6dbc30c0b8c8d612",
     "_resources/meituan/meituan-3c30ba0d24393abd.js": "49397f334f7186928d31383561a6cc237482bf28f285b8de11493cc29f2d10c3",
     "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js": "e25457f43eacfbf27ca8229445e69f60f7562ece723b5ebaf07969c0ebf75e1c",
@@ -450,7 +450,7 @@
     "mango_tv": {
       "output": "Video.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "93420c5702b11416f20eb4520706128b3be1c7ea59b5386e1c36c9c481e37777",
+      "sha256": "66cfdbba30cc53c3b34d145ac2a0723e43a3a8028ea171471050fb6068c8956d",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/MangoTV.sgmodule"
     },
     "mcdonalds": {

@@ -266,7 +266,7 @@ iqiyi = type=http-response,pattern=^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mix
 
 # --- mango_tv | sooyaaabo ---
 # 会员解锁
-[芒果TV]会员解锁 = type=http-request, pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js
+[芒果TV]会员解锁 = type=http-request, pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/mango_tv/mgtv_vip-65ce77fc243ed631.js
 
 [MITM]
 
