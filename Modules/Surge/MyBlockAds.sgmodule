@@ -262,14 +262,6 @@ DOMAIN-SUFFIX, datads.cn, REJECT, extended-matching, pre-matching
 ^https?:\/\/.*\.boohee\.(?>cn|com).*(?>notification_template|advertisements|share_contents|app_square|plugins|notifications|start_up_with_ad|float_ad|data_file_entrance) - reject
 ^https?:\/\/api\.boohee\.com\/app-interface\/v\d\/ad\/info - reject
 
-# --- china_unicom | sooyaaabo ---
-# 广告推送
-^https?:\/\/m\.client\.10010\.com\/mobileserviceimportant\/customer\/querySmartServicekhd.htm - reject
-# 新人专享
-^https?:\/\/m\.client\.10010\.com\/clientIndex\/api\/v1\/index\/queryIndexExclusiveOffers - reject
-# 首页瀑布流
-^https?:\/\/img\.client\.10010\.com\/homejingxuan12\/js\/(pubuliu|1homeView) - reject
-
 # --- china_telecom | fmz200 ---
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
 
@@ -373,9 +365,6 @@ http-response-jq ^https:\/\/apps\.api\.ke\.com\/platform\/shellapp\/homepage\/fe
 http-response-jq ^https:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api '.data.objects["OpenAPP-&-FlashAD"] = [] | .data.objects["InTheaters-&-BoxAD"] = []'
 http-response ^https?:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api\?bannerInfos=%5B%7B%22cinemaI "WX_index_mp-&-boxAD" "fmz200"
 
-# --- baidu_netdisk | sooyaaabo ---
-http-response-jq ^https:\/\/pan\.baidu\.com\/feed\/kingkongdistrict\? '.data.data |= map(select(.type != "novel" and .type != "shortplay" and .type != "print" and .type != "job_hunt"))'
-
 # --- jump | Kelee ---
 http-response-jq ^https:?\/\/switch.jumpvg.com\/jump\/getlaunchad\/v2$ 'del(.data.adList)|.data.launchAd.showType=0'
 http-response-jq ^https:?\/\/switch.jumpvg.com\/jump\/recommend\/ad_conf$ '.data=[]'
@@ -388,65 +377,8 @@ http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'if 
 http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'if (getpath(["response","onoff","vip_half_window_exit_remain_popup"]) | has("open")) then (setpath(["response","onoff","vip_half_window_exit_remain_popup","open"]; 0)) else . end'
 http-response-jq ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? 'if (getpath(["response","onoff"]) | has("vip_home_exit_remain_popup")) then (setpath(["response","onoff","vip_home_exit_remain_popup"]; 0)) else . end'
 
-# --- keep | sooyaaabo ---
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","adTimeoutReport"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","spotShowReport"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","adSupplementIntervalMinutes"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","adSupplementSwitch"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityBrandFeedSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","feedDetailSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","homePageFeedSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","followFeedSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedRecommendSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindSpotAdRequestMoment"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedSpotFixedPositionSecond"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotFixedPositionSecond"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","followFeedSpotFixedPositionSecond"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotFixedPositionSecond"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotFixedPositionThird"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindSpotFixedPositionSecond"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindSpotFixedPositionThird"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotFixedPositionInitial"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotFixedPositionThird"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedDynamicSpotPosition"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","feedDetailDynamicSpotPosition"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedRecommendDynamicSpotPosition"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","hotFeedFindDynamicSpotPosition"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","homePageFeedDynamicSpotPosition"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","followFeedDynamicSpotPosition"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","searchFeedSpotPositionDynamic"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityFeedSpotPositionDynamic"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","activityBrandFeedSpotPositionDynamic"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","splashAdLoadTimeLimit"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","courseAdLoadTimeLimit"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","feedAdLoadTimeLimit"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","aliHCSpotConfig"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","gdtSpotConfig"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcThresholdPercent"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcStepMinSeconds"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcStepMaxSeconds"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcPreLoadEarlySeconds"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","pugcLoadPostPreRolls"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/configs$ 'delpaths([["data","closeConfirmButtonText"]])'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/union_feed_all$ '.data.modules |= map(select(.code == "unionFeedEntry"))'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/v\d\/feed\/entryDetail\? 'if (getpath([]) | has("data")) then (setpath(["data"]; {})) else . end'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/config\/v\d\/basic\? '.data.bottomBarControl.defaultTab = "dynamic_sports" | .data.discoverPageConfigs.toolsBar = [] | .data.bottomBarControl.tabs |= map(select(.tabType == "schedule" or .tabType == "dynamic_sports" or .tabType == "discover" or .tabType == "personal")) | .data.discoverPageConfigs.discoverTabs |= map(select(.type == "socialTab" or .type == "union_feed_all" or .type == "union_feed_feed_activity" or .type == "union_feed_marathon_icon" or .type == "product") | .default = (.type == "union_feed_all") | if has("showAd") then .showAd = false else . end)'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/pencil-webapp\/play\/v\d\/games\? '.data.games[].microGames[] |= if .leftIcon? and .leftIcon.type == "aiMode" then del(.leftIcon) else . end'
-http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/v\d\/social\/tab\/friends '.data.modules |= map(select(.positions | type == "object" and (has("recommendReason") | not) and (has("recommendUsers") | not)))'
-
 # --- boohee | zirawell ---
 http-response ^https?:\/\/api\.boohee\.com\/meta-interface\/v\d\/index\/record_index articles random_body
-
-# --- china_unicom | sooyaaabo ---
-http-response-jq ^https:\/\/m\.client\.10010\.com\/search_service\/tyfbSearch\/searchDiscoverListExpress '.data = []'
-http-response-jq ^https:\/\/m\.client\.10010\.com\/search_service\/search\/searchScrollWord '.["113000004"] = []'
-http-response-jq ^https:\/\/m\.client\.10010\.com\/clientIndex\/v1\/api\/navHome '.datas.homeTopMenuItems |= map(select(.menuName != "通通" and .menuName != "vowifi" and .menuName != "签到" and .menuName != ""))'
-http-response-jq ^https:\/\/m\.client\.10010\.com\/clientIndex\/homefusion\/fuInter 'del(.["HomeFusion.backGroundQuery"], .["HomeFusion.fuchuangAdv_A8"], .["HomeFusion.bottomLabel"])'
-http-response-jq ^https:\/\/m\.client\.10010\.com\/clientMyPage\/v1\/api\/myWallet '.data.payShowFlag = false'
-http-response-jq ^https?:\/\/m\.client\.10010\.com\/clientMyPage\/v\d\/api\/(myWallet|myPoints|myColorfulRingtone|newUserInfo|getDeviceInfo) '.data={}'
 
 # --- xiaoxiao_youxuan | zirawell ---
 http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resource_slug random_body
@@ -599,43 +531,6 @@ http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resour
 # --- mcdonalds | fmz200 ---
 ^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash data-type=text data=" " status-code=200
 
-# --- baidu_netdisk | sooyaaabo ---
-# 开屏广告、首页卡片广告、传输页面广告、各类弹窗，精简侧拉抽屉和我的页面
-^https:\/\/pan\.baidu\.com\/api\/getconfig\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/pan\.baidu\.com\/api\/getsyscfg\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/pan\.baidu\.com\/act\/api\/activityentry\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/pan\.baidu\.com\/api\/plugin\/get\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/pan\.baidu\.com\/recommend\/query\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 启动弹窗
-^https?:\/\/.*baidu\.com\/rest\/.*\/membership\/proxy\/guide data-type=text data=" " status-code=200
-
-# 设置信息流
-^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list data-type=text data=" " status-code=200
-
-# 热搜list
-^https:\/\/pan\.baidu\.com\/feed\/hotlist data-type=text data=" " status-code=200
-
-# 活动推广
-^https?:\/\/.*zhangyuyidong\.cn\/api\/zysdk data-type=text data=" " status-code=200
-
-# 搜索填词
-^https:\/\/pan\.baidu\.com\/queryintent\/queryhint data-type=text data=" " status-code=200
-
-# 金币乐园
-^https:\/\/pan\.baidu\.com\/coins\/center\/notice data-type=text data=" " status-code=200
-
-# 短剧
-^https:\/\/pan\.baidu\.com\/recommend\/shortseries\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
 # --- colorful_clouds | Kelee ---
 ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
@@ -660,35 +555,6 @@ http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resour
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/resource\/realtime\/openingBanner data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# --- keep | sooyaaabo ---
-# 开屏广告
-^https:\/\/(api|kad)\.gotokeep\.com\/op-engine-webapp\/v\d\/ad\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 搜索填充词
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 关注 - 关注推荐
-^https:\/\/api\.gotokeep\.com\/twins\/v\d\/feed\/followPage\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/function\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 弹窗
-^https:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/api\.gotokeep\.com\/anno\/v1\/upgrade\/check$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 搜索 - 榜单
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 搜索 - 热门话题
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotHashtag\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 搜索 - 热搜推荐词
-^https:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# 未读消息
-^https:\/\/api\.gotokeep\.com\/messenger\/v\d\/conversations\/unread data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 # --- leoao | zirawell ---
 ^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v\d\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew data-type=json data="{}" status-code=200
@@ -788,24 +654,6 @@ jd = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?fun
 移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/interests\/products, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
 
 移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
-
-# --- baidu_netdisk | sooyaaabo ---
-# 广告推广
-[百度网盘]移除广告推广 = type=http-response, pattern=^https?:\/\/afd\.baidu\.com\/afd\/entry, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js, requires-body=true
-
-# 首页信息流
-[百度网盘]移除首页信息流广告 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/feed\/cardinfos, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js, requires-body=true
-
-# 游戏广告
-[百度网盘]移除游戏广告 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?method=gamecenter, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js, requires-body=true
-
-# chxm1023
-[百度网盘]会员权益@chxm1023 = type=http-response, pattern=^https?:\/\/pan\.baidu\.com\/(act\/.+\/(activityentry|bchannel|cardwelfare|skin)|rest\/.+\/(membership\/user|pcs\/adv)|feed\/cardinfos|api\/(user\/getinfo|quota|loginstatus|account\/getprivilege)|buy\/ad\/conf|wap\/vip|coins\/taskcenter\/homensr), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/chxm1023_bdcloud-49b029314704baf6.js, requires-body=true
-
-# ddgksf2013
-[百度网盘]倍速播放@ddgksf2013 = type=http-request, pattern=^https:\/\/pan\.baidu\.com\/api\/streaming\?app_id=\d+&type=M3U8_HQ_1080, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js
-
-[百度网盘]倍速播放@ddgksf2013 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js, requires-body=true
 
 # --- colorful_clouds | Kelee ---
 彩云天气去广告 = type=http-response, pattern=^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js, requires-body=true

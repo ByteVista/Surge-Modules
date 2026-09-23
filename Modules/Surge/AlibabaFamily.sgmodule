@@ -50,6 +50,7 @@ DOMAIN-SUFFIX, acs4baichuan.m.taobao.com, REJECT, extended-matching, pre-matchin
 DOMAIN, wgo.mmstat.com, REJECT, extended-matching, pre-matching
 DOMAIN, h-adashx.ut.ele.me, REJECT, extended-matching, pre-matching
 DOMAIN, highway-tb.ele.me, REJECT, extended-matching, pre-matching
+DOMAIN, app-monitor.ele.me, REJECT, extended-matching, pre-matching
 DOMAIN, cdn.ynuf.aliapp.org, REJECT, extended-matching, pre-matching
 IP-CIDR, 59.82.121.172/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 59.82.121.72/32, REJECT, no-resolve, pre-matching
@@ -63,6 +64,7 @@ IP-CIDR, 59.82.120.210/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 59.82.120.252/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 59.82.133.36/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 59.82.133.78/32, REJECT, no-resolve, pre-matching
+IP-CIDR, 59.82.133.157/32, REJECT, no-resolve, pre-matching
 IP-CIDR, 203.119.212.22/32, REJECT, no-resolve, pre-matching
 DOMAIN-KEYWORD, baichuan.taobao.com, REJECT, extended-matching, pre-matching
 DOMAIN-KEYWORD, o2o-ad-dev.oss-cn, REJECT, extended-matching, pre-matching

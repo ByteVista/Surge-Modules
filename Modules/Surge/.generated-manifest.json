@@ -23,9 +23,6 @@
     "_resources/ad_union/amdc-d187a0b6e9846a48.js",
     "_resources/alipan/adrive-113890ab142694bb.js",
     "_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js",
-    "_resources/baidu_netdisk/chxm1023_bdcloud-49b029314704baf6.js",
-    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js",
-    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js",
     "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js",
     "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js",
     "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js",
@@ -45,7 +42,6 @@
     "_resources/jd/jd-824aa2c327a04b43.js",
     "_resources/jingxi/jingxiAd-81b2de8846f19461.js",
     "_resources/maidanba/mdb-89816a29460471fa.js",
-    "_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js",
     "_resources/meitu/meitu-3139df05cf679e3f.js",
     "_resources/meituan/meituan-3c30ba0d24393abd.js",
     "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js",
@@ -80,18 +76,18 @@
   ],
   "outputs": {
     "AdUnion.sgmodule": "c04ddc85b8c1e5ce64d476f2c739e5c63207535148ef346749a32516631d6da3",
-    "AlibabaFamily.sgmodule": "ec9337c741ebc1c8d79057602a5201af689010dc8f360d1fa94769c6c7d999da",
+    "AlibabaFamily.sgmodule": "9808063454c3a1b17f933651baf07f60811f3b34f458d350a5baa95cfde30448",
     "Bilibili.sgmodule": "bad7927101669c4696b932d062d9871e0be37aca1a99ccba171c57e2ae1a47c3",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "b406c48a386bdf4e28169723c966fdaf485241b8c24aed64ba04c20137aeabab",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
     "MiniProgramAdBlock.sgmodule": "b39332ff20470f76710dd3f5e40079ae4be7187047ba0e5bd4b7b486f48ef58e",
-    "MyBlockAds.sgmodule": "e2153779e4f771b912c474d9d27125cf4b072d9f56754b1926622879aff9ff3d",
+    "MyBlockAds.sgmodule": "3ea345953eea2d14f46f011d348283b3e0a53e2d86f9616233341340914b3e7f",
     "PinDuoDuo.sgmodule": "c6ac62817c929cb436c268d716b44c6ccb53bd669678293b270251ddf5f683e4",
     "Spotify.sgmodule": "cd9601d7fed2f8d5aa92037884f8ac4f0bc6422bee402f702c0abefad8427d4f",
     "Tieba.sgmodule": "1fc0e0485d92a3272ed372bbbe3a074c810e7d99df83c200cd5afd681b52943d",
     "VVebo_repair.sgmodule": "94870ce676970a435b09fc47607615ed88725c5b02614d3039f4c3b8b16bd39d",
-    "Video.sgmodule": "93ba6772ce51f2afec6ef8c898ce9e76964dcad2ec11d072dc7ec5328f184e0a",
+    "Video.sgmodule": "cf239f4ed7b04316fd8d7d6b93c0603e8d2675c94d8603b09159b91c25eaf3c1",
     "Weibo.sgmodule": "e32afd45c1b228615024d6a32589bd4a1bf46557b62db353b62897488f7e699a",
     "XiaoHongShu.sgmodule": "80c57ccef0796a5e64b0386aba5a236d48c6c09830b3ab09dbcd662cb8f07387",
     "Ximalaya.sgmodule": "b6ed449996eed2b1791dbe334dfd42d5705a1af1b402c7d81879799b598d0dff",
@@ -102,9 +98,6 @@
     "_resources/ad_union/amdc-d187a0b6e9846a48.js": "4987266c554b1632ae90b224f642e3ca4349e9f3326104a09cb987390510b7b9",
     "_resources/alipan/adrive-113890ab142694bb.js": "4de6fd8ece48712dcc08c3c41cdd5da2440ea30c2e8e6f86c1e8be10ced9aa42",
     "_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js": "b351ddf6e353c85e58a7a98fc1fe66e07542d370154d486ed4efbc9660e6d7a2",
-    "_resources/baidu_netdisk/chxm1023_bdcloud-49b029314704baf6.js": "0dca14782f45fef21bd1ceb07ba6e5f7a37db1c56ba75da27053dd13945d4413",
-    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.ads-8edddec1fa089d57.js": "2fdc54b1c7acd53df4ac5379485df8c50834859eed20a8b590de2da0df217ac6",
-    "_resources/baidu_netdisk/ddgksf2013.top_bdpan.unlock-fa4eb602b726dc9b.js": "00615ce6dfae37cdc5e55ae791c9353a3fb6f981d895a6fbd0b53caaaf129ecd",
     "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js": "9a50669b814eedd82eb9b73518089547bc7b9c5388dc4e441dfc9f155c55fc61",
     "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js": "521a3974d1a485daf5750bc7b986ee5b64325480ed80da2e7d90265f4ad57090",
     "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js": "1b7e1d51efd960b10a22ea322630e72ecee646f2fdaad8a097c9e530fde1a857",
@@ -124,7 +117,6 @@
     "_resources/jd/jd-824aa2c327a04b43.js": "ddf9ec8ab97d5e5a5e1bc171c0301350ba42f41b9dcd129c166c6a192ecb7957",
     "_resources/jingxi/jingxiAd-81b2de8846f19461.js": "aa125c2689fba2cdd3ff1eb5aeb9e43bde2b1abab546cfcafdb67bd647d47b94",
     "_resources/maidanba/mdb-89816a29460471fa.js": "f50cef7a5f3b3e3179f9c5a93f2ab937dd72d83ca4dc2c9e8a66937c38e3e9ab",
-    "_resources/mango_tv/ZenmoFeiShi_mgtv_vip-7be3b2c5b8ebadfb.js": "7393e4f79938096a5ae000533dd228f88b7d03215031f6b22bbf3edf56bd1bec",
     "_resources/meitu/meitu-3139df05cf679e3f.js": "3a7b60ded8afe990bc8d2096db08fa28a0fadfd7466768ba6dbc30c0b8c8d612",
     "_resources/meituan/meituan-3c30ba0d24393abd.js": "49397f334f7186928d31383561a6cc237482bf28f285b8de11493cc29f2d10c3",
     "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js": "e25457f43eacfbf27ca8229445e69f60f7562ece723b5ebaf07969c0ebf75e1c",
@@ -198,7 +190,7 @@
     "baidu_netdisk": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "33dc338e00265df19b65974511b1cc2d926c7f3d38ee178dac848d4174c5a96b",
+      "sha256": "0cb0f91212d60ffe2a01108412a4ad9bfd2af76028f63e5eed7997bbf5d2b460",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/BaiduNetDisk.sgmodule"
     },
     "bank_of_china": {
@@ -282,7 +274,7 @@
     "china_unicom": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "474fd4e4b56709c2547c3e9f2f7c677f90198d6a321ff8f20563d6895496d1bd",
+      "sha256": "3133bae7c79eb8710016849ddf3b617634611074403fcd2598b0aab4cb9d5102",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/ChinaUnicom.sgmodule"
     },
     "cmb_life": {
@@ -420,7 +412,7 @@
     "keep": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "4c650f66e4d853fb35181ae4e3ef702510893f88c4c114d7f7878ab90720ad8a",
+      "sha256": "d00efa54afffa4154ebf542e50be446d5b342b9934991aa6a7227295a436ca31",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Keep.sgmodule"
     },
     "kfc": {
@@ -450,7 +442,7 @@
     "mango_tv": {
       "output": "Video.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "93420c5702b11416f20eb4520706128b3be1c7ea59b5386e1c36c9c481e37777",
+      "sha256": "ca8a9af8b63259095e98be19fff3bd28dec455adc237e24d96bb088fe183efe5",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/MangoTV.sgmodule"
     },
     "mcdonalds": {
@@ -582,7 +574,7 @@
     "taobao_flash_eleme": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "ee2becbb61111a7f026b846a054c5b74002f770047791adc846e59eb3a194420",
+      "sha256": "0eac60b01446ca3806c841ae930670f88937f0e23e7a12933bce3497d1dca587",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule"
     },
     "tencent_video": {
