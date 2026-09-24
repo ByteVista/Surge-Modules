@@ -77,7 +77,7 @@
   "outputs": {
     "AdUnion.sgmodule": "c04ddc85b8c1e5ce64d476f2c739e5c63207535148ef346749a32516631d6da3",
     "AlibabaFamily.sgmodule": "9808063454c3a1b17f933651baf07f60811f3b34f458d350a5baa95cfde30448",
-    "Bilibili.sgmodule": "bad7927101669c4696b932d062d9871e0be37aca1a99ccba171c57e2ae1a47c3",
+    "Bilibili.sgmodule": "796498ea18985a46e81756f312f7b5086e5097a7f49eba61f66e465dd4ef664d",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "b406c48a386bdf4e28169723c966fdaf485241b8c24aed64ba04c20137aeabab",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
@@ -220,7 +220,7 @@
     "bilibili": {
       "output": "Bilibili.sgmodule",
       "provider": "Kelee",
-      "sha256": "dc5c105d41806014a7f49ecf9193ff4c89ff2fffebae14b89c3593268e69b338",
+      "sha256": "40ec20ed532c905ff042098566381ad50fdccfe737db3bfad8cdc7801c0fdca1",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Loon/Kelee/Bilibili_remove_ads.lpx"
     },
     "binance": {
