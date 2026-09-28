@@ -75,7 +75,7 @@
     "_resources/youtube/youtube.response-f6d9678c4bd04211.js"
   ],
   "outputs": {
-    "AdUnion.sgmodule": "c04ddc85b8c1e5ce64d476f2c739e5c63207535148ef346749a32516631d6da3",
+    "AdUnion.sgmodule": "e3dc5f3c54dcdace799aa52ad85c68ba23c8261817b8233e8490518e3f8314b5",
     "AlibabaFamily.sgmodule": "9808063454c3a1b17f933651baf07f60811f3b34f458d350a5baa95cfde30448",
     "Bilibili.sgmodule": "796498ea18985a46e81756f312f7b5086e5097a7f49eba61f66e465dd4ef664d",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
@@ -154,7 +154,7 @@
     "ad_union": {
       "output": "AdUnion.sgmodule",
       "provider": "zirawell",
-      "sha256": "da4da98ac903ea2436eab7944dd29ea4b687f1c57e7be03a78644170f2221f04",
+      "sha256": "cd92ad89cfdaf8254589b14adb88f2da3b408894dad7cb543c0be031aeb26b44",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/%23/%E5%B9%BF%E5%91%8A%E8%81%94%E7%9B%9F/adunion.sgmodule"
     },
     "aihuishou": {
