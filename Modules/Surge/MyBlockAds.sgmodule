@@ -579,39 +579,39 @@ http-response ^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/place_ad resour
 [Script]
 
 # --- amap | Kelee ---
-移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除路线规划、导航结束页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除路线规划、导航结束页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除导航详情页底部酒店、处理附近页 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除导航详情页底部酒店、处理附近页 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除搜索栏推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除搜索栏推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除搜索详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除搜索详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除我的页面推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除我的页面推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除附近页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除附近页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
-移除导航详情页推广 = type=http-response, pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js, requires-body=true
+移除导航详情页推广 = type=http-response, pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js, requires-body=true
 
 # --- railway_12306 | Kelee ---
-移除12306应用内广告 = type=http-request, pattern=^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js
+移除12306应用内广告 = type=http-request, pattern=^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/railway_12306/kelee_12306_remove_ads-738f10801670d448.js
 
 # --- ithome | Kelee ---
-IT之家去广告 = type=http-response, pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/ithome/kelee.one_IThome_remove_ads-2381391738ca5f03.js, requires-body=true, argument="[{{{removeAllBanners}}},{{{removePinnedArticles}}}]"
+IT之家去广告 = type=http-response, pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?), script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/ithome/kelee_IThome_remove_ads-3de35facb5082106.js, requires-body=true, argument="[{{{removeAllBanners}}},{{{removePinnedArticles}}}]"
 
 # --- smzdm | zirawell ---
 smzdm = type=http-response,pattern=^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\?,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
@@ -625,13 +625,13 @@ smzdm = type=http-response,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/(>?filter
 smzdm = type=http-response,pattern=^https?:\/\/post\.m\.smzdm\.com\/ajax_app\/ajax_get_footer_list,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js
 
 # --- hupu | Kelee ---
-移除虎扑广告 = type=http-response, pattern=^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+移除虎扑广告 = type=http-response, pattern=^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee_HUPU_remove_ads-815b9281e067bf8c.js, requires-body=true
 
-移除虎扑广告 = type=http-response, pattern=^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+移除虎扑广告 = type=http-response, pattern=^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee_HUPU_remove_ads-815b9281e067bf8c.js, requires-body=true
 
-移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee_HUPU_remove_ads-815b9281e067bf8c.js, requires-body=true
 
-移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js, requires-body=true
+移除虎扑广告 = type=http-response, pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/hupu/kelee_HUPU_remove_ads-815b9281e067bf8c.js, requires-body=true
 
 # --- jd | zirawell ---
 jd = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?>deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome|readCustomSurfaceList),requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/jd/jd-824aa2c327a04b43.js
@@ -643,26 +643,26 @@ jd = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?fun
 小米商城 = type=http-response, pattern=^https?:\/\/api\.m\.mi\.com\/v1\/app\/start, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js, requires-body=true, timeout=60
 
 # --- pupu | Kelee ---
-移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js, requires-body=true
 
-移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/search_component_banner, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/search_component_banner, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js, requires-body=true
 
-移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/search\/hot_keywords\/v3, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/search\/hot_keywords\/v3, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js, requires-body=true
 
-移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/app_resource\/resource_preload\/list_h5_resource, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/app_resource\/resource_preload\/list_h5_resource, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js, requires-body=true
 
-移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/interests\/products, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/interests\/products, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js, requires-body=true
 
-移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js, requires-body=true
+移除朴朴超市广告 = type=http-response, pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js, requires-body=true
 
 # --- colorful_clouds | Kelee ---
-彩云天气去广告 = type=http-response, pattern=^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js, requires-body=true
+彩云天气去广告 = type=http-response, pattern=^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/colorful_clouds/kelee_ColorfulClouds_remove_ads-517cabc0449eb279.js, requires-body=true
 
 # --- meitu | zirawell ---
 meitu = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/meitu/meitu-3139df05cf679e3f.js
 
 # --- beautycam | Kelee ---
-精简首页功能栏目并移除美颜推荐 = type=http-response, pattern=^https:\/\/api\.meiyan\.com\/operation\/home\.json\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js, requires-body=true
+精简首页功能栏目并移除美颜推荐 = type=http-response, pattern=^https:\/\/api\.meiyan\.com\/operation\/home\.json\?, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/beautycam/kelee_MeituMYXJ_remove_ads-8ab07da7d34da19b.js, requires-body=true
 
 # --- ezviz | zirawell ---
 ys7 = type=http-response,pattern=^https?:\/\/\w+\.ys7\.com\/v\d\/valueadded\/operation\/config\/master\/station,requires-body=1,max-size=0,script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/ezviz/ys7-ac550595ac61cdfd.js

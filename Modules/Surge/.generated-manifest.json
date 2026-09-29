@@ -22,51 +22,51 @@
     "_resources/ad_union/alicdn-a1536927e11e0b56.js",
     "_resources/ad_union/amdc-d187a0b6e9846a48.js",
     "_resources/alipan/adrive-113890ab142694bb.js",
-    "_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js",
-    "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js",
-    "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js",
-    "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js",
-    "_resources/bilibili/kelee.one_Bilibili_proto_response_kokoryh-58fa8c729c45b8c2.js",
+    "_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js",
+    "_resources/beautycam/kelee_MeituMYXJ_remove_ads-8ab07da7d34da19b.js",
+    "_resources/bilibili/kelee_Bilibili_json_kokoryh-6f130131805f4ab0.js",
+    "_resources/bilibili/kelee_Bilibili_proto_request_kokoryh-6f4aa1850137cb8a.js",
+    "_resources/bilibili/kelee_Bilibili_proto_response_kokoryh-ca0c4f9c20e5b8fc.js",
     "_resources/blued/blued-4821c4ba5f47c7f5.js",
     "_resources/boohee/boohee-cab92058d564794c.js",
     "_resources/cainiao/cainiao-5aec06afaafdd490.js",
     "_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json",
-    "_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js",
+    "_resources/colorful_clouds/kelee_ColorfulClouds_remove_ads-517cabc0449eb279.js",
     "_resources/dianping/dianping-d7cd7fadf4b469af.js",
     "_resources/ezviz/ys7-ac550595ac61cdfd.js",
     "_resources/fliggy/fliggy-eeadbaa380278458.js",
     "_resources/freshippo/freshippo-806c7be05c2b8c0a.js",
     "_resources/goofish/goofish-0fd54500cd31e0c6.js",
-    "_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js",
-    "_resources/ithome/kelee.one_IThome_remove_ads-2381391738ca5f03.js",
+    "_resources/hupu/kelee_HUPU_remove_ads-815b9281e067bf8c.js",
+    "_resources/ithome/kelee_IThome_remove_ads-3de35facb5082106.js",
     "_resources/jd/jd-824aa2c327a04b43.js",
     "_resources/jingxi/jingxiAd-81b2de8846f19461.js",
     "_resources/maidanba/mdb-89816a29460471fa.js",
     "_resources/meitu/meitu-3139df05cf679e3f.js",
     "_resources/meituan/meituan-3c30ba0d24393abd.js",
-    "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js",
-    "_resources/mini_program_adblock/kelee.one_M_Stand-fcfb9d06ac976277.js",
-    "_resources/mini_program_adblock/kelee.one_T3-ff6ccbdc427d5216.js",
-    "_resources/mini_program_adblock/kelee.one_alittle-tea-c12c7329f0921bf4.js",
-    "_resources/mini_program_adblock/kelee.one_chayanyuese_remove_ads-83ad0eeeb2fed7ce.js",
-    "_resources/mini_program_adblock/kelee.one_coco-349af7ab77872fee.js",
-    "_resources/mini_program_adblock/kelee.one_ems-e88e06a330e09845.js",
-    "_resources/mini_program_adblock/kelee.one_kff-e71239e05218aa12.js",
-    "_resources/mini_program_adblock/kelee.one_lawson-45835cc0067fc6bf.js",
-    "_resources/mini_program_adblock/kelee.one_ming-68a6baa0607f1862.js",
-    "_resources/mini_program_adblock/kelee.one_qingju-e5bbbf8c01ddbf32.js",
-    "_resources/mini_program_adblock/kelee.one_xiaotucc-5c31ba666d0ddbaa.js",
-    "_resources/pinduoduo/kelee.one_PinDuoDuo_remove_ads-8f57eceeb49a0d8b.js",
-    "_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js",
+    "_resources/mini_program_adblock/kelee_FamilyMart-5d2f9af2f87b97b6.js",
+    "_resources/mini_program_adblock/kelee_M_Stand-13381d74b3ecf256.js",
+    "_resources/mini_program_adblock/kelee_T3-d42044c712b4e8a3.js",
+    "_resources/mini_program_adblock/kelee_alittle-tea-6c611989aeea1b65.js",
+    "_resources/mini_program_adblock/kelee_chayanyuese_remove_ads-b8b8690494e65f56.js",
+    "_resources/mini_program_adblock/kelee_coco-47a71845973ac3ed.js",
+    "_resources/mini_program_adblock/kelee_ems-78bac167b69d463b.js",
+    "_resources/mini_program_adblock/kelee_kff-ead68fe3558eecfc.js",
+    "_resources/mini_program_adblock/kelee_lawson-c07ae783a5e87b84.js",
+    "_resources/mini_program_adblock/kelee_ming-eb6cf7844f8ff747.js",
+    "_resources/mini_program_adblock/kelee_qingju-f8f412b1af0f9631.js",
+    "_resources/mini_program_adblock/kelee_xiaotucc-98230f682a9094f9.js",
+    "_resources/pinduoduo/kelee_PinDuoDuo_remove_ads-69af0be8912374f1.js",
+    "_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js",
     "_resources/quark/quark-a4613b36b767fa37.js",
-    "_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js",
+    "_resources/railway_12306/kelee_12306_remove_ads-738f10801670d448.js",
     "_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js",
     "_resources/spotify/spotify-json-02086290c7c6ac68.js",
     "_resources/spotify/spotify-proto-99449675fd0d0002.js",
     "_resources/taobao/taobao-80baf40ea1ffaa97.js",
-    "_resources/tieba/kelee.one_tieba-proto-167a15bd53ff51f3.js",
-    "_resources/vvebo/kelee.one_VVebo_repair-8edf1c3fff61fc20.js",
-    "_resources/weibo/kelee.one_Weibo_remove_ads-33c2a8c561cc0070.js",
+    "_resources/tieba/kelee_tieba-proto-fb877073a1c97039.js",
+    "_resources/vvebo/kelee_VVebo_repair-55d18aecbc8e67f4.js",
+    "_resources/weibo/kelee_Weibo_remove_ads-9dc7009e0c913e68.js",
     "_resources/xiaohongshu/xiaohongshu-ca20c7c41aa56a84.js",
     "_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js",
     "_resources/ximalaya/ximalaya_json-7207e9dc08009d9d.js",
@@ -77,71 +77,71 @@
   "outputs": {
     "AdUnion.sgmodule": "e3dc5f3c54dcdace799aa52ad85c68ba23c8261817b8233e8490518e3f8314b5",
     "AlibabaFamily.sgmodule": "9808063454c3a1b17f933651baf07f60811f3b34f458d350a5baa95cfde30448",
-    "Bilibili.sgmodule": "796498ea18985a46e81756f312f7b5086e5097a7f49eba61f66e465dd4ef664d",
+    "Bilibili.sgmodule": "a5d40011b7e9043f04d4e88edaa4032e18a0071ab0ac2486f4848d2f55d253f9",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "b406c48a386bdf4e28169723c966fdaf485241b8c24aed64ba04c20137aeabab",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
-    "MiniProgramAdBlock.sgmodule": "b39332ff20470f76710dd3f5e40079ae4be7187047ba0e5bd4b7b486f48ef58e",
-    "MyBlockAds.sgmodule": "3ea345953eea2d14f46f011d348283b3e0a53e2d86f9616233341340914b3e7f",
-    "PinDuoDuo.sgmodule": "c6ac62817c929cb436c268d716b44c6ccb53bd669678293b270251ddf5f683e4",
+    "MiniProgramAdBlock.sgmodule": "1c0880a078d866e2c9c20cf50f365113626edf79f142af3f6a512f800c36cb88",
+    "MyBlockAds.sgmodule": "e5c237f5e10f15011d4d011b979935cf9b52dad87040b2f1a91c8570624180f1",
+    "PinDuoDuo.sgmodule": "0f55aa81995b0f6876aa839c5073feff61ca24cbea9bcf3860ff9b465f4eb43b",
     "Spotify.sgmodule": "cd9601d7fed2f8d5aa92037884f8ac4f0bc6422bee402f702c0abefad8427d4f",
-    "Tieba.sgmodule": "1fc0e0485d92a3272ed372bbbe3a074c810e7d99df83c200cd5afd681b52943d",
-    "VVebo_repair.sgmodule": "94870ce676970a435b09fc47607615ed88725c5b02614d3039f4c3b8b16bd39d",
+    "Tieba.sgmodule": "8080bee0eebf32d0b3d2353013f624912d080e9cb6d0d653d8f4d3031b8bdc64",
+    "VVebo_repair.sgmodule": "8dbfd88d82b52661a27dd08feb954ad99e7ea432d225e85c8cbb243e473fcc97",
     "Video.sgmodule": "cf239f4ed7b04316fd8d7d6b93c0603e8d2675c94d8603b09159b91c25eaf3c1",
-    "Weibo.sgmodule": "e32afd45c1b228615024d6a32589bd4a1bf46557b62db353b62897488f7e699a",
+    "Weibo.sgmodule": "4b200f08e87c42866f608cdaa536a89efb8666ec13dbcca31efd81e7742ac719",
     "XiaoHongShu.sgmodule": "80c57ccef0796a5e64b0386aba5a236d48c6c09830b3ab09dbcd662cb8f07387",
     "Ximalaya.sgmodule": "b6ed449996eed2b1791dbe334dfd42d5705a1af1b402c7d81879799b598d0dff",
     "YouTube.sgmodule": "5c224b9bd891330a05f56f5bf3113a0cfb634d5a04381bade861000c1d9eaf66",
-    "Zhihu.sgmodule": "251ea1e98c9798c4c7dcf230eba82fe8d91e873de578bd57b3af4e759941450a",
+    "Zhihu.sgmodule": "e1475b9fca322e2e9c881f143a689e760ac33fddaee4472b85274479cdfadd43",
     "_resources/ad_union/adsense-8343a1053843019c.js": "d79654a773b4f248afbf90adaf85b4824a70fefe3686a34cb39c68cddaa6eefd",
     "_resources/ad_union/alicdn-a1536927e11e0b56.js": "e6ff8a29a82508abff43eab1e85c7d518002c6d810f5458d1b78a8219fc4cdcf",
     "_resources/ad_union/amdc-d187a0b6e9846a48.js": "4987266c554b1632ae90b224f642e3ca4349e9f3326104a09cb987390510b7b9",
     "_resources/alipan/adrive-113890ab142694bb.js": "4de6fd8ece48712dcc08c3c41cdd5da2440ea30c2e8e6f86c1e8be10ced9aa42",
-    "_resources/amap/kelee.one_Amap_remove_ads-01651b854861482f.js": "b351ddf6e353c85e58a7a98fc1fe66e07542d370154d486ed4efbc9660e6d7a2",
-    "_resources/beautycam/kelee.one_MeituMYXJ_remove_ads-7f69ea78c4af5546.js": "9a50669b814eedd82eb9b73518089547bc7b9c5388dc4e441dfc9f155c55fc61",
-    "_resources/bilibili/kelee.one_Bilibili_json_kokoryh-1e8a25e361b23bf2.js": "521a3974d1a485daf5750bc7b986ee5b64325480ed80da2e7d90265f4ad57090",
-    "_resources/bilibili/kelee.one_Bilibili_proto_request_kokoryh-6ea4163f5387f9b8.js": "1b7e1d51efd960b10a22ea322630e72ecee646f2fdaad8a097c9e530fde1a857",
-    "_resources/bilibili/kelee.one_Bilibili_proto_response_kokoryh-58fa8c729c45b8c2.js": "e4a8426cffbfca85c78286126a10813051a2d1aeed018119bbabe3db5da85728",
+    "_resources/amap/kelee_Amap_remove_ads-244864e85dabccdd.js": "b351ddf6e353c85e58a7a98fc1fe66e07542d370154d486ed4efbc9660e6d7a2",
+    "_resources/beautycam/kelee_MeituMYXJ_remove_ads-8ab07da7d34da19b.js": "9a50669b814eedd82eb9b73518089547bc7b9c5388dc4e441dfc9f155c55fc61",
+    "_resources/bilibili/kelee_Bilibili_json_kokoryh-6f130131805f4ab0.js": "521a3974d1a485daf5750bc7b986ee5b64325480ed80da2e7d90265f4ad57090",
+    "_resources/bilibili/kelee_Bilibili_proto_request_kokoryh-6f4aa1850137cb8a.js": "1b7e1d51efd960b10a22ea322630e72ecee646f2fdaad8a097c9e530fde1a857",
+    "_resources/bilibili/kelee_Bilibili_proto_response_kokoryh-ca0c4f9c20e5b8fc.js": "e4a8426cffbfca85c78286126a10813051a2d1aeed018119bbabe3db5da85728",
     "_resources/blued/blued-4821c4ba5f47c7f5.js": "b9aa88e977da62caa90afbe5d921f45d8ef63f09945442043bc95145eb551a7d",
     "_resources/boohee/boohee-cab92058d564794c.js": "c0d70da6294c34ea98fe2ab013b39cc64734d4e4f3c25addd14f5a0c7c00970f",
     "_resources/cainiao/cainiao-5aec06afaafdd490.js": "c99c07937e4f4357949ba17f77927748992ad480afe14619a20c9f6551160d86",
     "_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json": "dde008b55310925cb3c24bd863125dab3bdb9f577c9f36642f321da4db330e28",
-    "_resources/colorful_clouds/kelee.one_ColorfulClouds_remove_ads-f8b1417ab5834983.js": "51d20e0cd5f134603f541fdb7a05a3e9a259b8e3adece8347b90df237687c0a1",
+    "_resources/colorful_clouds/kelee_ColorfulClouds_remove_ads-517cabc0449eb279.js": "51d20e0cd5f134603f541fdb7a05a3e9a259b8e3adece8347b90df237687c0a1",
     "_resources/dianping/dianping-d7cd7fadf4b469af.js": "78971da6855858d1a6737872209cfc0aaaf7755fbe8da19f4115a03591820252",
     "_resources/ezviz/ys7-ac550595ac61cdfd.js": "9380bb149f8fa9de5289a277efb7153306f9eb119c21e952312067c79531e2bb",
     "_resources/fliggy/fliggy-eeadbaa380278458.js": "050efdf95b8050816050f614fef98052944c27bfe1c8d07857ea9b552786c66f",
     "_resources/freshippo/freshippo-806c7be05c2b8c0a.js": "edf71faccbca61b153bbce98f56b75e27313883cf520e5e315f6ba15ed52360d",
     "_resources/goofish/goofish-0fd54500cd31e0c6.js": "aa4fd649a9cc23700e408b6f9174a411b76b227f7034c3b8ffdae0ae0e3b4f22",
-    "_resources/hupu/kelee.one_HUPU_remove_ads-8887fc6e835c7ab9.js": "43ec9962925a76ca49cf1491a73430bd1b7fc3ef206de50eb0083c75b69865a6",
-    "_resources/ithome/kelee.one_IThome_remove_ads-2381391738ca5f03.js": "3008c1a2831ec084c07e44c2219ee8776aefb45a9b4053da675fde6701caa141",
+    "_resources/hupu/kelee_HUPU_remove_ads-815b9281e067bf8c.js": "43ec9962925a76ca49cf1491a73430bd1b7fc3ef206de50eb0083c75b69865a6",
+    "_resources/ithome/kelee_IThome_remove_ads-3de35facb5082106.js": "3008c1a2831ec084c07e44c2219ee8776aefb45a9b4053da675fde6701caa141",
     "_resources/jd/jd-824aa2c327a04b43.js": "ddf9ec8ab97d5e5a5e1bc171c0301350ba42f41b9dcd129c166c6a192ecb7957",
     "_resources/jingxi/jingxiAd-81b2de8846f19461.js": "aa125c2689fba2cdd3ff1eb5aeb9e43bde2b1abab546cfcafdb67bd647d47b94",
     "_resources/maidanba/mdb-89816a29460471fa.js": "f50cef7a5f3b3e3179f9c5a93f2ab937dd72d83ca4dc2c9e8a66937c38e3e9ab",
     "_resources/meitu/meitu-3139df05cf679e3f.js": "3a7b60ded8afe990bc8d2096db08fa28a0fadfd7466768ba6dbc30c0b8c8d612",
     "_resources/meituan/meituan-3c30ba0d24393abd.js": "49397f334f7186928d31383561a6cc237482bf28f285b8de11493cc29f2d10c3",
-    "_resources/mini_program_adblock/kelee.one_FamilyMart-c2994707a14792db.js": "e25457f43eacfbf27ca8229445e69f60f7562ece723b5ebaf07969c0ebf75e1c",
-    "_resources/mini_program_adblock/kelee.one_M_Stand-fcfb9d06ac976277.js": "5d6f163842ce53eb034fa01c244f6482fedd2f5d56b7c206c25d6f11c21e805f",
-    "_resources/mini_program_adblock/kelee.one_T3-ff6ccbdc427d5216.js": "ab1ca9af4dd9b294f585335856de51d6df2b61c31d9a3d1982a5b091355da25a",
-    "_resources/mini_program_adblock/kelee.one_alittle-tea-c12c7329f0921bf4.js": "c765215071712fa0c0c0ef3719263fff81d4a1ce0189f8bc0861aa721657a44c",
-    "_resources/mini_program_adblock/kelee.one_chayanyuese_remove_ads-83ad0eeeb2fed7ce.js": "4b7f857caa810648f7be584e916ceffb9c12dd3b2ce7766ed5bd605646e2a4d1",
-    "_resources/mini_program_adblock/kelee.one_coco-349af7ab77872fee.js": "dc9a1915eed8f6f760a8f3a03f5e2f5a0f346373693ae4ac2e0c5dbd90fd46b3",
-    "_resources/mini_program_adblock/kelee.one_ems-e88e06a330e09845.js": "2208e4945d8781e5bc9d20a436fc141629a7e4dc9fd516f9fe917196010cf5bc",
-    "_resources/mini_program_adblock/kelee.one_kff-e71239e05218aa12.js": "8453c73e9412fd99396afbfea14e7d26c46936da1650603b6f2433cda18cbf2c",
-    "_resources/mini_program_adblock/kelee.one_lawson-45835cc0067fc6bf.js": "3d57d6ae9070934eef3513e2a4b640fad9dd5076fbbc6c471994bd3d790068f1",
-    "_resources/mini_program_adblock/kelee.one_ming-68a6baa0607f1862.js": "bd0f4e67ae73fdd083b10c1e802912d8c9ade1b2b14a0dead865d7af0b90d991",
-    "_resources/mini_program_adblock/kelee.one_qingju-e5bbbf8c01ddbf32.js": "8664e7a22b21aaa8546ec167e3a43fee7ebd2c00552a126212720b09a4819bf8",
-    "_resources/mini_program_adblock/kelee.one_xiaotucc-5c31ba666d0ddbaa.js": "a10131a49267ce2cdd17c7c4d783eb64c8aa943b83ee4dcadb846ccd2c4bbb1b",
-    "_resources/pinduoduo/kelee.one_PinDuoDuo_remove_ads-8f57eceeb49a0d8b.js": "63af2e44da24da11f5c1bc930aefdcef2ce16aa65293be3e80ba8520d46e9c58",
-    "_resources/pupu/kelee.one_PuPuMall_remove_ads-0cb6b759699bbcaa.js": "76659d365b0da3eef1ef54cde44254f9d951799138af52a3edeea2e29a43f83f",
+    "_resources/mini_program_adblock/kelee_FamilyMart-5d2f9af2f87b97b6.js": "e25457f43eacfbf27ca8229445e69f60f7562ece723b5ebaf07969c0ebf75e1c",
+    "_resources/mini_program_adblock/kelee_M_Stand-13381d74b3ecf256.js": "5d6f163842ce53eb034fa01c244f6482fedd2f5d56b7c206c25d6f11c21e805f",
+    "_resources/mini_program_adblock/kelee_T3-d42044c712b4e8a3.js": "ab1ca9af4dd9b294f585335856de51d6df2b61c31d9a3d1982a5b091355da25a",
+    "_resources/mini_program_adblock/kelee_alittle-tea-6c611989aeea1b65.js": "c765215071712fa0c0c0ef3719263fff81d4a1ce0189f8bc0861aa721657a44c",
+    "_resources/mini_program_adblock/kelee_chayanyuese_remove_ads-b8b8690494e65f56.js": "4b7f857caa810648f7be584e916ceffb9c12dd3b2ce7766ed5bd605646e2a4d1",
+    "_resources/mini_program_adblock/kelee_coco-47a71845973ac3ed.js": "dc9a1915eed8f6f760a8f3a03f5e2f5a0f346373693ae4ac2e0c5dbd90fd46b3",
+    "_resources/mini_program_adblock/kelee_ems-78bac167b69d463b.js": "2208e4945d8781e5bc9d20a436fc141629a7e4dc9fd516f9fe917196010cf5bc",
+    "_resources/mini_program_adblock/kelee_kff-ead68fe3558eecfc.js": "8453c73e9412fd99396afbfea14e7d26c46936da1650603b6f2433cda18cbf2c",
+    "_resources/mini_program_adblock/kelee_lawson-c07ae783a5e87b84.js": "3d57d6ae9070934eef3513e2a4b640fad9dd5076fbbc6c471994bd3d790068f1",
+    "_resources/mini_program_adblock/kelee_ming-eb6cf7844f8ff747.js": "bd0f4e67ae73fdd083b10c1e802912d8c9ade1b2b14a0dead865d7af0b90d991",
+    "_resources/mini_program_adblock/kelee_qingju-f8f412b1af0f9631.js": "8664e7a22b21aaa8546ec167e3a43fee7ebd2c00552a126212720b09a4819bf8",
+    "_resources/mini_program_adblock/kelee_xiaotucc-98230f682a9094f9.js": "a10131a49267ce2cdd17c7c4d783eb64c8aa943b83ee4dcadb846ccd2c4bbb1b",
+    "_resources/pinduoduo/kelee_PinDuoDuo_remove_ads-69af0be8912374f1.js": "63af2e44da24da11f5c1bc930aefdcef2ce16aa65293be3e80ba8520d46e9c58",
+    "_resources/pupu/kelee_PuPuMall_remove_ads-a282b65b8e542b6d.js": "76659d365b0da3eef1ef54cde44254f9d951799138af52a3edeea2e29a43f83f",
     "_resources/quark/quark-a4613b36b767fa37.js": "6aa13d1c7d7f3d37f821aced7747dffa5a505f6ba3eae2dafd8d37caa43454d8",
-    "_resources/railway_12306/kelee.one_12306_remove_ads-7574f9fb7f87f30f.js": "22a825d8149d952dd9c6c1c5c96fa3f830a0ebba975f8fc402f55ad1f40d4a8a",
+    "_resources/railway_12306/kelee_12306_remove_ads-738f10801670d448.js": "22a825d8149d952dd9c6c1c5c96fa3f830a0ebba975f8fc402f55ad1f40d4a8a",
     "_resources/smzdm/smzdm-5b2f5f7c38ba26e6.js": "7ed45ff3a292d28ef1ccbb3b12e7f949a4792e60c3e7275125fee297b0f2701e",
     "_resources/spotify/spotify-json-02086290c7c6ac68.js": "41cf1074770cdef3948baa12ff4a8db9045d1cac888714c8b7e69909eb531bc9",
     "_resources/spotify/spotify-proto-99449675fd0d0002.js": "2e6850e888d092905c766f0bbedc4b4afb9a712330970cc1265105d7fb4995d0",
     "_resources/taobao/taobao-80baf40ea1ffaa97.js": "948921def8daf5fc8da5f36645569e1b01ee03c99f2c2d54da6ae77b8cef8a86",
-    "_resources/tieba/kelee.one_tieba-proto-167a15bd53ff51f3.js": "2ab9006be369e1083072ec49f4163245d8c385b0f3acc40910c2922454ebbd78",
-    "_resources/vvebo/kelee.one_VVebo_repair-8edf1c3fff61fc20.js": "7fd17286253c41c42f1f96b02ac200e4a82f5edf98c14caa7be3a444a872ab16",
-    "_resources/weibo/kelee.one_Weibo_remove_ads-33c2a8c561cc0070.js": "026ccd766a53f744c2bf2aad93c4deb6f207defe4daf973178bb3e4193c997fb",
+    "_resources/tieba/kelee_tieba-proto-fb877073a1c97039.js": "2ab9006be369e1083072ec49f4163245d8c385b0f3acc40910c2922454ebbd78",
+    "_resources/vvebo/kelee_VVebo_repair-55d18aecbc8e67f4.js": "7fd17286253c41c42f1f96b02ac200e4a82f5edf98c14caa7be3a444a872ab16",
+    "_resources/weibo/kelee_Weibo_remove_ads-9dc7009e0c913e68.js": "026ccd766a53f744c2bf2aad93c4deb6f207defe4daf973178bb3e4193c997fb",
     "_resources/xiaohongshu/xiaohongshu-ca20c7c41aa56a84.js": "318d89bce1117edb26a93b383804e195649ec4674a04efa9e3ddb4ef7f34b498",
     "_resources/xiaomi_mall/myBlockAds-c9be0bae88b388e8.js": "4cf62100424886068a5470daecec319e93ccd034c647d79a9daaa72bbbc341bb",
     "_resources/ximalaya/ximalaya_json-7207e9dc08009d9d.js": "2b0cb0abf3cf9eaf16e45591c947d2ab1905c2fa5aa8c1ca56ac1f3b4cf19533",
@@ -178,7 +178,7 @@
     "amap": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "1ddc96fb5a370ead6ea38e9b67885f8d652f89aafa0b0c9576580217f1d6eca8",
+      "sha256": "bf3f0c3d70f6c2f0c150720c6362a7ef220795e042824047618881e111d53925",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Amap_remove_ads.sgmodule"
     },
     "amazon": {
@@ -208,19 +208,19 @@
     "beautycam": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "5a123a33a3158bf453f5b0d073062a14bb5b27e947bbf73846f8b738b78f1167",
+      "sha256": "34160dcd354380676e22c6f3c4adaa5bd2226ad3adbdcbb6ee2fdec2f9e793e2",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/MeituMYXJ_remove_ads.sgmodule"
     },
     "beike": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "11a9be00aa0f38438ea2637f1e725d1c0e3dfc83b7830b92a5513c1bebd24a37",
+      "sha256": "e986740fb0552a7b6dd2b505f5d675e2956e121c36c8091da4d5555228c34cb0",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beike_remove_ads.sgmodule"
     },
     "bilibili": {
       "output": "Bilibili.sgmodule",
       "provider": "Kelee",
-      "sha256": "40ec20ed532c905ff042098566381ad50fdccfe737db3bfad8cdc7801c0fdca1",
+      "sha256": "00b6c6240ffe4e52a11feaea328dae6f6b90e4b6fe251f67d5deec1ee4ae84e4",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Loon/Kelee/Bilibili_remove_ads.lpx"
     },
     "binance": {
@@ -286,13 +286,13 @@
     "colorful_clouds": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "45fdbf9cbd77e3949daac4329e39fd2ffaa5682ab98128bcd3fbdb195d4ae4c1",
+      "sha256": "e6212612965267575ba866ecec7307ce3c4cb7c9ceb1d226be188194e87182b1",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/ColorfulClouds_remove_ads.sgmodule"
     },
     "coolapk": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "8b1cd3c66be93de5e3ae477bf990cef04dec65af3806de00a5669edd798b54b0",
+      "sha256": "b29aeff031b2238e027ef1d84c5cc160ae59fd2a5ed2a5005c891aeb6e2ac85c",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/CoolApk_remove_ads.sgmodule"
     },
     "csdn": {
@@ -310,7 +310,7 @@
     "dewu": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "72ad3e6940c15362f5636b23ba08b1840a649f1381c76c52696f23f3d6a82506",
+      "sha256": "6c049dc969a3a6813d0938d88fea6447e6bcf788d247d2d3327ffd6b85ce1695",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Dewu_remove_ads.sgmodule"
     },
     "dianping": {
@@ -322,7 +322,7 @@
     "didi": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "895bac8f36e9bd91316c208c657048d4199ee57955069e34496a75b9490b7561",
+      "sha256": "8a9d81eb3c507adca1d92c10b4acfe866cb66c7f1bc6d80a51bf3263a6c6c4e2",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/DiDi_remove_ads.sgmodule"
     },
     "douban": {
@@ -376,7 +376,7 @@
     "hupu": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "f14def08e8f4a5505010da3906b1953fe0ceaeb379cdcb49754cc7ac79d23072",
+      "sha256": "ed1a2a576ac91e7a3a6907aebff06f2bfd85d61f3d3f4f62fae813912dd72d29",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/HUPU_remove_ads.sgmodule"
     },
     "iqiyi": {
@@ -388,7 +388,7 @@
     "ithome": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "d56092a42cd2078f9828db25f9a89404f93800546fef5bfcb08ebafb54916e3d",
+      "sha256": "8b9091ae58c85b6cde932364641544a4bb87f0622581713fa4ed4b677975cc8d",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/IThome_remove_ads.sgmodule"
     },
     "jd": {
@@ -406,7 +406,7 @@
     "jump": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "b69dbd419ebfadca82fdd7904dc22548c40e9fba62afe8a002b9408cbabaecea",
+      "sha256": "2845c366344e5824b2092a18eefc13597c577f1300891fcbc8c7edaaf5a47458",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Jump_remove_ads.sgmodule"
     },
     "keep": {
@@ -430,7 +430,7 @@
     "luckin_coffee": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "a217dfb6fe88b945742b09e9f56ea3dba02008f3a512004d286f26a1db3cae89",
+      "sha256": "187618d0a7c7d5996d791904d4393e4978ccc28d80af681d8069c2f3d254c39a",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/LuckinCoffee_remove_ads.sgmodule"
     },
     "maidanba": {
@@ -478,7 +478,7 @@
     "mini_program_adblock": {
       "output": "MiniProgramAdBlock.sgmodule",
       "provider": "Kelee",
-      "sha256": "8f0f03f2c7f7e59e59d744a3212f589001ca6dc883e235ad750a7a67e3372a61",
+      "sha256": "eed8c5c794aba3e8f7e50e63b80ffc7458a7b30d491400408e81ab0469a849ab",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/WexinMiniPrograms_Remove_ads.sgmodule"
     },
     "minimal_exchange_rate": {
@@ -502,13 +502,13 @@
     "pinduoduo": {
       "output": "PinDuoDuo.sgmodule",
       "provider": "Kelee",
-      "sha256": "5112562b7ea5cc5e78356c4a39d92ab1654ab83ae5c0eb73656933fba930188c",
+      "sha256": "5565abdec7dde2ecd9456f17fa8a3d8a6ca59d7fe740caeba363345817cc3b5a",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PinDuoDuo_remove_ads.sgmodule"
     },
     "pupu": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "0f565bfff7dfbdae26eab8310b16691d213dee489b8a0b55eed286fa9dde38d3",
+      "sha256": "2bed65e0167ae872196a764b6c93128cbc9c467dbdb014570daa476068d93844",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PuPuMall_remove_ads.sgmodule"
     },
     "quark": {
@@ -520,7 +520,7 @@
     "railway_12306": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "cbdb237cefb029ceac9df88d26578ae177a8a67a514363e37a625525020167f1",
+      "sha256": "5b38f997e457eabb8bf85ba723292c06f9cac777b6786fb77c3eb507c4406856",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/12306_remove_ads.sgmodule"
     },
     "sams_club": {
@@ -592,7 +592,7 @@
     "tieba": {
       "output": "Tieba.sgmodule",
       "provider": "Kelee",
-      "sha256": "262e9f5e18816c8847aae77c8337e6bf6e692df3223534677217272e311e3e4b",
+      "sha256": "2b137c309d0267d69119d6fa8da018e4072e54a76d467f590ee1bba2d3362392",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Tieba_remove_ads.sgmodule"
     },
     "traffic_management_12123": {
@@ -610,7 +610,7 @@
     "vvebo": {
       "output": "VVebo_repair.sgmodule",
       "provider": "Kelee",
-      "sha256": "b7d1c7cb50a89a419fb66da14618d223f48da4edca37ec43cc85ee55b7cf69e6",
+      "sha256": "4344e456715474e4f7cecec8bcb2f7f828e54cbd1c7a124e1fd01084fa0868ad",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/VVebo_repair.sgmodule"
     },
     "wanda_cinema": {
@@ -622,7 +622,7 @@
     "weibo": {
       "output": "Weibo.sgmodule",
       "provider": "Kelee",
-      "sha256": "e1fc3a0ac3b94b8de8a221533e49804dc1424f69680c83d24e8af85eeefaeb7d",
+      "sha256": "b0b97e8168196d5689d2d2122d40dccb8343985d4cc3a66e404d5ef7eb2d04e5",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Weibo_remove_ads.sgmodule"
     },
     "xiaohongshu": {
@@ -682,7 +682,7 @@
     "zhihu": {
       "output": "Zhihu.sgmodule",
       "provider": "Kelee",
-      "sha256": "9e1056dc1126852f6a09aa5c5f5fe7a0e59eaba622396bfc9b718633081b9b0d",
+      "sha256": "ea18e3189e8e2fc7440184fd83a5c43cc9f58cc79c9648adf9ceb4b97b5a04e7",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Zhihu_remove_ads.sgmodule"
     }
   }

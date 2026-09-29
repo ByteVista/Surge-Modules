@@ -90,7 +90,7 @@ http-response-jq ^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/order_list_v4\?
 ^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v2\/query\/goods_detail_with_tags\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
-移除扫码取件页面商品推荐及弹窗 = type=http-response, pattern=^https:\/\/m\.pinduoduo\.net\/mdkd\/package\?from_app_scan, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pinduoduo/kelee.one_PinDuoDuo_remove_ads-8f57eceeb49a0d8b.js, requires-body=true
+移除扫码取件页面商品推荐及弹窗 = type=http-response, pattern=^https:\/\/m\.pinduoduo\.net\/mdkd\/package\?from_app_scan, script-path=https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/pinduoduo/kelee_PinDuoDuo_remove_ads-69af0be8912374f1.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% api.pinduoduo.com, m.pinduoduo.net
