@@ -160,7 +160,7 @@
     "aihuishou": {
       "output": "MyBlockAds.sgmodule",
       "provider": "ddgksf2013",
-      "sha256": "3246d1a2d1ce837005a0e8d6c0f354b6cdf89fc5d487c486c93fac02078e968c",
+      "sha256": "91a5ce7b742e34e90a1b4b417ef52c968f8c6ba2f309745db9f7b2c4118f2a17",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/AiHuiShouAds.sgmodule"
     },
     "alipan": {
@@ -190,7 +190,7 @@
     "baidu_netdisk": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "0cb0f91212d60ffe2a01108412a4ad9bfd2af76028f63e5eed7997bbf5d2b460",
+      "sha256": "cfba8f440abf4caf5b111e95b5de751e0f63c3238ed725eee3acfd981ca75cac",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/BaiduNetDisk.sgmodule"
     },
     "bank_of_china": {
@@ -274,7 +274,7 @@
     "china_unicom": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "3133bae7c79eb8710016849ddf3b617634611074403fcd2598b0aab4cb9d5102",
+      "sha256": "5134c71f095d3505ccb81e8d9fdb5906d55d66ee609f144cea91a50ae522313b",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/ChinaUnicom.sgmodule"
     },
     "cmb_life": {
@@ -412,7 +412,7 @@
     "keep": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "d00efa54afffa4154ebf542e50be446d5b342b9934991aa6a7227295a436ca31",
+      "sha256": "20214cad0f670b3afa7984a7fb53adb2b0dd36b40914294df1196714f39be0ed",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Keep.sgmodule"
     },
     "kfc": {
@@ -442,7 +442,7 @@
     "mango_tv": {
       "output": "Video.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "ca8a9af8b63259095e98be19fff3bd28dec455adc237e24d96bb088fe183efe5",
+      "sha256": "1d6a38d19fdb3161895fe996afb00f0f6c963e4ae9fc381e3b27d73cfea2c856",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/MangoTV.sgmodule"
     },
     "mcdonalds": {
