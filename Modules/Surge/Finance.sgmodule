@@ -33,6 +33,9 @@ DOMAIN, ads.cup.com.cn, REJECT, extended-matching, pre-matching
 DOMAIN, analytics.95516.com, REJECT, extended-matching, pre-matching
 DOMAIN, tysdk.95516.com, REJECT, extended-matching, pre-matching
 
+# --- cmb_life | zirawell ---
+DOMAIN, applog.paas.cmbchina.com, REJECT, extended-matching, pre-matching
+
 # --- maidanba | zirawell ---
 DOMAIN-SUFFIX, track.bankcomm.com, REJECT, extended-matching, pre-matching
 
