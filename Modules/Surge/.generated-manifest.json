@@ -89,7 +89,7 @@
     "VVebo_repair.sgmodule": "8dbfd88d82b52661a27dd08feb954ad99e7ea432d225e85c8cbb243e473fcc97",
     "Video.sgmodule": "cf239f4ed7b04316fd8d7d6b93c0603e8d2675c94d8603b09159b91c25eaf3c1",
     "Weibo.sgmodule": "4b200f08e87c42866f608cdaa536a89efb8666ec13dbcca31efd81e7742ac719",
-    "XiaoHongShu.sgmodule": "80c57ccef0796a5e64b0386aba5a236d48c6c09830b3ab09dbcd662cb8f07387",
+    "XiaoHongShu.sgmodule": "e416a1fdd45c27e1a2596e74d4447a5170cc69c8e30906205f2ffd67911ffaba",
     "Ximalaya.sgmodule": "b6ed449996eed2b1791dbe334dfd42d5705a1af1b402c7d81879799b598d0dff",
     "YouTube.sgmodule": "5c224b9bd891330a05f56f5bf3113a0cfb634d5a04381bade861000c1d9eaf66",
     "Zhihu.sgmodule": "e1475b9fca322e2e9c881f143a689e760ac33fddaee4472b85274479cdfadd43",
@@ -628,7 +628,7 @@
     "xiaohongshu": {
       "output": "XiaoHongShu.sgmodule",
       "provider": "fmz200",
-      "sha256": "2dde6b24ffb33adfad21a0c71718c93cb1ea6bdae65853bdca4e3819e0991df5",
+      "sha256": "1178226070417157801ee0735870a0a30274881b6a463ffad1dfd23ecb8851e5",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partX/Xiaohongshu.lpx"
     },
     "xiaomi_mall": {
