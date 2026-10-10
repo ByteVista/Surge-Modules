@@ -50,7 +50,7 @@
   ],
   "outputs": {
     "AdUnion.sgmodule": "e3dc5f3c54dcdace799aa52ad85c68ba23c8261817b8233e8490518e3f8314b5",
-    "AlibabaFamily.sgmodule": "9808063454c3a1b17f933651baf07f60811f3b34f458d350a5baa95cfde30448",
+    "AlibabaFamily.sgmodule": "141de47d56749635ce41318f8c37a0a979a91f00ae7c861e0a22b1a42c79d5eb",
     "Bilibili.sgmodule": "75e6a67dd0137056c9ceffe75494b3adffdd15ccdf146cb925a13512ebff694c",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "d4dd09a9a76d40a611aa9380e59adff7378b09e35655432627c711a23302e11c",
@@ -252,7 +252,7 @@
     "damai": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "20e58952307b62caa31389124d9d9f2b50d65345d138cb68893bf2897278c099",
+      "sha256": "7390e5aff3995d44e52a6df2ff816c45a5ce10d37d7c10c0451ba8a4538cebc3",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E9%BA%A6/damai.sgmodule"
     },
     "dewu": {
