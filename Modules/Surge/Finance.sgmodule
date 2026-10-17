@@ -119,6 +119,8 @@ http-response ^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/ClientFacePublic\/\w+
 
 # --- china_merchants_bank | zirawell ---
 ^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data-type=text data="" status-code=200
+^https?:\/\/entry-gateway\.paas\.cmbchina\.com\/ccgateway\/api\/paas-entry\/recommend data-type=json data="{}" status-code=200
+^https?:\/\/entry-gateway\.paas\.cmbchina\.com\/ccgateway\/api\/paas-entry\/ai-column data-type=json data="{}" status-code=200
 ^https?:\/\/mobile\.cmbchina\.com\/dcardmanage\/salary-welfare\/get-recommend data-type=file data="https://bytevista.github.io/Surge-Modules/Modules/Surge/_resources/china_merchants_bank/cmb-ea1f03f8a0414c0c.json"
 
 # --- bank_of_china | zirawell ---
@@ -138,4 +140,4 @@ mdb = type=http-response,pattern=^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/
 
 [MITM]
 
-hostname = %APPEND% wallet.95516.com, mars.ccc.cmbchina.com, marscc.bcs.cmbchina.com, contentcc.bcs.cmbchina.com, intellicc.b*s.cmbchina.com, *mbasecc.b*s.cmbchina.com, interactivecc.b*s.cmbchina.com, yummy2web01-edge-dmz.bcs.cmbchina.com, *.bankcomm.com, *.bankcomm.cn, image1.ccb.com, imageadv.ccb.com, cy.cloud.ccb.com, download1.bankcomm.com, webappcfg.paas.cmbchina.com, mobile.cmbchina.com, mbs.boc.cn, cdn1.mbs.boc.cn, api*.futunn.com, www.binance.info, www.yingwangtech.net, www.binance.com
+hostname = %APPEND% wallet.95516.com, mars.ccc.cmbchina.com, marscc.bcs.cmbchina.com, contentcc.bcs.cmbchina.com, intellicc.b*s.cmbchina.com, *mbasecc.b*s.cmbchina.com, interactivecc.b*s.cmbchina.com, yummy2web01-edge-dmz.bcs.cmbchina.com, *.bankcomm.com, *.bankcomm.cn, image1.ccb.com, imageadv.ccb.com, cy.cloud.ccb.com, download1.bankcomm.com, mobile.cmbchina.com, webappcfg.paas.cmbchina.com, entry-gateway.paas.cmbchina.com, mbs.boc.cn, cdn1.mbs.boc.cn, api*.futunn.com, www.binance.info, www.yingwangtech.net, www.binance.com
