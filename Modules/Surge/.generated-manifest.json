@@ -56,7 +56,7 @@
     "Finance.sgmodule": "8f9863441685c744ad5a88694b8668e1386ddd6412003c45e94c27222bed5f33",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
     "MiniProgramAdBlock.sgmodule": "36b893658b4bbbbc123b4083b7fc31e2cd028ab6f1d09fe26f990472d14869aa",
-    "MyBlockAds.sgmodule": "67f5e5c29446648d4d283bde49d146d8ebb59bd75269e9a6043834500e37a73f",
+    "MyBlockAds.sgmodule": "4e4d7e5a17b38ece5e71897b4b7b4484dfe3e9243c8476b3170ed5c9703bd391",
     "PinDuoDuo.sgmodule": "a244bf3582b6faabdff0077c52e4cd8e8ead5df36326a7ed043147d08b3e0408",
     "Spotify.sgmodule": "cd9601d7fed2f8d5aa92037884f8ac4f0bc6422bee402f702c0abefad8427d4f",
     "Tieba.sgmodule": "db97a20f383283109ffd82430d7e4e4c9e75b96e716369efbae05c16d85f80bf",
@@ -126,7 +126,7 @@
     "amap": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "e6643548a8534846427e8d0134462298f9cadc71fdbf2425619349b7a444ff0d",
+      "sha256": "ad1b8e5a85b6755c2c6655842b8f8881aa1b2052a6865de84050480b7e95cb4e",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Amap_remove_ads.sgmodule"
     },
     "amazon": {
