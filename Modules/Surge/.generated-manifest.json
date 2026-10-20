@@ -126,7 +126,7 @@
     "amap": {
       "output": "MyBlockAds.sgmodule",
       "provider": "Kelee",
-      "sha256": "e5466db7d4bdc93dd3591eaf9a3d3ffb91f256dc211f39a8c73f716e7206d67a",
+      "sha256": "4999856201652afa38fbb591165e58a31b37ef47df750d3c328055b0b30ef73d",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Amap_remove_ads.sgmodule"
     },
     "amazon": {
