@@ -142,7 +142,7 @@ http-response ^https?:\/\/outfliggys\.m\.taobao\.com\/app\/trip\/rx-travel-detai
 ^https?:\/\/(?>nr-op|cube)\.elemecdn\.com\/image\/.*\.(png|jpeg|jpg|gif)\?x-oss-process=image\/resize,m_fill,w_180,h_180\/($|format,webp\/$) data-type=tiny-gif status-code=200
 
 # --- damai | zirawell ---
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome data-type=text data="" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.(?>welcome|float) data-type=text data="" status-code=200
 
 # --- quark | zirawell ---
 ^https?:\/\/stars\.shuqireader\.com\/kkios\/render\/load\/resource\/appConfig data-type=json data="{}" status-code=200
