@@ -53,7 +53,7 @@
     "AlibabaFamily.sgmodule": "61e2c584a9a78668455e596ae2634beed31b9f2b62b6b596df6400e2fd2c7096",
     "Bilibili.sgmodule": "75e6a67dd0137056c9ceffe75494b3adffdd15ccdf146cb925a13512ebff694c",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
-    "Finance.sgmodule": "161669cb2148cb7f8be250eb55d8309dd13f1b5a83eb863856427f93f4c2f93c",
+    "Finance.sgmodule": "e8e48af4791203a170dd9d77f04af1a152b03e32911fd336a04fe511d7b3bf08",
     "MeituanFamily.sgmodule": "48d6ef0261d00a56527648ec20f4c8cdcdea41cf72f575da4d9902db1ea8f953",
     "MiniProgramAdBlock.sgmodule": "36b893658b4bbbbc123b4083b7fc31e2cd028ab6f1d09fe26f990472d14869aa",
     "MyBlockAds.sgmodule": "7cd46fecbf9de5fc3a421afa48791377ffb773c5783f59f93c4f2c0f5cdb2522",
@@ -150,7 +150,7 @@
     "bank_of_communications": {
       "output": "Finance.sgmodule",
       "provider": "zirawell",
-      "sha256": "ad7074e349f73250c9d7ef96aa88c1b9f5d9c11a78c862cc5c0874eefb5803ce",
+      "sha256": "98c43290efe2443799389b8db02e9e43abcf7e424a46b8b37ea042e7aa2c6222",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C/bankcomm.sgmodule"
     },
     "beautycam": {
