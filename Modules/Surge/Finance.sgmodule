@@ -42,10 +42,6 @@ DOMAIN-SUFFIX, track.bankcomm.com, REJECT, extended-matching, pre-matching
 # --- china_construction_bank | zirawell ---
 DOMAIN-SUFFIX, adv.ccb.com, REJECT, extended-matching, pre-matching
 
-# --- bank_of_communications | zirawell ---
-DOMAIN, monitor.bankcomm.cn, REJECT, extended-matching, pre-matching
-DOMAIN, mobs.dl.bankcomm.com, REJECT, extended-matching, pre-matching
-
 # --- china_merchants_bank | zirawell ---
 DOMAIN, log.cmbchina.com, REJECT, extended-matching, pre-matching
 DOMAIN, mbads.paas.cmbchina.com, REJECT, extended-matching, pre-matching
