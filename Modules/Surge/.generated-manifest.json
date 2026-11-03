@@ -138,7 +138,7 @@
     "baidu_netdisk": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "4f5100a7b80684b2760daf681b48b02641ec0d0cdecccdddb0bc6d43eb1d59ea",
+      "sha256": "27b1883320961772843e70f77a4d3a0c036b231a40f3c1b917824d93ee9a84b4",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/BaiduNetDisk.sgmodule"
     },
     "bank_of_china": {
@@ -222,7 +222,7 @@
     "china_unicom": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "53e8f0620666675209fb3263132efc8c16fe2b08b6e864a1e47f9079584c1d68",
+      "sha256": "aaa201696644a03339b5a25591c2bee612d6144c5aa2b7375ad78894f7d40e51",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/ChinaUnicom.sgmodule"
     },
     "cmb_life": {
@@ -360,7 +360,7 @@
     "keep": {
       "output": "MyBlockAds.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "7d47b9418112d7687a118484fbfd5ce72d11d0faa1aae723daf97df0d2e3f8e9",
+      "sha256": "78fa051c557431849e26dc51d37d7f1a2467a53e108453f82218af2d72a6fb89",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Keep.sgmodule"
     },
     "kfc": {
@@ -390,7 +390,7 @@
     "mango_tv": {
       "output": "Video.sgmodule",
       "provider": "sooyaaabo",
-      "sha256": "0080d3f04ce93e85f21d287dee9633a69240a73e8c65bea447097e99222327fb",
+      "sha256": "a19b63c2eee0b05af0d5ed3b37e16f8793523b1c117ea4907e463deebfe20c6f",
       "url": "https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/MangoTV.sgmodule"
     },
     "mcdonalds": {
