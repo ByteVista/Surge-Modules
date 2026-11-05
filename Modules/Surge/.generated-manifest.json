@@ -50,7 +50,7 @@
   ],
   "outputs": {
     "AdUnion.sgmodule": "e3dc5f3c54dcdace799aa52ad85c68ba23c8261817b8233e8490518e3f8314b5",
-    "AlibabaFamily.sgmodule": "61e2c584a9a78668455e596ae2634beed31b9f2b62b6b596df6400e2fd2c7096",
+    "AlibabaFamily.sgmodule": "fd2e25c55f8b35aef17ad1ea4b723ece4a214ba320dfdc76c6de7c75136f1657",
     "Bilibili.sgmodule": "75e6a67dd0137056c9ceffe75494b3adffdd15ccdf146cb925a13512ebff694c",
     "ByteDanceFamily.sgmodule": "9ce4ff417f7935861f210fa86bd8864cbbfe1d8c89fc1f5a8bc2895f22c4ac58",
     "Finance.sgmodule": "161669cb2148cb7f8be250eb55d8309dd13f1b5a83eb863856427f93f4c2f93c",
@@ -294,7 +294,7 @@
     "fliggy": {
       "output": "AlibabaFamily.sgmodule",
       "provider": "zirawell",
-      "sha256": "4d602924d466f170a6ab57d0977c5fce905b1329d7f6053f25a7d35b26ede02a",
+      "sha256": "091ac4a2c38af22acbfe3e3e03bec919d4b83b0b4efe32cb29596c039b7c9a4d",
       "url": "https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule"
     },
     "freshippo": {
