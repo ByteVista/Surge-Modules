@@ -1,10 +1,5 @@
 name: Check upstream subscriptions
 on:
-  push:
-    paths: [README.md, install.html, config/**, scripts/**, tests/**, requirements.txt, .github/workflows/**]
-  pull_request:
-  schedule:
-    - cron: '23 3 * * *'
   workflow_dispatch:
 permissions:
   contents: read
