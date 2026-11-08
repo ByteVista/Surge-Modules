@@ -1,883 +1,598 @@
-schema: 1
-
+schema: 2
 policy:
-  allow_upstream_unlock_features: true
-  allow_external_unlock_injection: false
-  preserve_whole_upstream_module: true
-  mirror_all_runtime_dependencies: true
-  module_category: AdBlock
-
-bundles:
-  video:
-    module: Video.sgmodule
-    description: 视频类总模块
-    publish_individual_modules: false
-    merge_strategy: merge_same_named_sections
-    deduplicate: exact_duplicate_lines_only
-  myblockads:
-    module: MyBlockAds.sgmodule
-    description: MyBlockAds 软件合集
-    source_prefixes:
-      - MyBlockAds/
-    publish_individual_modules: false
-    merge_strategy: merge_same_named_sections
-    deduplicate: exact_duplicate_lines_only
-  alibaba:
-    module: AlibabaFamily.sgmodule
-    description: 阿里系合集
-    source_prefixes:
-      - AlibabaFamily/
-    publish_individual_modules: false
-    merge_strategy: merge_same_named_sections
-    deduplicate: exact_duplicate_lines_only
-  bytedance:
-    module: ByteDanceFamily.sgmodule
-    description: 字节系合集
-    source_prefixes:
-      - ByteDanceFamily/
-    publish_individual_modules: false
-    merge_strategy: merge_same_named_sections
-    deduplicate: exact_duplicate_lines_only
-  meituan:
-    module: MeituanFamily.sgmodule
-    description: 美团系合集
-    source_prefixes:
-      - MeituanFamily/
-    publish_individual_modules: false
-    merge_strategy: merge_same_named_sections
-    deduplicate: exact_duplicate_lines_only
-  finance:
-    module: Finance.sgmodule
-    description: 金融软件合集
-    source_prefixes:
-      - Finance/
-    publish_individual_modules: false
-    merge_strategy: merge_same_named_sections
-    deduplicate: exact_duplicate_lines_only
-
-# 仅记录用户已经确认的来源；未确认的软件不提前选择。
+  delivery: direct-upstream
+  fallback: romeo
+  mirror_modules: false
+  mirror_dependencies: false
+  convert_modules: false
+  merge_modules: false
+groups:
+  standalone: 独立模块
+  video: 视频
+  myblockads: 常用 App
+  alibaba: 阿里系
+  bytedance: 字节系
+  meituan: 美团系
+  finance: 金融
 apps:
   bilibili:
-    module: Bilibili.sgmodule
-    mode: convert
-    format: loon
-    provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Loon/Kelee/Bilibili_remove_ads.lpx
-    modifications: none
-    include_in_bundle: false
-
+    name: 哔哩哔哩增强
+    group: standalone
+    provider: kokoryh
+    source: upstream
+    url: https://raw.githubusercontent.com/kokoryh/Sparkle/master/release/surge/module/bilibili.sgmodule
+    note: Kelee 哔哩哔哩脚本的原作者；使用其原生 Surge 版本。
   youtube:
-    module: YouTube.sgmodule
-    mode: direct
-    format: surge
+    name: Youtube (Music) Enhance
+    group: standalone
     provider: Maasea
+    source: upstream
     url: https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule
-    modifications: none
-    include_in_bundle: false
-
   spotify:
-    module: Spotify.sgmodule
-    mode: direct
-    format: surge
+    name: Spotify(>=iOS15)
+    group: standalone
     provider: app2smile
+    source: upstream
     url: https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
-    modifications: none
-
   tieba:
-    module: Tieba.sgmodule
-    mode: direct
-    format: surge
+    name: 百度贴吧去广告
+    group: standalone
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Tieba_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Tieba_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   pinduoduo:
-    module: PinDuoDuo.sgmodule
-    mode: direct
-    format: surge
+    name: 拼多多去广告
+    group: standalone
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PinDuoDuo_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/PinDuoDuo_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   xiaohongshu:
-    module: XiaoHongShu.sgmodule
-    mode: convert
-    format: loon
+    name: 小红书
+    group: standalone
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partX/Xiaohongshu.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partX/Xiaohongshu.sgmodule
   xiaohongshu_enhance:
-    module: Apps/XiaoHongShuEnhance.sgmodule
-    mode: disabled
+    enabled: false
     reason: selected_upstream_combines_ads_and_enhancements
-
   vvebo:
-    module: VVebo_repair.sgmodule
-    mode: direct
-    format: surge
+    name: VVebo时间线修复
+    group: standalone
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/VVebo_repair.sgmodule
-    modifications: none
-    include_in_bundle: false
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/VVebo_repair.sgmodule
+    note: 修复用户时间线和我的页面；上游要求禁用微博去广告插件，避免冲突。
   weibo:
-    module: Weibo.sgmodule
-    mode: direct
-    format: surge
+    name: 微博去广告
+    group: standalone
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Weibo_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Weibo_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   zhihu:
-    module: Zhihu.sgmodule
-    mode: direct
-    format: surge
+    name: 知乎去广告
+    group: standalone
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Zhihu_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Zhihu_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   ximalaya:
-    module: Ximalaya.sgmodule
-    mode: convert
-    format: quantumult_x
+    name: ximalaya
+    group: standalone
     provider: ddgksf2013
-    url: https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Ximalaya.conf
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/Beta/Ximalaya.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   jd_enhance:
-    module: Enhancements/JDEnhance.sgmodule
-    mode: disabled
+    enabled: false
     reason: user_choice
-
   mini_program_adblock:
-    module: MiniProgramAdBlock.sgmodule
-    mode: direct
-    format: surge
+    name: 微信小程序去广告
+    group: standalone
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/WexinMiniPrograms_Remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/WexinMiniPrograms_Remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   taobao:
-    module: AlibabaFamily/Taobao.sgmodule
-    mode: direct
-    format: surge
+    name: 淘宝 - TAOBAO
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D/taobao.sgmodule
-    modifications: none
-
   taobao_flash_eleme:
-    module: AlibabaFamily/TaobaoFlash.sgmodule
-    mode: direct
-    format: surge
+    name: 淘宝闪购 - TBTO
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule
-    modifications: none
-
   damai:
-    module: AlibabaFamily/Damai.sgmodule
-    mode: direct
-    format: surge
+    name: 大麦 - DAMAI
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E9%BA%A6/damai.sgmodule
-    modifications: none
-
   fliggy:
-    module: AlibabaFamily/Fliggy.sgmodule
-    mode: direct
-    format: surge
+    name: 飞猪旅行 - FLIGGY
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule
-    modifications: none
-
   quark:
-    module: AlibabaFamily/Quark.sgmodule
-    mode: direct
-    format: surge
+    name: 夸克 - QUARK
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/K/%E5%A4%B8%E5%85%8B/quark.sgmodule
-    modifications: none
-
   goofish:
-    module: AlibabaFamily/Goofish.sgmodule
-    mode: direct
-    format: surge
+    name: 闲鱼 - GOOFISH
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E9%97%B2%E9%B1%BC/goofish.sgmodule
-    modifications: none
-
   alipan:
-    module: AlibabaFamily/AliyunDrive.sgmodule
-    mode: direct
-    format: surge
+    name: 阿里云盘 - ADRIVE
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/adrive.sgmodule
-    modifications: none
-
   youku:
-    module: Video.sgmodule
-    bundle: video
-    mode: direct
-    format: surge
+    name: 优酷 - YOUKU
+    group: video
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91/youku.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   cainiao:
-    module: AlibabaFamily/Cainiao.sgmodule
-    mode: direct
-    format: surge
+    name: 菜鸟 - CAINIAO
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/C/%E8%8F%9C%E9%B8%9F/cainiao.sgmodule
-    modifications: none
-
   alibaba_1688:
-    module: AlibabaFamily/Alibaba1688.sgmodule
-    mode: disabled
+    enabled: false
     reason: no_verified_app_specific_upstream
-
   freshippo:
-    module: AlibabaFamily/Freshippo.sgmodule
-    mode: direct
-    format: surge
+    name: 盒马 - FRESHIPPO
+    group: alibaba
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/H/%E7%9B%92%E9%A9%AC/freshippo.sgmodule
-    modifications: none
-
   bytedance_family:
-    module: ByteDanceFamily/ByteDance.sgmodule
-    covers:
-      - douyin
-      - dongchedi
-    mode: convert
-    format: loon
+    name: 字节跳动
+    group: bytedance
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partZ/ByteDance.lpx
-    modifications: none
-    include_in_bundle: true
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partZ/ByteDance.sgmodule
   dongchedi_dedicated:
-    module: ByteDanceFamily/Dongchedi.sgmodule
-    mode: disabled
+    enabled: false
     reason: covered_by_bytedance_family_module
-
   meituan:
-    module: MeituanFamily/Meituan.sgmodule
-    mode: direct
-    format: surge
+    name: 美团 - MEITUAN
+    group: meituan
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2/meituan.sgmodule
-    modifications: none
-
   meituan_waimai:
-    module: MeituanFamily/MeituanWaimai.sgmodule
-    mode: direct
-    format: surge
+    name: 美团外卖 - MEITUANWM
+    group: meituan
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96/meituanwm.sgmodule
-    modifications: none
-
   dianping:
-    module: MeituanFamily/Dianping.sgmodule
-    mode: direct
-    format: surge
+    name: 大众点评 - DIANPING
+    group: meituan
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E4%BC%97%E7%82%B9%E8%AF%84/dianping.sgmodule
-    modifications: none
-
   xiaoxiang_supermarket:
-    module: MeituanFamily/XiaoxiangSupermarket.sgmodule
-    mode: direct
-    format: surge
+    name: 小象超市 - XIAOXIANG
+    group: meituan
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E8%B1%A1%E8%B6%85%E5%B8%82/xiaoxiang.sgmodule
-    modifications: none
-
   tencent_video:
-    module: Video.sgmodule
-    bundle: video
-    mode: direct
-    format: surge
+    name: 腾讯视频 - TXTV
+    group: video
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91/txtv.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   ad_union:
-    module: AdUnion.sgmodule
-    covers:
-      - tencent_ads
-      - cross_app_ad_sdks
-    mode: direct
-    format: surge
+    name: 广告联盟 - ADUNION
+    group: standalone
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/%23/%E5%B9%BF%E5%91%8A%E8%81%94%E7%9B%9F/adunion.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   alipay:
-    module: Finance/Alipay.sgmodule
-    mode: direct
-    format: surge
+    name: 支付宝 - ALIPAY
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%94%AF%E4%BB%98%E5%AE%9D/alipay.sgmodule
-    modifications: none
-
   unionpay:
-    module: Finance/UnionPay.sgmodule
-    mode: direct
-    format: surge
+    name: 云闪付 - 95516
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%91%E9%97%AA%E4%BB%98/unionpay.sgmodule
-    modifications: none
-
   cmb_life:
-    module: Finance/CMBLife.sgmodule
-    mode: direct
-    format: surge
+    name: 掌上生活 - CMBCC
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8E%8C%E4%B8%8A%E7%94%9F%E6%B4%BB/cmbcc.sgmodule
-    modifications: none
-
   maidanba:
-    module: Finance/MaiDanBa.sgmodule
-    mode: direct
-    format: surge
+    name: 买单吧 - BANKCOMM
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E4%B9%B0%E5%8D%95%E5%90%A7/mdb.sgmodule
-    modifications: none
-
   china_construction_bank:
-    module: Finance/ChinaConstructionBank.sgmodule
-    mode: direct
-    format: surge
+    name: 中国建设银行 - CCB
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C/ccb.sgmodule
-    modifications: none
-
   bank_of_communications:
-    module: Finance/BankOfCommunications.sgmodule
-    mode: direct
-    format: surge
+    name: 交通银行 - BANKCOMM
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C/bankcomm.sgmodule
-    modifications: none
-
   china_merchants_bank:
-    module: Finance/ChinaMerchantsBank.sgmodule
-    mode: direct
-    format: surge
+    name: 招商银行 - CMBCHINA
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/cmb.sgmodule
-    modifications: none
-
   bank_of_china:
-    module: Finance/BankOfChina.sgmodule
-    mode: direct
-    format: surge
+    name: 中国银行 - BOC
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/boc.sgmodule
-    modifications: none
-
   futunn:
-    module: Finance/FutuNiuNiu.sgmodule
-    mode: direct
-    format: surge
+    name: 富途牛牛 - FUTUNN
+    group: finance
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E5%AF%8C%E9%80%94%E7%89%9B%E7%89%9B/futunn.sgmodule
-    modifications: none
-
   binance:
-    module: Finance/Binance.sgmodule
-    mode: convert
-    format: loon
+    name: 币安
+    group: finance
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partB/Binance.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partB/Binance.sgmodule
   amap:
-    module: MyBlockAds/Amap.sgmodule
-    mode: direct
-    format: surge
+    name: 高德地图去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Amap_remove_ads.sgmodule
-    modifications: dependency_mirror_only
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Amap_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   didi:
-    module: MyBlockAds/DiDi.sgmodule
-    mode: direct
-    format: surge
+    name: 滴滴去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/DiDi_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/DiDi_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   klook:
-    module: MyBlockAds/Klook.sgmodule
-    mode: disabled
+    enabled: false
     reason: no_verified_dedicated_upstream
-    covered_by: AdUnion.sgmodule
-    limitation: generic_ad_sdk_coverage_only
-
   sf_express:
-    module: MyBlockAds/SFExpress.sgmodule
-    mode: direct
-    format: surge
+    name: 顺丰速运 - SFEXPRESS
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E9%A1%BA%E4%B8%B0%E9%80%9F%E8%BF%90/sfexpress.sgmodule
-    modifications: none
-
   traffic_management_12123:
-    module: MyBlockAds/TrafficManagement12123.sgmodule
-    mode: direct
-    format: surge
+    name: 交管12123 - 12123
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E7%AE%A112123/12123.sgmodule
-    modifications: none
-
   railway_12306:
-    module: MyBlockAds/Railway12306.sgmodule
-    mode: direct
-    format: surge
+    name: 12306去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/12306_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/12306_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   douban:
-    module: MyBlockAds/Douban.sgmodule
-    mode: direct
-    format: surge
+    name: 豆瓣 - DOUBAN
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E8%B1%86%E7%93%A3/douban.sgmodule
-    modifications: none
-    compatibility: app_store_version
-
   ithome:
-    module: MyBlockAds/ITHome.sgmodule
-    mode: direct
-    format: surge
+    name: IT之家去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/IThome_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/IThome_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   coolapk:
-    module: MyBlockAds/CoolApk.sgmodule
-    mode: direct
-    format: surge
+    name: 酷安去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/CoolApk_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/CoolApk_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   smzdm:
-    module: MyBlockAds/SMZDM.sgmodule
-    mode: direct
-    format: surge
+    name: 什么值得买 - SMZDM
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/smzdm.sgmodule
-    modifications: none
-
   csdn:
-    module: MyBlockAds/CSDN.sgmodule
-    mode: convert
-    format: loon
+    name: CSDN
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partC/CSDN.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partC/csdn.sgmodule
   hupu:
-    module: MyBlockAds/Hupu.sgmodule
-    mode: direct
-    format: surge
+    name: 虎扑去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/HUPU_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/HUPU_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   gcores:
-    module: MyBlockAds/Gcores.sgmodule
-    mode: direct
-    format: surge
+    name: 机核 - GCORES
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9C%BA%E6%A0%B8/gcores.sgmodule
-    modifications: none
-
   sspai:
-    module: MyBlockAds/SSPai.sgmodule
-    mode: direct
-    format: surge
+    name: 少数派 - SSPAI
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B0%91%E6%95%B0%E6%B4%BE/sspai.sgmodule
-    modifications: none
-
   dewu:
-    module: MyBlockAds/Dewu.sgmodule
-    mode: direct
-    format: surge
+    name: 得物去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Dewu_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Dewu_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   jd:
-    module: MyBlockAds/JD.sgmodule
-    mode: direct
-    format: surge
+    name: 京东 - JD
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%AC%E4%B8%9C/jd.sgmodule
-    modifications: none
-    excludes:
-      - price_comparison
-      - cookie_capture
-
   shihuo:
-    module: MyBlockAds/ShiHuo.sgmodule
-    mode: direct
-    format: surge
+    name: 识货 - SHIHUO
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E8%AF%86%E8%B4%A7/shihuo.sgmodule
-    modifications: none
-
   jingxi:
-    module: MyBlockAds/JingXi.sgmodule
-    mode: convert
-    format: loon
+    name: 京喜
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partJ/JingXi.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partJ/JingXi.sgmodule
   suning:
-    module: MyBlockAds/Suning.sgmodule
-    mode: convert
-    format: loon
+    name: 苏宁易购
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partS/Suning.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partS/Suning.sgmodule
   sams_club:
-    module: MyBlockAds/SamsClub.sgmodule
-    mode: direct
-    format: surge
+    name: 山姆会员商店 - SAMSCLUB
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B1%B1%E5%A7%86%E4%BC%9A%E5%91%98%E5%95%86%E5%BA%97/samsclub.sgmodule
-    modifications: none
-
   amazon:
-    module: MyBlockAds/Amazon.sgmodule
-    mode: direct
-    format: surge
+    name: 亚马逊 - AMAZON
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%9A%E9%A9%AC%E9%80%8A/amazon.sgmodule
-    modifications: none
-
   xiaomi_mall:
-    module: MyBlockAds/XiaomiMall.sgmodule
-    mode: convert
-    format: loon
+    name: 小米商城
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partX/XiaomiMall.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partX/XiaomiMall.sgmodule
   xiaomi_youpin:
-    module: MyBlockAds/XiaomiYoupin.sgmodule
-    mode: direct
-    format: surge
+    name: 小米有品 - MIYOUPIN
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E7%B1%B3%E6%9C%89%E5%93%81/miyoupin.sgmodule
-    modifications: none
-
   aihuishou:
-    module: MyBlockAds/AiHuiShou.sgmodule
-    mode: direct
-    format: surge
+    name: AiHuiShouAds
+    group: myblockads
     provider: ddgksf2013
-    source_mirror: Romeo
+    source: romeo
     url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/AiHuiShouAds.sgmodule
-    modifications: none
-    provenance_note: standalone_author_source_unavailable
-
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   beike:
-    module: MyBlockAds/Beike.sgmodule
-    mode: direct
-    format: surge
+    name: 贝壳找房去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beike_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Beike_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   kfc:
-    module: MyBlockAds/KFC.sgmodule
-    mode: convert
-    format: loon
+    name: 肯德基
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partK/KFC.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partK/KFC.sgmodule
   mcdonalds:
-    module: MyBlockAds/McDonalds.sgmodule
-    mode: convert
-    format: loon
+    name: 麦当劳
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partM/McDonalds.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partM/McDonalds.sgmodule
   mwee:
-    module: MyBlockAds/Mwee.sgmodule
-    mode: direct
-    format: surge
+    name: 美味不用等 - MWEE
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%91%B3%E4%B8%8D%E7%94%A8%E7%AD%89/mwee.sgmodule
-    modifications: none
-
   pupu:
-    module: MyBlockAds/PuPuMall.sgmodule
-    mode: direct
-    format: surge
+    name: 朴朴超市去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/PuPuMall_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/PuPuMall_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   luckin_coffee:
-    module: MyBlockAds/LuckinCoffee.sgmodule
-    mode: direct
-    format: surge
+    name: 瑞幸咖啡去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/LuckinCoffee_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/LuckinCoffee_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   wanda_cinema:
-    module: MyBlockAds/WandaCinema.sgmodule
-    mode: convert
-    format: loon
+    name: 万达电影
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partW/WandaCinema.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partW/WandaCinema.sgmodule
   fcbox:
-    module: MyBlockAds/FCBox.sgmodule
-    mode: direct
-    format: surge
+    name: 丰巢 - FCBOX
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E4%B8%B0%E5%B7%A2/fcbox.sgmodule
-    modifications: none
-
   baidu_netdisk:
-    module: MyBlockAds/BaiduNetDisk.sgmodule
-    mode: direct
-    format: surge
+    name: 百度网盘
+    group: myblockads
     provider: sooyaaabo
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/BaiduNetDisk.sgmodule
-    modifications: none
-    features:
-      - ad_removal
-      - partial_svip
-      - quality_unlock
-      - playback_speed_unlock
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/BaiduNetDisk.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   colorful_clouds:
-    module: MyBlockAds/ColorfulClouds.sgmodule
-    mode: direct
-    format: surge
+    name: 彩云天气去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/ColorfulClouds_remove_ads.sgmodule
-    modifications: none
-    compatibility: standard_app
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/ColorfulClouds_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   jump:
-    module: MyBlockAds/Jump.sgmodule
-    mode: direct
-    format: surge
+    name: Jump去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Jump_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Jump_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   meitu:
-    module: MyBlockAds/Meitu.sgmodule
-    mode: direct
-    format: surge
+    name: 美图秀秀 - MEITU
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80/meitu.sgmodule
-    modifications: none
-    features:
-      - ad_removal
-      - upstream_unlock
-
   beautycam:
-    module: MyBlockAds/BeautyCam.sgmodule
-    mode: direct
-    format: surge
+    name: 美颜相机去广告
+    group: myblockads
     provider: Kelee
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/MeituMYXJ_remove_ads.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/MeituMYXJ_remove_ads.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   minimal_exchange_rate:
-    module: MyBlockAds/MinimalExchangeRate.sgmodule
-    mode: direct
-    format: surge
+    name: 极简汇率 - TRATAO
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9E%81%E7%AE%80%E6%B1%87%E7%8E%87/tratao.sgmodule
-    modifications: none
-
   pikpak:
-    module: MyBlockAds/PikPak.sgmodule
-    mode: direct
-    format: surge
+    name: pikpak - PIKPAK
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/P/pikpak/pikpak.sgmodule
-    modifications: none
-    features:
-      - region_access_bypass
-
   tianyi_cloud:
-    module: MyBlockAds/TianyiCloud.sgmodule
-    mode: direct
-    format: surge
+    name: 天翼云盘 - 189CLOUD
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98/189cloud.sgmodule
-    modifications: none
-
   midea_meiju:
-    module: MyBlockAds/MideaMeiju.sgmodule
-    mode: disabled
+    enabled: false
     reason: user_selected_no_module
-
   ezviz:
-    module: MyBlockAds.sgmodule
-    bundle: myblockads
-    mode: direct
-    format: surge
+    name: 萤石云视频 - YS7
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E8%90%A4%E7%9F%B3%E4%BA%91%E8%A7%86%E9%A2%91/ys7.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   mijia:
-    module: MyBlockAds/Mijia.sgmodule
-    mode: convert
-    format: loon
+    name: 米家
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partM/Mijia.lpx
-    modifications: none
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partM/Mijia.sgmodule
   keep:
-    module: MyBlockAds/Keep.sgmodule
-    mode: direct
-    format: surge
+    name: Keep
+    group: myblockads
     provider: sooyaaabo
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Keep.sgmodule
-    modifications: none
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/Keep.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   leoao:
-    module: MyBlockAds/Leoao.sgmodule
-    mode: direct
-    format: surge
+    name: 乐刻运动 - LEOAO
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/L/%E4%B9%90%E5%88%BB%E8%BF%90%E5%8A%A8/leoao.sgmodule
-    modifications: none
-
   boohee:
-    module: MyBlockAds/Boohee.sgmodule
-    mode: direct
-    format: surge
+    name: 薄荷健康 - BOOHEE
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/%E8%96%84%E8%8D%B7%E5%81%A5%E5%BA%B7/boohee.sgmodule
-    modifications: none
-
   iqiyi:
-    module: Video.sgmodule
-    bundle: video
-    mode: direct
-    format: surge
+    name: 爱奇艺 - IQIYI
+    group: video
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E7%88%B1%E5%A5%87%E8%89%BA/iqiyi.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   mango_tv:
-    module: Video.sgmodule
-    bundle: video
-    mode: direct
-    format: surge
+    name: 芒果TV
+    group: video
     provider: sooyaaabo
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/MangoTV.sgmodule
-    modifications: none
-    features:
-      - ad_removal
-      - page_cleanup
-      - upstream_membership_unlock
-    include_in_bundle: true
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/MangoTV.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   netease_buff:
-    module: MyBlockAds.sgmodule
-    mode: disabled
+    enabled: false
     reason: no_verified_dedicated_upstream
-
   blued:
-    module: MyBlockAds.sgmodule
-    bundle: myblockads
-    mode: direct
-    format: surge
+    name: Blued
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/Blued/blued.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   china_unicom:
-    module: MyBlockAds.sgmodule
-    bundle: myblockads
-    mode: direct
-    format: surge
+    name: 中国联通
+    group: myblockads
     provider: sooyaaabo
-    source_mirror: Romeo
-    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/ChinaUnicom.sgmodule
-    modifications: none
-    include_in_bundle: true
-
+    source: romeo
+    url: https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/ChinaUnicom.sgmodule
+    note: 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。
   china_telecom:
-    module: MyBlockAds.sgmodule
-    bundle: myblockads
-    mode: convert
-    format: loon
+    name: 中国电信
+    group: myblockads
     provider: fmz200
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partZ/ChinaTelecom.lpx
-    modifications: none
-    include_in_bundle: true
-
+    source: upstream
+    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partZ/ChinaTelecom.sgmodule
   xiaoxiao_youxuan:
-    module: MyBlockAds.sgmodule
-    bundle: myblockads
-    mode: direct
-    format: surge
+    name: 晓晓优选 - XXYX
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E6%99%93%E6%99%93%E4%BC%98%E9%80%89/xxyx.sgmodule
-    modifications: none
-    include_in_bundle: true
-
   xichuangzhu:
-    module: MyBlockAds.sgmodule
-    bundle: myblockads
-    mode: direct
-    format: surge
+    name: 西窗烛 - XCZIM
+    group: myblockads
     provider: zirawell
+    source: upstream
     url: https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E8%A5%BF%E7%AA%97%E7%83%9B/xczim.sgmodule
-    modifications: none
-    include_in_bundle: true

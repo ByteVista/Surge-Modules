@@ -1,139 +1,173 @@
-# Surge 模块自动同步
+# Surge 上游直订阅
 
-这个仓库定时拉取选定上游，将 Loon／Quantumult X 内容通过 Script-Hub 转成 Surge，并按照既定分组生成最终模块。上游没有变化时不会产生提交；任一必要来源获取或转换失败时，本次同步整体失败，不发布残缺合集。
+公开维护的 Surge 插件安装目录。**原作者提供原生 Surge 模块时直接订阅原作者；没有可用的原作者 Surge 版本时使用 Romeo 成品。** 模块中的脚本和规则保持上游原样，由 Surge 直接获取。
 
-## 最终模块布局
+## 从旧版迁移
 
-| 输出 | 内容 |
-|---|---|
-| `MyBlockAds.sgmodule` | MyBlockAds 软件清单中的普通 App，包括萤石云视频；不包含视频类 App |
-| `Bilibili.sgmodule` | 哔哩哔哩，使用 Romeo 镜像的 Kelee Loon 插件完整转换 |
-| `YouTube.sgmodule` | YouTube，直接使用 Maasea 原生 Surge 模块 |
-| `Video.sgmodule` | 优酷、爱奇艺、芒果 TV、腾讯视频 |
-| `AlibabaFamily.sgmodule` | 淘宝、淘宝闪购、大麦、飞猪、夸克、闲鱼、阿里云盘、菜鸟、盒马；1688 暂不启用 |
-| `ByteDanceFamily.sgmodule` | 抖音与懂车帝共用的 fmz200 字节系完整模块 |
-| `MeituanFamily.sgmodule` | 美团、美团外卖、大众点评、小象超市 |
-| `Finance.sgmodule` | 支付宝、云闪付、掌上生活、买单吧、银行、富途和币安等已选金融软件 |
-| `AdUnion.sgmodule` | 用户明确选择的 zirawell 广告联盟完整模块，作用范围跨 App |
-| `MiniProgramAdBlock.sgmodule` | Romeo 提供的 Kelee 微信小程序 Surge 转换版 |
-| `VVebo_repair.sgmodule` | Kelee 的 VVebo 用户时间线和“我的页面”修复 |
-| 独立模块 | 贴吧、拼多多、小红书、微博、知乎、喜马拉雅、Spotify |
+1. 在 Surge 中停用并删除旧的 `MyBlockAds`、`Video`、家族合集、`Finance` 和其他通过 `bytevista.github.io` 安装的模块。
+2. 在下表中按需安装独立插件。同一 App 只启用一套去广告模块，避免旧合集和新插件重复处理。
+3. 按插件要求启用重写、脚本及 MITM，安装并信任证书；处理 HTTP/2 的插件还需按上游说明启用对应功能。
+4. 在 Surge 内更新模块即可跟随上游，不需要 GitHub Pro 或本项目运行同步任务。
 
-所有最终 `.sgmodule` 都发布在 `Modules/Surge/` 根目录，不再划分模块子目录。模块引用的脚本、远程数据和规则集会完整镜像到 `Modules/Surge/_resources/`，模块内的运行依赖链接全部改为本仓库的公开 GitHub Pages 地址。作者主页、App Store 和图标属于说明性元数据，不是模块运行依赖，因此保持上游原值。
+旧的 GitHub Pages 订阅地址已停用，无法自动迁移到新的上游 URL，必须重新安装。安装成功和链接可访问不代表所有 App 版本均能去广告；具体兼容性以插件原作者说明和设备实测为准。
 
-所有最终模块的 Surge 分类统一设置为 `#!category=AdBlock`。
+## 安装方式
 
-完整软件、作者、格式和 URL 以 [`config/sources.yaml`](config/sources.yaml) 为准。美的美居、阿里巴巴（1688）、网易 BUFF、京东增强和小红书拆分增强目前明确禁用，不会生成空模块。
+- **自动安装**：点击下表按钮，通过本仓库的安装中转页唤起 Surge 并确认安装。GitHub 会过滤 README 内的 `surge://` 协议链接，因此中转页使用 raw.githack.com 提供 HTTPS 访问，首次打开可能需确认访问。此服务仅展示安装页，模块与脚本仍直接从上游下载。
+- **上游订阅**：右键或长按复制链接，在 Surge → 模块 → 安装新模块 → 从 URL 安装中粘贴。若中转页无法打开，使用此方式。
+- 中转页也提供可复制的 Surge 协议链接。无需部署网站，无需 GitHub Pages。
 
-## 模块订阅链接
+## 插件目录
 
-点击下方模块名称即可打开安装页，自动唤起 Surge 安装。若浏览器拦截自动跳转，请点击安装页的“打开 Surge 安装”；也可复制“原始订阅链接”到 Surge 的“从 URL 安装模块”。
+下面的列表由 [`config/sources.yaml`](config/sources.yaml) 生成。标记“Romeo”的条目使用其原样成品；部分普通版本仅含 MITM 或缺少脚本，因此采用经内容检查的 `Beta` 版本。Beta 是该上游的目录名称，功能与兼容性仍由该上游决定。
 
 <!-- MODULE_LINKS_START -->
-- [AdUnion.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=AdUnion.sgmodule)
-- [AlibabaFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=AlibabaFamily.sgmodule)
-- [Bilibili.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Bilibili.sgmodule)
-- [ByteDanceFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=ByteDanceFamily.sgmodule)
-- [Finance.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Finance.sgmodule)
-- [MeituanFamily.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=MeituanFamily.sgmodule)
-- [MiniProgramAdBlock.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=MiniProgramAdBlock.sgmodule)
-- [MyBlockAds.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=MyBlockAds.sgmodule)
-- [PinDuoDuo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=PinDuoDuo.sgmodule)
-- [Spotify.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Spotify.sgmodule)
-- [Tieba.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Tieba.sgmodule)
-- [Video.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Video.sgmodule)
-- [VVebo_repair.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=VVebo_repair.sgmodule)
-- [Weibo.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Weibo.sgmodule)
-- [XiaoHongShu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=XiaoHongShu.sgmodule)
-- [Ximalaya.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Ximalaya.sgmodule)
-- [YouTube.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=YouTube.sgmodule)
-- [Zhihu.sgmodule](https://bytevista.github.io/Surge-Modules/Modules/Surge/install.html?module=Zhihu.sgmodule)
+
+### 独立模块
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 哔哩哔哩增强 | kokoryh 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fkokoryh%2FSparkle%2Fmaster%2Frelease%2Fsurge%2Fmodule%2Fbilibili.sgmodule) · [上游订阅](https://raw.githubusercontent.com/kokoryh/Sparkle/master/release/surge/module/bilibili.sgmodule) | Kelee 哔哩哔哩脚本的原作者；使用其原生 Surge 版本。 |
+| Youtube (Music) Enhance | Maasea 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2FMaasea%2Fsgmodule%2Fmaster%2FYouTube.Enhance.sgmodule) · [上游订阅](https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule) |  |
+| Spotify(>=iOS15) | app2smile 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fapp2smile%2Frules%2Fmaster%2Fmodule%2Fspotify.module) · [上游订阅](https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module) |  |
+| 百度贴吧去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FTieba_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Tieba_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 拼多多去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FPinDuoDuo_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/PinDuoDuo_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 小红书 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartX%2FXiaohongshu.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partX/Xiaohongshu.sgmodule) |  |
+| VVebo时间线修复 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FVVebo_repair.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/VVebo_repair.sgmodule) | 修复用户时间线和我的页面；上游要求禁用微博去广告插件，避免冲突。 |
+| 微博去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FWeibo_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Weibo_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 知乎去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FZhihu_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Zhihu_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| ximalaya | ddgksf2013 · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2Fddgksf2013%2FBeta%2FXimalaya.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/Beta/Ximalaya.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 微信小程序去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FWexinMiniPrograms_Remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/WexinMiniPrograms_Remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 广告联盟 - ADUNION | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2F%2523%2F%25E5%25B9%25BF%25E5%2591%258A%25E8%2581%2594%25E7%259B%259F%2Fadunion.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/%23/%E5%B9%BF%E5%91%8A%E8%81%94%E7%9B%9F/adunion.sgmodule) |  |
+
+### 视频
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 优酷 - YOUKU | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FY%2F%25E4%25BC%2598%25E9%2585%25B7%25E8%25A7%2586%25E9%25A2%2591%2Fyouku.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91/youku.sgmodule) |  |
+| 腾讯视频 - TXTV | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FT%2F%25E8%2585%25BE%25E8%25AE%25AF%25E8%25A7%2586%25E9%25A2%2591%2Ftxtv.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91/txtv.sgmodule) |  |
+| 爱奇艺 - IQIYI | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FA%2F%25E7%2588%25B1%25E5%25A5%2587%25E8%2589%25BA%2Fiqiyi.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E7%88%B1%E5%A5%87%E8%89%BA/iqiyi.sgmodule) |  |
+| 芒果TV | sooyaaabo · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2Fsooyaaabo%2FBeta%2FMangoTV.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/MangoTV.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+
+### 常用 App
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 高德地图去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FAmap_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Amap_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 滴滴去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FDiDi_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/DiDi_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 顺丰速运 - SFEXPRESS | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FS%2F%25E9%25A1%25BA%25E4%25B8%25B0%25E9%2580%259F%25E8%25BF%2590%2Fsfexpress.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E9%A1%BA%E4%B8%B0%E9%80%9F%E8%BF%90/sfexpress.sgmodule) |  |
+| 交管12123 - 12123 | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FJ%2F%25E4%25BA%25A4%25E7%25AE%25A112123%2F12123.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E7%AE%A112123/12123.sgmodule) |  |
+| 12306去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2F12306_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/12306_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 豆瓣 - DOUBAN | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FD%2F%25E8%25B1%2586%25E7%2593%25A3%2Fdouban.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E8%B1%86%E7%93%A3/douban.sgmodule) |  |
+| IT之家去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FIThome_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/IThome_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 酷安去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FCoolApk_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/CoolApk_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 什么值得买 - SMZDM | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FS%2F%25E4%25BB%2580%25E4%25B9%2588%25E5%2580%25BC%25E5%25BE%2597%25E4%25B9%25B0%2Fsmzdm.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0/smzdm.sgmodule) |  |
+| CSDN | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartC%2Fcsdn.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partC/csdn.sgmodule) |  |
+| 虎扑去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FHUPU_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/HUPU_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 机核 - GCORES | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FJ%2F%25E6%259C%25BA%25E6%25A0%25B8%2Fgcores.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9C%BA%E6%A0%B8/gcores.sgmodule) |  |
+| 少数派 - SSPAI | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FS%2F%25E5%25B0%2591%25E6%2595%25B0%25E6%25B4%25BE%2Fsspai.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B0%91%E6%95%B0%E6%B4%BE/sspai.sgmodule) |  |
+| 得物去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FDewu_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Dewu_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 京东 - JD | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FJ%2F%25E4%25BA%25AC%25E4%25B8%259C%2Fjd.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%AC%E4%B8%9C/jd.sgmodule) |  |
+| 识货 - SHIHUO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FS%2F%25E8%25AF%2586%25E8%25B4%25A7%2Fshihuo.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E8%AF%86%E8%B4%A7/shihuo.sgmodule) |  |
+| 京喜 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartJ%2FJingXi.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partJ/JingXi.sgmodule) |  |
+| 苏宁易购 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartS%2FSuning.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partS/Suning.sgmodule) |  |
+| 山姆会员商店 - SAMSCLUB | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FS%2F%25E5%25B1%25B1%25E5%25A7%2586%25E4%25BC%259A%25E5%2591%2598%25E5%2595%2586%25E5%25BA%2597%2Fsamsclub.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/S/%E5%B1%B1%E5%A7%86%E4%BC%9A%E5%91%98%E5%95%86%E5%BA%97/samsclub.sgmodule) |  |
+| 亚马逊 - AMAZON | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FY%2F%25E4%25BA%259A%25E9%25A9%25AC%25E9%2580%258A%2Famazon.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%9A%E9%A9%AC%E9%80%8A/amazon.sgmodule) |  |
+| 小米商城 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartX%2FXiaomiMall.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partX/XiaomiMall.sgmodule) |  |
+| 小米有品 - MIYOUPIN | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FX%2F%25E5%25B0%258F%25E7%25B1%25B3%25E6%259C%2589%25E5%2593%2581%2Fmiyoupin.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E7%B1%B3%E6%9C%89%E5%93%81/miyoupin.sgmodule) |  |
+| AiHuiShouAds | ddgksf2013 · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2Fddgksf2013%2FAiHuiShouAds.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/ddgksf2013/AiHuiShouAds.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 贝壳找房去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FBeike_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Beike_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 肯德基 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartK%2FKFC.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partK/KFC.sgmodule) |  |
+| 麦当劳 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartM%2FMcDonalds.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partM/McDonalds.sgmodule) |  |
+| 美味不用等 - MWEE | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FM%2F%25E7%25BE%258E%25E5%2591%25B3%25E4%25B8%258D%25E7%2594%25A8%25E7%25AD%2589%2Fmwee.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%91%B3%E4%B8%8D%E7%94%A8%E7%AD%89/mwee.sgmodule) |  |
+| 朴朴超市去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FPuPuMall_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/PuPuMall_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 瑞幸咖啡去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FLuckinCoffee_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/LuckinCoffee_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 万达电影 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartW%2FWandaCinema.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partW/WandaCinema.sgmodule) |  |
+| 丰巢 - FCBOX | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FF%2F%25E4%25B8%25B0%25E5%25B7%25A2%2Ffcbox.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E4%B8%B0%E5%B7%A2/fcbox.sgmodule) |  |
+| 百度网盘 | sooyaaabo · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2Fsooyaaabo%2FBeta%2FBaiduNetDisk.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/BaiduNetDisk.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 彩云天气去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FColorfulClouds_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/ColorfulClouds_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| Jump去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FJump_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/Jump_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 美图秀秀 - MEITU | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FM%2F%25E7%25BE%258E%25E5%259B%25BE%25E7%25A7%2580%25E7%25A7%2580%2Fmeitu.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80/meitu.sgmodule) |  |
+| 美颜相机去广告 | Kelee · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2FKelee%2FBeta%2FMeituMYXJ_remove_ads.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/Kelee/Beta/MeituMYXJ_remove_ads.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 极简汇率 - TRATAO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FJ%2F%25E6%259E%2581%25E7%25AE%2580%25E6%25B1%2587%25E7%258E%2587%2Ftratao.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E6%9E%81%E7%AE%80%E6%B1%87%E7%8E%87/tratao.sgmodule) |  |
+| pikpak - PIKPAK | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FP%2Fpikpak%2Fpikpak.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/P/pikpak/pikpak.sgmodule) |  |
+| 天翼云盘 - 189CLOUD | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FT%2F%25E5%25A4%25A9%25E7%25BF%25BC%25E4%25BA%2591%25E7%259B%2598%2F189cloud.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%9B%98/189cloud.sgmodule) |  |
+| 萤石云视频 - YS7 | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FY%2F%25E8%2590%25A4%25E7%259F%25B3%25E4%25BA%2591%25E8%25A7%2586%25E9%25A2%2591%2Fys7.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E8%90%A4%E7%9F%B3%E4%BA%91%E8%A7%86%E9%A2%91/ys7.sgmodule) |  |
+| 米家 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartM%2FMijia.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partM/Mijia.sgmodule) |  |
+| Keep | sooyaaabo · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2Fsooyaaabo%2FBeta%2FKeep.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/Keep.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 乐刻运动 - LEOAO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FL%2F%25E4%25B9%2590%25E5%2588%25BB%25E8%25BF%2590%25E5%258A%25A8%2Fleoao.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/L/%E4%B9%90%E5%88%BB%E8%BF%90%E5%8A%A8/leoao.sgmodule) |  |
+| 薄荷健康 - BOOHEE | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FB%2F%25E8%2596%2584%25E8%258D%25B7%25E5%2581%25A5%25E5%25BA%25B7%2Fboohee.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/%E8%96%84%E8%8D%B7%E5%81%A5%E5%BA%B7/boohee.sgmodule) |  |
+| Blued | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FB%2FBlued%2Fblued.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/B/Blued/blued.sgmodule) |  |
+| 中国联通 | sooyaaabo · Romeo | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fifflagged%2FRomeo%2Fmain%2FModules%2FSurge%2Fsooyaaabo%2FBeta%2FChinaUnicom.sgmodule) · [上游订阅](https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/sooyaaabo/Beta/ChinaUnicom.sgmodule) | 未找到同作者可直接订阅的原生 Surge 版本；使用 Romeo 成品。 |
+| 中国电信 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartZ%2FChinaTelecom.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partZ/ChinaTelecom.sgmodule) |  |
+| 晓晓优选 - XXYX | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FX%2F%25E6%2599%2593%25E6%2599%2593%25E4%25BC%2598%25E9%2580%2589%2Fxxyx.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E6%99%93%E6%99%93%E4%BC%98%E9%80%89/xxyx.sgmodule) |  |
+| 西窗烛 - XCZIM | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FX%2F%25E8%25A5%25BF%25E7%25AA%2597%25E7%2583%259B%2Fxczim.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E8%A5%BF%E7%AA%97%E7%83%9B/xczim.sgmodule) |  |
+
+### 阿里系
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 淘宝 - TAOBAO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FT%2F%25E6%25B7%2598%25E5%25AE%259D%2Ftaobao.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D/taobao.sgmodule) |  |
+| 淘宝闪购 - TBTO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FT%2F%25E6%25B7%2598%25E5%25AE%259D%25E9%2597%25AA%25E8%25B4%25AD%2Feleme.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/T/%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD/eleme.sgmodule) |  |
+| 大麦 - DAMAI | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FD%2F%25E5%25A4%25A7%25E9%25BA%25A6%2Fdamai.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E9%BA%A6/damai.sgmodule) |  |
+| 飞猪旅行 - FLIGGY | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FF%2F%25E9%25A3%259E%25E7%258C%25AA%25E6%2597%2585%25E8%25A1%258C%2Ffliggy.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C/fliggy.sgmodule) |  |
+| 夸克 - QUARK | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FK%2F%25E5%25A4%25B8%25E5%2585%258B%2Fquark.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/K/%E5%A4%B8%E5%85%8B/quark.sgmodule) |  |
+| 闲鱼 - GOOFISH | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FX%2F%25E9%2597%25B2%25E9%25B1%25BC%2Fgoofish.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E9%97%B2%E9%B1%BC/goofish.sgmodule) |  |
+| 阿里云盘 - ADRIVE | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FA%2F%25E9%2598%25BF%25E9%2587%258C%25E4%25BA%2591%25E7%259B%2598%2Fadrive.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/A/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/adrive.sgmodule) |  |
+| 菜鸟 - CAINIAO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FC%2F%25E8%258F%259C%25E9%25B8%259F%2Fcainiao.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/C/%E8%8F%9C%E9%B8%9F/cainiao.sgmodule) |  |
+| 盒马 - FRESHIPPO | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FH%2F%25E7%259B%2592%25E9%25A9%25AC%2Ffreshippo.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/H/%E7%9B%92%E9%A9%AC/freshippo.sgmodule) |  |
+
+### 字节系
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 字节跳动 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartZ%2FByteDance.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partZ/ByteDance.sgmodule) |  |
+
+### 美团系
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 美团 - MEITUAN | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FM%2F%25E7%25BE%258E%25E5%259B%25A2%2Fmeituan.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2/meituan.sgmodule) |  |
+| 美团外卖 - MEITUANWM | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FM%2F%25E7%25BE%258E%25E5%259B%25A2%25E5%25A4%2596%25E5%258D%2596%2Fmeituanwm.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96/meituanwm.sgmodule) |  |
+| 大众点评 - DIANPING | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FD%2F%25E5%25A4%25A7%25E4%25BC%2597%25E7%2582%25B9%25E8%25AF%2584%2Fdianping.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/D/%E5%A4%A7%E4%BC%97%E7%82%B9%E8%AF%84/dianping.sgmodule) |  |
+| 小象超市 - XIAOXIANG | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FX%2F%25E5%25B0%258F%25E8%25B1%25A1%25E8%25B6%2585%25E5%25B8%2582%2Fxiaoxiang.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/X/%E5%B0%8F%E8%B1%A1%E8%B6%85%E5%B8%82/xiaoxiang.sgmodule) |  |
+
+### 金融
+
+| 模块 | 来源 | 安装 | 说明 |
+|---|---|---|---|
+| 支付宝 - ALIPAY | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FZ%2F%25E6%2594%25AF%25E4%25BB%2598%25E5%25AE%259D%2Falipay.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%94%AF%E4%BB%98%E5%AE%9D/alipay.sgmodule) |  |
+| 云闪付 - 95516 | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FY%2F%25E4%25BA%2591%25E9%2597%25AA%25E4%25BB%2598%2Funionpay.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Y/%E4%BA%91%E9%97%AA%E4%BB%98/unionpay.sgmodule) |  |
+| 掌上生活 - CMBCC | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FZ%2F%25E6%258E%258C%25E4%25B8%258A%25E7%2594%259F%25E6%25B4%25BB%2Fcmbcc.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8E%8C%E4%B8%8A%E7%94%9F%E6%B4%BB/cmbcc.sgmodule) |  |
+| 买单吧 - BANKCOMM | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FM%2F%25E4%25B9%25B0%25E5%258D%2595%25E5%2590%25A7%2Fmdb.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/M/%E4%B9%B0%E5%8D%95%E5%90%A7/mdb.sgmodule) |  |
+| 中国建设银行 - CCB | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FZ%2F%25E4%25B8%25AD%25E5%259B%25BD%25E5%25BB%25BA%25E8%25AE%25BE%25E9%2593%25B6%25E8%25A1%258C%2Fccb.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C/ccb.sgmodule) |  |
+| 交通银行 - BANKCOMM | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FJ%2F%25E4%25BA%25A4%25E9%2580%259A%25E9%2593%25B6%25E8%25A1%258C%2Fbankcomm.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/J/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C/bankcomm.sgmodule) |  |
+| 招商银行 - CMBCHINA | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FZ%2F%25E6%258B%259B%25E5%2595%2586%25E9%2593%25B6%25E8%25A1%258C%2Fcmb.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/cmb.sgmodule) |  |
+| 中国银行 - BOC | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FZ%2F%25E4%25B8%25AD%25E5%259B%25BD%25E9%2593%25B6%25E8%25A1%258C%2Fboc.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/Z/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/boc.sgmodule) |  |
+| 富途牛牛 - FUTUNN | zirawell 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Fzirawell%2FR-Store%2Fmain%2FRule%2FSurge%2FAdblock%2FApp%2FF%2F%25E5%25AF%258C%25E9%2580%2594%25E7%2589%259B%25E7%2589%259B%2Ffutunn.sgmodule) · [上游订阅](https://raw.githubusercontent.com/zirawell/R-Store/main/Rule/Surge/Adblock/App/F/%E5%AF%8C%E9%80%94%E7%89%9B%E7%89%9B/futunn.sgmodule) |  |
+| 币安 | fmz200 原作者 | [自动安装](https://raw.githack.com/ByteVista/Surge-Modules/main/install.html#url=https%3A%2F%2Fraw.githubusercontent.com%2Ffmz200%2Fwool_scripts%2Fmain%2FSurge%2Fmodule%2Fsplit%2FpartB%2FBinance.sgmodule) · [上游订阅](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Surge/module/split/partB/Binance.sgmodule) |  |
+
 <!-- MODULE_LINKS_END -->
 
-## 上游备选
+## 来源与维护
 
-以下来源用于查找模块替代方案和上游更新信息。选定具体模块后，再将对应的订阅地址、格式和作者填入 `config/sources.yaml`；本列表不参与自动故障切换。
+- 原作者：kokoryh、Maasea、app2smile、zirawell、fmz200 等。哔哩哔哩使用 Kelee 原脚本作者 kokoryh 的原生 Surge 模块。
+- 原作者仅发布 Loon / Quantumult X 时，选用 [Romeo 的 Surge 成品](https://github.com/ifflagged/Romeo/tree/main/Modules/Surge)，不把其他客户端格式直接当作 Surge 模块安装。
+- 备选索引：[墨鱼频道](https://t.me/ddgksf2021)、[fmz200 规则列表](https://github.com/fmz200/wool_scripts/blob/main/README-RULE.md)、[Kelee 插件中心](https://hub.kelee.one/)。
+- Vvebo 时间线修复按其上游说明要求禁用微博去广告插件，以免冲突。
+- 美的美居、1688、网易 BUFF、京东增强、小红书拆分增强等此前禁用的条目仍记录在配置中，不生成安装入口；Klook 仍没有已核实的独立模块。
 
-| 来源 | 入口 | 用途 |
-|---|---|---|
-| 墨鱼 / ddgksf | [Cuttlefish の自留地](https://t.me/ddgksf2021) | 查看脚本发布、更新说明和订阅入口 |
-| fmz200 | [wool_scripts 规则列表](https://github.com/fmz200/wool_scripts/blob/main/README-RULE.md) | 查找 Surge、Loon、QuanX、Egern 等格式的规则和模块链接 |
+本项目维护 URL 和安装入口，不再合并、转换、镜像插件或运行依赖，不再备份整个 Romeo 仓库。原先生成的模块与备份已从当前版本移除，历史提交保留。
 
-## 同步原则
+自动检查每日运行，检查模块 URL、有效 Surge 配置段及引用资源是否可访问。检查不会改写上游内容，也不能代替设备端的去广告效果测试。上游发生移动时修改配置中的 URL；不因一次网络错误自动更换作者或插件。
 
-- 原生 Surge 上游直接使用；Loon 和 Quantumult X 上游只做格式转换。
-- Kelee 项目优先读取 Romeo 已完成的 Surge 转换结果；哔哩哔哩使用 Romeo 镜像的 Kelee Loon 插件，由本仓库转换为 Surge。
-- 不从不同作者中拼规则，不补写功能，不裁剪所选上游自带的去广告、页面净化或解锁功能。
-- 合集按同名 Surge 配置段汇总，仅删除完全相同的活动行；`[MITM]` 的 hostname 机械合并并精确去重。
-- 所有运行时依赖都会镜像，包括 JavaScript、Map Local 远程数据和规则集；文件内容不改，只把模块引用替换为本仓库 Pages 地址。
-- 拼多多、微博、知乎和高德地图统一读取 Romeo 镜像的 Kelee Surge 成品；高德地图继续并入 `MyBlockAds.sgmodule`。
-- Script-Hub 或上游 CDN 临时返回错误时，单项转换会退避重试；整轮仍失败时，工作流等待后再完整重试一次。
+本地维护需要 Python 3.11+：
 
-## 自动更新流程
-
-```text
-GitHub Actions（每小时第 17 分钟）
-        ↓
-读取 config/sources.yaml
-        ↓
-带正确 User-Agent 下载上游
-        ↓
-原生 Surge 直接使用
-Loon / QX 交给 Script-Hub 转换
-        ↓
-镜像全部脚本与运行时资源
-        ↓
-按 Video / MyBlockAds / 家族模块合并
-        ↓
-完整性校验
-        ↓
-有内容变化才 commit 和 push
-        ↓
-将模块、JS、JSON 和索引页部署到 GitHub Pages
-```
-
-工作流位于 [`.github/workflows/sync-surge-modules.yml`](.github/workflows/sync-surge-modules.yml)。也可以在 GitHub 的 Actions 页面手动运行。
-
-## 部署
-
-1. 将仓库内容推送到 GitHub，默认分支建议使用 `main`。
-2. 私有仓库需要 GitHub Pro、Team 或 Enterprise；Pages 发布内容将公开，但仓库中的同步脚本和配置仍保持私有。
-3. 打开仓库的 **Settings → Pages**，在 **Build and deployment → Source** 中选择 **GitHub Actions**。
-4. 在 **Settings → Actions → General → Workflow permissions** 中选择 **Read and write permissions**。
-5. 打开 **Actions → Sync Surge Modules → Run workflow**，执行第一次同步。
-6. 成功后，在 Pages 首页或 README 中使用自动生成的模块订阅链接。
-
-项目站点通常位于：
-
-```text
-https://你的用户名.github.io/仓库名/
-```
-
-模块链接通常位于：
-
-```text
-https://你的用户名.github.io/仓库名/Modules/Surge/Bilibili.sgmodule
-```
-
-工作流会读取 GitHub Pages 提供的实际站点根地址，因此也兼容自定义域名，不需要在配置中写死用户名或仓库名。
-
-若默认分支启用了“禁止直接推送”的保护规则，需要允许 `github-actions[bot]` 推送，或把提交步骤改为创建 Pull Request。
-
-## 本地检查
-
-本地需要 Python 3.11+；完整转换还需要运行 Script-Hub：
-
-```bash
+```sh
 python -m pip install -r requirements.txt
-python scripts/validate_modules.py --config-only
 python -m unittest discover -s tests -v
-python scripts/sync_modules.py --raw-base https://OWNER.github.io/REPOSITORY/Modules/Surge
-python scripts/validate_modules.py
-python scripts/build_pages.py --modules Modules/Surge --readme README.md --site _site
+python scripts/catalog.py --repository ByteVista/Surge-Modules
+python scripts/catalog.py --repository ByteVista/Surge-Modules --check --check-links
 ```
 
-## 使用提醒
-
-VVebo 修复模块的上游说明要求：使用前禁用微博去广告插件，以免冲突。
-
-部分模块启用 MITM，部分完整上游还带会员、画质、倍速或区域解锁。安装前请阅读生成模块顶部的来源列表；遇到登录、支付、播放或页面异常时，应先停用对应合集排查。所有模块及脚本版权归各上游作者，本仓库只负责自动同步、格式转换和组合发布。
+所有模块与脚本的版权及使用条件归原作者；本仓库仅整理公开订阅地址。
