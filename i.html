@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>安装 Romeo Surge 模块</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;line-height:1.8}a,code{overflow-wrap:anywhere}code{display:block;white-space:pre-wrap}</style>
+<h1>安装 Romeo Surge 模块</h1>
+<p id="status">正在读取安装入口…</p>
+<p id="versions"></p>
+<p><a id="install" hidden>打开 Surge 安装</a></p>
+<p><a id="source" hidden>模块原文 / 直接订阅地址</a></p>
+<code id="scheme"></code>
+<noscript>需要启用 JavaScript。也可到 https://github.com/ifflagged/Romeo/tree/main/Modules/Surge 复制模块地址，在 Surge 中安装。</noscript>
+<script>
+(() => {
+  const authors = ["001ProMax", "Alex0510", "BiliUniverse", "Biliverse", "ccyykk666", "chavyleung", "ddgksf2013", "devchristian1337", "DualSubs", "fking", "fmz200", "gholts", "githubdulong", "ifflagged", "ishowshu", "Kelee", "kelv1n1n", "klraw", "kokoryh", "Maasea", "mieqq", "mist-whisper", "Moli-X", "muktsoen", "NSRingo", "Romeo-Root", "rucu6", "sooyaaabo", "TomCatXue", "VirgilClyne", "wf021325", "XiangwanGuan", "xingjiu29", "Yu9191", "Yuheng0101", "ZenmoFeiShi", "zirawell"];
+  const choices = {d: {bit: 1, folder: '', label: '默认目录'}, b: {bit: 2, folder: 'Beta/', label: 'Beta'}, o: {bit: 4, folder: 'Official/', label: 'Official'}};
+  const pieces = location.hash.slice(1).split('/');
+  const authorId = pieces.shift();
+  const maskText = pieces.shift();
+  const primary = pieces.shift();
+  const status = document.getElementById('status');
+  let filename;
+  try { filename = decodeURIComponent(pieces.join('/')); } catch {}
+  const mask = Number(maskText);
+  const author = authors[Number(authorId)];
+  if (!/^\d+$/.test(authorId || '') || !author || !/^[1-7]$/.test(maskText || '') || !choices[primary] ||
+      !(mask & choices[primary].bit) || !filename || /[\\\x00-\x1f]/.test(filename) ||
+      filename.split('/').some(p => !p || p === '.' || p === '..')) {
+    status.textContent = '安装链接无效，请返回 README 重新选择。';
+    return;
+  }
+  const file = filename + '.sgmodule';
+  const prefix = 'https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/Surge/';
+  const urlFor = key => prefix + (author === 'Romeo-Root' ? '' : encodeURIComponent(author) + '/') + choices[key].folder + file.split('/').map(encodeURIComponent).join('/');
+  const schemeFor = key => 'surge:///install-module?url=' + encodeURIComponent(urlFor(key));
+  const select = (key, open) => {
+    const url = urlFor(key), scheme = schemeFor(key);
+    const install = document.getElementById('install');
+    install.href = scheme; install.hidden = false;
+    const source = document.getElementById('source');
+    source.href = url; source.hidden = false;
+    source.textContent = '模块原文 / 直接订阅：' + url;
+    document.getElementById('scheme').textContent = scheme;
+    status.textContent = '作者目录：' + (author === 'Romeo-Root' ? '根目录' : author) + '；模块：' + file + '；版本：' + choices[key].label + '。若未自动打开 Surge，请点击“打开 Surge 安装”，并允许浏览器打开应用。';
+    if (open) location.href = scheme;
+  };
+  const versions = document.getElementById('versions');
+  versions.appendChild(document.createTextNode('可选版本：'));
+  for (const key of ['d', 'b', 'o']) {
+    if (!(mask & choices[key].bit)) continue;
+    const link = document.createElement('a');
+    link.textContent = choices[key].label;
+    link.href = schemeFor(key);
+    link.addEventListener('click', () => select(key, false));
+    versions.appendChild(link);
+    versions.appendChild(document.createTextNode('　'));
+  }
+  select(primary, true);
+})();
+</script>
+</html>
